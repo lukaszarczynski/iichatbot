@@ -19,11 +19,11 @@ class Talker(object):
         }
         answer = self.get_answer(question)
         if "answer" not in answer.keys():
-            raise Error("answer not found")
+            raise Exception("answer not found")
         if "score" not in answer.keys():
-            raise Error("score not found")
+            raise Exception("score not found")
         if not (0.0 <= answer["score"] <= 1.0):
-            raise Error("invalid score")
+            raise Exception("invalid score")
         logging.info("%s answered: %s [%f]" % (self.__class__.__name__,
                                                answer["answer"],
                                                answer["score"]))
