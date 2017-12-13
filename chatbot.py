@@ -1,10 +1,11 @@
 import logging
 from stupid_talker.stupid_talker import StupidTalker
-
+from vector_sum_talker.vector_sum_talker import VectorSumTalker
 
 def get_talkers():
     talkers = []
     talkers.append(StupidTalker())
+    talkers.append(VectorSumTalker())
     return talkers
 
 
