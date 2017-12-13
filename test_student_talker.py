@@ -8,7 +8,7 @@ from students_talker.students_talker import StudentsTalker
 class TestChatbot(unittest.TestCase):
     def test_valid_answer(self):
         talker = StudentsTalker(sys.modules['students_talker'].__path__[0])
-        answ = talker.get_answer("Czy muszę chodzić na WF")
+        answ = talker.get_answer("Czym jest O3")
         self.assertEqual(answ['answer'], "Bleh")
 
 
