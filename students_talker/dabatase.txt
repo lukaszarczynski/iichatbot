@@ -1,0 +1,34 @@
+Czego nauczę się na analizie matematycznej *|* Dowiesz się, czym jest zbieżność, granica; nauczysz się różniczkowania i całkowania oraz badania zmienności funkcji.
+Czego nauczę się na logice *|* Logika pomoże Ci poprawnie używać terminologii matematycznej oraz przeprowadzania ścisłych dowodów.
+Czego nauczę się na algebrze *|* Na zajęciach omówisz pojęcia abstrakcyjne, jak grupy, ciała, pierścienia. Dowiesz się o algebrze liniowej i podstawach operacji macierzowych.
+Czego nauczę się na matematyce dyskretnej *|* Matematyka dyskretna do duży przedmiot. Omawia teorię liczb i kombinatorykę. Będą też podstawy teorii grafów (np. drzewa rozpinające).
+Czego nauczę się na rachunku prawdopodobieństwa *|* Dowiesz się czym jest prawdopodobieństwo ciągłe i dyskretne oraz wartość oczekiwana. Nauczysz się analizować zdarzenia, zmienne losowe, obliczać prawdopodobieństwo, wartość oczekiwaną i odchylenie standardowe.
+Czego nauczę się na wprowadzeniu do informatyki *|* W czasie WdI przejdziesz przez podstawy teorii programowania; od systemu binarnego, przez tablice, wskaźniki i pętle. Omówione zostaną także niezmienniki pozwalające na udowadnianie poprawności programów i algorytmów.
+Czego nauczę się na algorytmach i strukturach danych *|* AiSD to chyba największy przedmiot na tej uczelni. Będzie mowa o różnych klasach algorytmów (dynamiczne, dziel i rządź...), o algorytmach grafowych, haszowaniu, sortowaniu; omówione zostaną sposoby wyznaczania złożoności algorytmów; będzie też o wielu strukturach danych.
+Czego nauczę się na metodach numerycznych *|* Na metodahc numerycznych dowiesz się, że komputer nie potrafi liczyć. Poznasz też sposoby radzenia sobie z tymi problemami.
+Czego nauczę się na programowaniu obiektowym *|* Na tym przedmiocie będziesz programować w trzech różnych językach obiektowych - Pythonie, Java'ie i Rubym.
+Czego nauczę się na metodach programowania *|* Poznasz języki funkcyjne - Prologa i Haskella oraz nauczysz się programowania w tych językach.
+Czego nauczę się na inżynierii oprogramowania *|* Na tym przedmiocie dowiesz się w jaki sposób planować tworzenie programu; od pomysłu do technicznego opisu aplikacji.
+Czego nauczę się na sieciach komputerowych *|* Na sieciach dowiesz się co tak naprawdę dzieje się w momencie, gdy łączysz się z Internetem. Duży nacisk jest położony na praktykę.
+Czego nauczę się na bazach danych *|* Nauczysz się teorii baz danych oraz stworzysz projekt wykorzystujący relacyjną bazę danych.
+Czym jest O1 *|* Są to przedmioty obowiązkowe w pierwszym roku studiów (tzn. Logika, Analiza matematyczne, Algebra i Metody programowania).
+Czym jest O2 *|* Są to przedmioty obowiązkowe w drugim roku studiów (tzn. Matematyka dyskretna, Analiza numeryczna oraz Algorytmy i struktury danych).
+Czym jest O3 *|* Są to przedmioty rozszerzone wymagana na studiach magisterskich. Obowiązkowym przedmiotem tej grupy są Języki formalne i złożoność obliczeniowa.
+Czym jest I1 *|* Są to przedmioty dot. praktycznej informatyki. Wiedza zdobyta na przedmiotach oznaczonych jako I1 na pewno przydadzą Ci się w pracy zawodowej.
+Czym jest I2 *|* Przedmioty I2 zawierają bardziej zaawansowane treści informatyczne, które mogą przydać się jedynie w niektórych przypadkach. Z I2 warto wybierać tylko te przedmioty, które naprawdę Cię interesują.
+Czym jest I.inż *|* Przedmioty I.Inż są przeznaczone dla studentów pragnących uzyskać tytuł inżyniera. Poruszają praktyczne aspekty informatyki, np. programowanie mikroprocesorów.
+Czym jest K1 *|* K1 to kursy dotyczące podstawowych zagadnień informatycznych.
+Czym jest K2 *|* K2 to kursy dotyczące bardziej zaawansowanych zagadnień informatycznych.
+Czym jest K.inż *|* K.inż to kursy przeznaczone dla tych, który chcą ukończyć studia z tytułem inżyniera.
+Czym są seminaria *|* Seminaria zwykle mają formę wykładów prowadzonych przez studentów. Na każdych zajęciach inna osoba omawia jakiś szczegółowy zakres materiału.
+Czym jest praktyka zawodowa *|* Częścią studiów jest praktyka, którą odbywasz w jednej z firm informatycznych. Jeżeli masz problem ze znalezieniem pracodawcy, który zapewni staż, zgłoś się do pracowników Instytutu.
+Co to jest przedmiot nieinformatyczny *|* W trakcie studiów musisz uzyskać przynajmniej 4 ECTSy za przedmioty nieinformatyczne. Przedmioty te traktują zwykle o ekonomii, prawie, psychologii albo historii.
+Czy muszę chodzić na WF *|* Studenci Instytutu Informatyki mogą, lecz nie muszą zaliczyć zajęć sportowych.
+Ile ECTSów potrzebuję żeby zaliczyć 3 semestr *|* 90.
+Ile ECTSów potrzebuję żeby zaliczyć 4 semestr *|* 120.
+Ile ECTSów potrzebuję żeby zaliczyć 5 semestr *|* 150.
+Ile ECTSów potrzebuję żeby zaliczyć 6 semestr *|* 180 (albo 170 w przypadku studiów inżynierskich).
+Ile ECTSów potrzebuję żeby zaliczyć 7 semestr *|* 210.
+Co muszę zrobić aby ukończyć studia licencjackie *|* Musisz zaliczyć wszystkie przedmioty obowiązkowe, uzyskać przynajmniej 180 ECTSów, zaliczyć język obcy na poziomie B2 II (j. ang. na poziomie co najmniej A2 II), zaliczyć 1 seminarium, wziąć udział w projekcie programistycznym, zaliczyć co najmniej 3 tygodnie praktyki, uzyskać 54 ECTSy z przedmiotów I1 i I2, uzyskać co najmniej 4 punkty z przedmiotów nieinformatycznych.
+Co muszę zrobić aby ukończyć studia inżynierskie *|* Musisz zaliczyć wszystkie przedmioty obowiązkowe, uzyskać przynajmniej 210 ECTSów, zaliczyć język obcy na poziomie B2 II (j. ang. na poziomie co najmniej A2 II), zaliczyć 1 seminarium, wziąć udział w zespołowym projekcie programistycznym, zaliczyć co najmniej 4 tygodnie praktyki, uzyskać 66 ECTSy z przedmiotów I1, I2 i I.inż (z I.inż co najmniej 12 ECTSów), uzyskać co najmniej 4 punkty z przedmiotów nieinformatyczych, z czego jeden musi obejmować treści ekonomiczne.
+Gdzie znajduje się program studiów *|* Znajdziesz go na stronie http://ii.uni.wroc.pl/media/uploads/program13_AallMBL.html
