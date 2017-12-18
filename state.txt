@@ -1,0 +1,5 @@
+Tutaj zbieramy klucze które uważamy, że fajnie byłoby mieć w state:
+
+SEX
+AGE
+AFFILIATION - STUDENT/FIRST_YEAR_STUDENT/CANDIDAT...

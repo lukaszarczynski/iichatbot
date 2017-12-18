@@ -52,35 +52,39 @@ tagToAnswer = {'kierunki' : 'Na naszym wydziale oferujemy trzy kierunki: matemat
 'fb' : 'Na Facebooku są obecnie dwie działające grupy - jedna dla pierwszego roku, a druga dla reszty studentów: https://www.facebook.com/groups/1509427755955548/ https://www.facebook.com/groups/1458898207762366/',
 'przedmioty' : 'https://zapisy.ii.uni.wroc.pl/courses/'}
 
-def match(q,pattern):
-    pat = re.compile(pattern)
-    return (pat.search(q) != None)
 
-def ask(q):
-    for possibility in questions:
-        if match(q,possibility):
-            tag = questions[possibility]
-            return tagToAnswer[tag]
-    return "Przepraszam ale nie mogę Ci pomóc."
-
-class CandidatTalker():
+class CandidatesTalker(Talker):
     
-    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5):
+    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5, state_update):
         self.answer = answer
         self.score = score
+        self.state_update = state_update
 
     def get_answer(self, question):
         self.answer = ask(question)
         return {
             "answer": self.answer,
             "score": self.score
+            "state_update": {}
         }
 
+    def match(q,pattern):
+    	pat = re.compile(pattern)
+    	return (pat.search(q) != None)
+
+	def ask(q):
+    	for possibility in questions:
+        	if match(q,possibility):
+            	tag = questions[possibility]
+            	return tagToAnswer[tag]
+    	return "Przepraszam ale nie mogę Ci pomóc."
 
 
-while(True):
-    user=raw_input()
-    if user == 'akubik': 
-        break
-    print ask(user)
+
+
+# while(True):
+#     user=raw_input()
+#     if user == 'akubik': 
+#         break
+#     print ask(user)
     
