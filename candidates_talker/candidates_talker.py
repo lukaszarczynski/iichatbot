@@ -55,7 +55,7 @@ tagToAnswer = {'kierunki' : 'Na naszym wydziale oferujemy trzy kierunki: matemat
 
 class CandidatesTalker(Talker):
     
-    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5, state_update):
+    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5):
         self.answer = answer
         self.score = score
         self.state_update = state_update

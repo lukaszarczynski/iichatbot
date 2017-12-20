@@ -13,12 +13,12 @@ class Talker(object):
         """
         raise NotImplementedError
 
-    def get_answer_helper(self, question_raw):
+    def get_answer_helper(self, question_raw, status):
         question = {
             "question": question_raw,
             "preprocessed": spellcheck(question_raw)
         }
-        answer = self.get_answer(question)
+        answer = self.get_answer(question, status)
         if "answer" not in answer.keys():
             raise Exception("answer not found")
         if "score" not in answer.keys():

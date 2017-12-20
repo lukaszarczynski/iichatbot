@@ -18,10 +18,10 @@ def get_talkers():
     return talkers
 
 
-def get_answer(talkers, question):
+def get_answer(talkers, question, state):
     answers = []
     for talker in talkers:
-        answers.append(talker.get_answer_helper(question))
+        answers.append(talker.get_answer_helper(question, state))
     answers = sorted(answers, key=lambda answer: -answer["score"])
     return answers[0]
 
@@ -40,7 +40,7 @@ def loop(talkers):
             print ">",
             question = raw_input()
             logging.info("Question asked: %s" % question)
-            answer = get_answer(talkers, question)
+            answer = get_answer(talkers, question, state)
             print "<", answer["answer"]
             logging.info("Answered: %s" % answer["answer"])
             state = update_state(state, answer["state_update"])
