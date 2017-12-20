@@ -71,12 +71,11 @@ class VectorSumTalker(Talker):
         self.vectors = []
 
         self.load_sentences(source, ' ' if source == 'data/subtitles.txt' else ':')
-        print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
+        #print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
 
     def get_answer(self, question):
         q = question['question'].decode('utf-8')
         sentence = self.preprocess(q)
-        print sentence
         vec = self.get_vector(sentence)
         if vec is None:
             return {
@@ -84,11 +83,15 @@ class VectorSumTalker(Talker):
                 "score": 0
             }
         cosine = (self.vectors * vec.reshape(1, -1)).sum(axis=1)
-        best = self.n_max(cosine, 1)[0]
-        print self.responses[best]
-        print 'most similar question', self.sentences[best]
+        best = sorted(range(len(cosine)), key=lambda x: -cosine[x])
+        for i in best:
+            if self.responses[i] != '':
+                return {
+                    "answer": self.responses[i],
+                    "score": max(0, min(cosine[i], 1)),
+                    "state_update": {}
+                }
         return {
-            "answer": self.responses[best],
-            "score": cosine[best],
-            "state_update": {}
+            "answer": "nic nie zrozumiałem",
+            "score": 0
         }
