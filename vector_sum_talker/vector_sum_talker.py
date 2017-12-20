@@ -3,9 +3,10 @@
 from talker import Talker
 import w2v_util.loader
 import numpy as np
+import traceback
 
 class VectorSumTalker(Talker):
-    W2V_PATH = '../vec.bin'
+    W2V_PATH = 'big_data/word2vec-jarek/vec.bin'
     
     @staticmethod
     def n_max(vec, n):
@@ -48,6 +49,7 @@ class VectorSumTalker(Talker):
                     self.responses.append('')
                     added = True
                 except:
+                    #traceback.print_exc()
                     pass
     
     def get_vector(self, s):
@@ -62,18 +64,19 @@ class VectorSumTalker(Talker):
         vec = vec / np.linalg.norm(vec)
         return vec
     
-    def __init__(self):
+    def __init__(self, source):
         self.w2v = w2v_util.loader.get(self.W2V_PATH)
         self.sentences = []
         self.responses = []
         self.vectors = []
 
-        for f, sep in [('data/subtitles.txt', ' '), ('data/drama_quotes.txt', ':'),
-             ('data/dialogi_z_prozy.txt', ':'), ('data/yebood.txt', ':')]:
-            self.load_sentences(f, sep)
+        self.load_sentences(source, ' ' if source == 'data/subtitles.txt' else ':')
+        print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
 
     def get_answer(self, question):
+        q = question['question'].decode('utf-8')
         sentence = self.preprocess(question['question'])
+        print sentence
         vec = self.get_vector(sentence)
         if vec is None:
             return {
@@ -82,7 +85,10 @@ class VectorSumTalker(Talker):
             }
         cosine = (self.vectors * vec.reshape(1, -1)).sum(axis=1)
         best = self.n_max(cosine, 1)[0]
+        print self.responses[best]
+        print 'most similar question', self.sentences[best]
         return {
             "answer": self.responses[best],
-            "score": cosine[best]
+            "score": cosine[best],
+            "state_update": {}
         }

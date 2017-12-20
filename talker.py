@@ -29,7 +29,6 @@ class Talker(object):
             raise Exception("invalid score")
         logging.info("%s answered: %s [%f]" % (self.__class__.__name__,
                                                answer["answer"],
-                                               answer["score"],
-                                               answer["state_update"]))
+                                               answer["score"]))
         return answer
 
