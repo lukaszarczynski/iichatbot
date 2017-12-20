@@ -75,7 +75,7 @@ class VectorSumTalker(Talker):
 
     def get_answer(self, question):
         q = question['question'].decode('utf-8')
-        sentence = self.preprocess(question['question'])
+        sentence = self.preprocess(q)
         print sentence
         vec = self.get_vector(sentence)
         if vec is None:
