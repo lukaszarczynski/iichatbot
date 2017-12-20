@@ -1,31 +1,31 @@
-{ "q": ".* C CZY .* PYTHON", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python.", "score": 0.9 }
-{ "q": ".* C CZY .* PYTHONA", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9 }
-{ "q": ".* C ALBO .* PYTHON", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9}
-{ "q": ".* C ALBO .* PYTHONA", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9}
-{ "q": "CO TO JEST SKOS", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie." , "score": 0.8}
-{ "q": "CO TO SKOS", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie.", "score": 0.8}
-{ "q": "CZYM JEST SKOS", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie.", "score": 0.8}
-{ "q": "CO WZIĄĆ NA PIERWSZYM SEMESTRZE", "a": "Na pierszym semestrze dobrze jest wziąć Wstęp do Programowania, Wstęp do Informatyki i Podstawowy Warsztat Informatyka. Oprócz tego na pierwszym semestrze są obowiązkowe Logika i Analiza Matematyczna","score": 0.9}
-{ "q": "CZEGO UCZYĆ SIĘ NA PIERWSZYM SEMESTRZE", "a": "Na pierszym semestrze dobrze jest wziąć Wstęp do Programowania, Wstęp do Informatyki i Podstawowy Warsztat Informatyka. Oprócz tego na pierwszym semestrze są obowiązkowe Logika i Analiza Matematyczna" ,"score": 0.9}
-{ "q": "CO JEST NAJTRUDNIEJSZE NA PIERWSZYM SEMESTRZE", "a": "Na pierwszym semestrze najtrudniejsza jest Logika.","score": 0.9 }
-{ "q": "CO SPRAWI MI TRUDNOŚĆ NA PIERWSZYM SEMESTRZE", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
-{ "q": "JAKI PRZEDMIOT JEST TRUDNY NA PIERWSZYM SEMESTRZE", "a": "Na pierwszym semestrze najtrudniejsza jest Logika.","score": 0.9 }
-{ "q": "CO JEST CIĘŻKIE NA PIERWSZYM SEMESTRZE", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
-{ "q": "CO MOŻE BYĆ CIĘŻKIE NA PIERWSZYM SEMESTRZE", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
-{ "q": "CO .* NA KURSIE NA SKOSIE", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
-{ "q": "CO .* NA KURSIE NA SKOS", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
-{ "q": "CO .* NA KURSACH NA SKOS", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu.","score": 0.6 }
-{ "q": "CO .* NA KURSACH NA SKOSIE", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
-{ "q": "Z CZEGO UCZYĆ SIĘ DO ANALIZY MATEMATYCZNEJ", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa.","score": 0.6 }
-{ "q": "Z CZEGO UCZYĆ SIĘ DO ANMAT", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa." ,"score": 0.6}
-{ "q": ".* KSIĄŻKI DO ANALIZY MATEMATYCZNEJ", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa.","score": 0.6 }
-{ "q": ".* KSIĄŻKI DO ANMAT", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa." ,"score": 0.6}
-{ "q": "KIEDY BĘDĄ ZAPISY", "a": "Zapisy będą odbywać się na dniach adaptacyjnych. Wtedy też pokazane będą informacje na temat przedmiotów." ,"score": 0.5}
-{ "q": "KIEDY ROZPOCZNĄ SIĘ ZAPISY", "a": "Zapisy będą odbywać się na dniach adaptacyjnych. Wtedy też pokazane będą informacje na temat przedmiotów." ,"score": 0.5}
-{ "q": "NA JAKIEJ STRONIE SĄ ZAPISY", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania rozdawane są na dniach adaptacyjnych.","score": 0.5 }
-{ "q": "PRZEZ JAKĄ STRONĘ ZAPISUJEMY SIĘ NA ZAJĘCIA", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania rozdawane są na dniach adaptacyjnych.","score": 0.5 }
-{ "q": "PRZEZ JAKĄ STRONĘ SIĘ ZAPISUJEMY", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania będą rozdawane na dniach adaptacyjnych." ,"score": 0.5}
-{ "q": "CO .* ZROBIĆ ŻEBY ZALICZYĆ PIERWSZY SEMESTR", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów.","score": 0.9 }
-{ "q": "CO ZROBIĆ NA ZALICZENIE PIERWSZEGO SEMESTRU", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów.","score": 0.9 }
-{ "q": "CO .* ZROBIĆ ŻEBY ZALICZYĆ 1 SEMESTR", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów." ,"score": 0.9}
-{ "q": "CO ZROBIĆ NA ZALICZENIE 1 SEMESTRU", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów." ,"score": 0.9}
+{ "q": ".* c czy .* python", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python.", "score": 0.9 }
+{ "q": ".* c czy .* pythona", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9 }
+{ "q": ".* c albo .* python", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9}
+{ "q": ".* c albo .* pythona", "a": "Jeśli masz doświadczenie z programowaniem, wybierz C. Jeśli nie czujesz się pewnie, lub zaczynasz, lepszy będzie Python." , "score": 0.9}
+{ "q": "co to jest skos", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie." , "score": 0.8}
+{ "q": "co to skos", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie.", "score": 0.8}
+{ "q": "czym jest skos", "a": "SKOS to system komunikacji na odległość ze studentami. Gdy zapiszesz się na przedmiot zostaniesz zapisany na odpowiadający mu kurs na SKOSie.", "score": 0.8}
+{ "q": "co wziąć na pierwszym semestrze", "a": "Na pierszym semestrze dobrze jest wziąć Wstęp do Programowania, Wstęp do Informatyki i Podstawowy Warsztat Informatyka. Oprócz tego na pierwszym semestrze są obowiązkowe Logika i Analiza Matematyczna","score": 0.9}
+{ "q": "czego uczyć się na pierwszym semestrze", "a": "Na pierszym semestrze dobrze jest wziąć Wstęp do Programowania, Wstęp do Informatyki i Podstawowy Warsztat Informatyka. Oprócz tego na pierwszym semestrze są obowiązkowe Logika i Analiza Matematyczna" ,"score": 0.9}
+{ "q": "co jest najtrudniejsze na pierwszym semestrze", "a": "Na pierwszym semestrze najtrudniejsza jest Logika.","score": 0.9 }
+{ "q": "co sprawi mi trudność na pierwszym semestrze", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
+{ "q": "jaki przedmiot jest trudny na pierwszym semestrze", "a": "Na pierwszym semestrze najtrudniejsza jest Logika.","score": 0.9 }
+{ "q": "co jest ciężkie na pierwszym semestrze", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
+{ "q": "co może być ciężkie na pierwszym semestrze", "a": "Na pierwszym semestrze najtrudniejsza jest Logika." ,"score": 0.9}
+{ "q": "co .* na kursie na skosie", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
+{ "q": "co .* na kursie na skos", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
+{ "q": "co .* na kursach na skos", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu.","score": 0.6 }
+{ "q": "co .* na kursach na skosie", "a": "Na konkretnym kursie na SKOSie znajdziesz informacje o punktacji, listy zadań i, w większości przypadków, slajdy z wykładu." ,"score": 0.6}
+{ "q": "z czego uczyć się do analizy matematycznej", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa.","score": 0.6 }
+{ "q": "z czego uczyć się do anmat", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa." ,"score": 0.6}
+{ "q": ".* książki do analizy matematycznej", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa.","score": 0.6 }
+{ "q": ".* książki do anmat", "a": "Dobrymi książkami do Analizy Matematycznej są podręczniki z PWr Skoczylasa." ,"score": 0.6}
+{ "q": "kiedy będą zapisy", "a": "Zapisy będą odbywać się na dniach adaptacyjnych. Wtedy też pokazane będą informacje na temat przedmiotów." ,"score": 0.5}
+{ "q": "kiedy rozpoczną się zapisy", "a": "Zapisy będą odbywać się na dniach adaptacyjnych. Wtedy też pokazane będą informacje na temat przedmiotów." ,"score": 0.5}
+{ "q": "na jakiej stronie są zapisy", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania rozdawane są na dniach adaptacyjnych.","score": 0.5 }
+{ "q": "przez jaką stronę zapisujemy się na zajęcia", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania rozdawane są na dniach adaptacyjnych.","score": 0.5 }
+{ "q": "przez jaką stronę się zapisujemy", "a": "Zapisy odbywają się przez serwis zapisy.ii.uni.wroc.pl. Dane do logowania będą rozdawane na dniach adaptacyjnych." ,"score": 0.5}
+{ "q": "co .* zrobić żeby zaliczyć pierwszy semestr", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów.","score": 0.9 }
+{ "q": "co zrobić na zaliczenie pierwszego semestru", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów.","score": 0.9 }
+{ "q": "co .* zrobić żeby zaliczyć 1 semestr", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów." ,"score": 0.9}
+{ "q": "co zrobić na zaliczenie 1 semestru", "a": "Aby zaliczyć pierwszy semestr należy zaliczyć co najmniej jeden z przedmiotów Analiza matematyczna i Logika dla informatyków. Ponadto deficyt ECTS nie może przekroczyć 10 punktów." ,"score": 0.9}

@@ -3,9 +3,10 @@
 from talker import Talker
 import w2v_util.loader
 import numpy as np
+import traceback
 
 class VectorSumTalker(Talker):
-    W2V_PATH = '../vec.bin'
+    W2V_PATH = 'big_data/word2vec-jarek/vec.bin'
     
     @staticmethod
     def n_max(vec, n):
@@ -48,6 +49,7 @@ class VectorSumTalker(Talker):
                     self.responses.append('')
                     added = True
                 except:
+                    #traceback.print_exc()
                     pass
     
     def get_vector(self, s):
@@ -62,18 +64,18 @@ class VectorSumTalker(Talker):
         vec = vec / np.linalg.norm(vec)
         return vec
     
-    def __init__(self):
+    def __init__(self, source):
         self.w2v = w2v_util.loader.get(self.W2V_PATH)
         self.sentences = []
         self.responses = []
         self.vectors = []
 
-        for f, sep in [('data/subtitles.txt', ' '), ('data/drama_quotes.txt', ':'),
-             ('data/dialogi_z_prozy.txt', ':'), ('data/yebood.txt', ':')]:
-            self.load_sentences(f, sep)
+        self.load_sentences(source, ' ' if source == 'data/subtitles.txt' else ':')
+        #print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
 
     def get_answer(self, question):
-        sentence = self.preprocess(question['question'])
+        q = question['question'].decode('utf-8')
+        sentence = self.preprocess(q)
         vec = self.get_vector(sentence)
         if vec is None:
             return {
@@ -81,8 +83,15 @@ class VectorSumTalker(Talker):
                 "score": 0
             }
         cosine = (self.vectors * vec.reshape(1, -1)).sum(axis=1)
-        best = self.n_max(cosine, 1)[0]
+        best = sorted(range(len(cosine)), key=lambda x: -cosine[x])
+        for i in best:
+            if self.responses[i] != '':
+                return {
+                    "answer": self.responses[i],
+                    "score": max(0, min(cosine[i], 1)),
+                    "state_update": {}
+                }
         return {
-            "answer": self.responses[best],
-            "score": cosine[best]
+            "answer": "nic nie zrozumiałem",
+            "score": 0
         }
