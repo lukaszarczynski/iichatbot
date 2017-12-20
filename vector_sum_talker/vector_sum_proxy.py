@@ -10,11 +10,11 @@ class VectorSumProxy(Talker):
         self.kwargs = kwargs
         self.create()
     
-    def get_answer(self, question):
+    def get_answer(self, question, *args, **kwargs):
         if question['question'] == 'reset':
             reload(vector_sum_talker)
             self.create()
             return { 'answer': 'vector sum talker has been reset',
                      'score': 1,
                      'state_update': {} }
-        return self.talker.get_answer(question)
+        return self.talker.get_answer(question, *args, **kwargs)

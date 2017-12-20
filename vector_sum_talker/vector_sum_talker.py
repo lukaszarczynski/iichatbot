@@ -73,7 +73,7 @@ class VectorSumTalker(Talker):
         self.load_sentences(source, ' ' if source == 'data/subtitles.txt' else ':')
         #print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
 
-    def get_answer(self, question):
+    def get_answer(self, question, *args, **kwargs):
         q = question['question'].decode('utf-8')
         sentence = self.preprocess(q)
         vec = self.get_vector(sentence)
