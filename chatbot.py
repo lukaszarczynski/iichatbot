@@ -1,5 +1,7 @@
+import argparse
 import logging
 import traceback
+import sys
 from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 #from candidates_talker.candidates_talker import CandidatesTalker
@@ -52,7 +54,16 @@ def loop(talkers):
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='chatbot.log', level=logging.INFO,
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('--debug', action='store_true', dest='debug', help='write logs to the console')
+    args = parser.parse_args(sys.argv[1:])
+    
+    if args.debug:
+        logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s: %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S')
+    else:
+        logging.basicConfig(filename='chatbot.log', level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
     loop(get_talkers())
