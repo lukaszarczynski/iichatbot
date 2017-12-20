@@ -24,7 +24,7 @@ class Talker(object):
         if "score" not in answer.keys():
             raise Exception("score not found")
         if "state_update" not in answer.keys():
-            raise Exception("state update not found")
+            answer["state_update"] = { }
         if not (0.0 <= answer["score"] <= 1.0):
             raise Exception("invalid score")
         logging.info("%s answered: %s [%f]" % (self.__class__.__name__,
