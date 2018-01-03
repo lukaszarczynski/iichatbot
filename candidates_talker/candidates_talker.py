@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import re
+from talker import Talker
 questions = {'kierun':'kierunki', 
 'co.*isim':'co isim', 'czym .* isim' : 'co isim', 
 'ile.*studentów .* isim' : 'ile isim', 'ile .* osób .* isim' : 'ile isim',
@@ -58,26 +59,24 @@ class CandidatesTalker(Talker):
     def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5):
         self.answer = answer
         self.score = score
-        self.state_update = state_update
 
-    def get_answer(self, question):
-        self.answer = ask(question)
+    def get_answer(self, question, status):
+        self.answer = self.ask(question)
         return {
             "answer": self.answer,
             "score": self.score
-            "state_update": {}
         }
 
-    def match(q,pattern):
-    	pat = re.compile(pattern)
-    	return (pat.search(q) != None)
+    def match(self,q,pattern):
+        pat = re.compile(pattern)
+        return (pat.search(q) != None)
 
-	def ask(q):
-    	for possibility in questions:
-        	if match(q,possibility):
-            	tag = questions[possibility]
-            	return tagToAnswer[tag]
-    	return "Przepraszam ale nie mogę Ci pomóc."
+    def ask(self, q):
+        for possibility in questions:
+            if self.match(q['question'],possibility):
+                tag = questions[possibility]
+                return tagToAnswer[tag]
+        return "Przepraszam ale nie mogę Ci pomóc."
 
 
 

@@ -453,3 +453,4 @@
 2018-01-03 10:23:03: loading sentences from data/yebood.txt
 2018-01-03 10:23:08: loading sentences from data/dialogi_z_prozy.txt
 2018-01-03 10:23:57: loading sentences from data/drama_quotes.txt
+2018-01-03 10:30:39: loading word2vec word embeddings from big_data/word2vec-jarek/vec.bin

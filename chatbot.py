@@ -4,18 +4,17 @@ import traceback
 import sys
 from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
-#from candidates_talker.candidates_talker import CandidatesTalker
-#from first_year_talker.first_year_talker import FirstYearTalker
+from candidates_talker.candidates_talker import CandidatesTalker
+from first_year_talker.first_year_talker import FirstYearTalker
 
 def get_talkers():
     talkers = []
-    #talkers.append(StupidTalker())
     talkers.append(VectorSumProxy('data/subtitles.txt'))
     talkers.append(VectorSumProxy('data/yebood.txt'))
     talkers.append(VectorSumProxy('data/dialogi_z_prozy.txt'))
     talkers.append(VectorSumProxy('data/drama_quotes.txt'))
-    #talkers.append(CandidatesTalker())
-    #talkers.append(FirstYearTalker())
+    talkers.append(FirstYearTalker())
+    talkers.append(CandidatesTalker())
 
     return talkers
 
