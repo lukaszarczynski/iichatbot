@@ -62,6 +62,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
+        logging.info('Debug mode is ON')
     else:
         logging.basicConfig(filename='chatbot.log', level=logging.INFO,
                         format='%(asctime)s: %(message)s',

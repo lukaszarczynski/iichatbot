@@ -9,6 +9,9 @@ class VectorSumProxy(Talker):
         self.args = args
         self.kwargs = kwargs
         self.create()
+        
+    def my_name(self):
+        return self.talker.my_name()
     
     def get_answer(self, question, *args, **kwargs):
         if question['question'] == 'reset':
