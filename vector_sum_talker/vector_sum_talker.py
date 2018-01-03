@@ -64,7 +64,8 @@ class VectorSumTalker(Talker):
         vec = vec / np.linalg.norm(vec)
         return vec
     
-    def __init__(self, source):
+    def __init__(self, source, spellchecker):
+        Talker.__init__(self, spellchecker)
         self.w2v = w2v_util.loader.get(self.W2V_PATH)
         self.sentences = []
         self.responses = []
@@ -74,7 +75,7 @@ class VectorSumTalker(Talker):
         #print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
 
     def get_answer(self, question, *args, **kwargs):
-        q = question['question'].decode('utf-8')
+        q = question['fixed_typos']
         sentence = self.preprocess(q)
         vec = self.get_vector(sentence)
         if vec is None:
