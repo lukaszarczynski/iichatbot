@@ -2,23 +2,26 @@
 import json
 import io
 import re
+import os
 
 from talker import Talker
+
+my_path = os.path.dirname(__file__)
 
 class FirstYearTalker(Talker):
 
     def __init__(self, spellchecker):
         Talker.__init__(self, spellchecker)
         phrases = {}
-        with io.open('pierwszaki.txt',mode="r", encoding="utf-8") as f:
+        with io.open(os.path.join(my_path, 'pierwszaki.txt'),mode="r", encoding="utf-8") as f:
             for line in f:
                 jsonline = json.loads(line)
                 phrases[re.compile(jsonline["q"])] = [jsonline["a"],jsonline["score"]]
         f.closed
         self.answers = phrases
 
-    def get_answer(self, question):
-        q = question["processedstring"]
+    def get_answer(self, question, **kwargs):
+        q = question["question"]
         temp = unicode(q, "utf-8", errors="ignore")
         for key in self.answers:
             if re.match(key, temp):

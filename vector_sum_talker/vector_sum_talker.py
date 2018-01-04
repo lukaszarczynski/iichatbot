@@ -4,6 +4,8 @@ from talker import Talker
 import w2v_util.loader
 import numpy as np
 import traceback
+import idf
+import logging
 
 class VectorSumTalker(Talker):
     W2V_PATH = 'big_data/word2vec-jarek/vec.bin'
@@ -29,7 +31,7 @@ class VectorSumTalker(Talker):
         return ' '.join(final)
     
     def load_sentences(self, file, sep):
-        print 'loading sentences from', file
+        logging.info('loading sentences from %s', file)
         with open(file) as f:
             added = False
             for l in f.readlines():
@@ -42,36 +44,45 @@ class VectorSumTalker(Talker):
                     if last_added:
                         self.responses[-1] = l
                     l = self.preprocess(l)
-                    vec = self.get_vector(l)
-                    if vec is None: continue
+                    if not self.has_vector(l):
+                        continue
+                    self.idf.add_document(l)
                     self.sentences.append(l)
-                    self.vectors.append(vec)
                     self.responses.append('')
                     added = True
                 except:
                     #traceback.print_exc()
                     pass
     
+    def has_vector(self, s):
+        return any(w in self.w2v.vocab_hash for w in s.split())
+   
     def get_vector(self, s):
         vec = []
-        for w in s.split():
-            if w in self.w2v.vocab_hash:
-                vec.append(self.w2v.get_vector(w))
-        if len(vec) == 0: return
-        vec = np.mean(vec, axis=0)
-        if np.linalg.norm(vec) < 1e-7:
-            return
-        vec = vec / np.linalg.norm(vec)
+        words = [w for w in s.split() if w in self.w2v.vocab_hash]
+        if len(words) == 0:
+            return None
+        vec = [self.w2v.get_vector(w) for w in words]
+        vec = np.mean(vec * self.idf.idf(words)[:, None], axis=0)
+        if np.linalg.norm(vec) > 1e-7:
+            vec = vec / np.linalg.norm(vec)
         return vec
     
     def __init__(self, source):
+        reload(idf)
         self.w2v = w2v_util.loader.get(self.W2V_PATH)
         self.sentences = []
         self.responses = []
         self.vectors = []
-
+        self.idf = idf.IDF()
+        
         self.load_sentences(source, ' ' if source == 'data/subtitles.txt' else ':')
-        #print 'successfully loaded %d sentences from %s' % (len(self.sentences), source)
+        self.vectors = np.array(map(self.get_vector, self.sentences))
+        
+        self.name = 'VectorSumTalker (%s)' % source
+        
+    def my_name(self):
+        return self.name
 
     def get_answer(self, question, *args, **kwargs):
         q = question['fixed_typos']

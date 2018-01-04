@@ -6,19 +6,20 @@ import sys
 from helpers.typos import Typos
 from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
-#from candidates_talker.candidates_talker import CandidatesTalker
-#from first_year_talker.first_year_talker import FirstYearTalker
+from candidates_talker.candidates_talker import CandidatesTalker
+from first_year_talker.first_year_talker import FirstYearTalker
 
-def get_talkers():
+def get_talkers(exclude=[]):
     talkers = []
-    #talkers.append(StupidTalker(spellchecker))
-    talkers.append(VectorSumProxy('data/subtitles.txt'))
-    talkers.append(VectorSumProxy('data/yebood.txt'))
-    talkers.append(VectorSumProxy('data/dialogi_z_prozy.txt'))
-    talkers.append(VectorSumProxy('data/drama_quotes.txt'))
-    #talkers.append(CandidatesTalker(spellchecker))
-    #talkers.append(FirstYearTalker(spellchecker))
-
+    def add_talker(constructor, *args, **kwargs):
+        if constructor.__name__ not in exclude:
+            talkers.append(constructor(*args, **kwargs))
+    add_talker(VectorSumProxy, 'data/subtitles.txt')
+    add_talker(VectorSumProxy, 'data/yebood.txt')
+    add_talker(VectorSumProxy, 'data/dialogi_z_prozy.txt')
+    add_talker(VectorSumProxy, 'data/drama_quotes.txt')
+    add_talker(FirstYearTalker)
+    add_talker(CandidatesTalker)
     return talkers
 
 
@@ -58,14 +59,16 @@ def loop(talkers):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('--debug', action='store_true', dest='debug', help='write logs to the console')
+    parser.add_argument('--exclude', nargs='+', dest='exclude', help="don't use bots with specified class names")
     args = parser.parse_args(sys.argv[1:])
     
     if args.debug:
         logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
+        logging.info('Debug mode is ON')
     else:
         logging.basicConfig(filename='chatbot.log', level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
-    loop(get_talkers())
+    loop(get_talkers(args.exclude or []))

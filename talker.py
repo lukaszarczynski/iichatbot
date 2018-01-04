@@ -2,7 +2,10 @@ import logging
 from helpers.spellcheck import spellcheck
 
 class Talker(object):
-    def get_answer(self, question, *args, **kwargs):
+    def my_name(self):
+        return self.__class__.__name__
+    
+    def get_answer(self, *args, **kwargs):
         """
         Return a dictionary with an answer to a given question.
         Args:
@@ -19,7 +22,7 @@ class Talker(object):
         }
         question["preprocessed"] = question["fixed_typos"].split(" ")
 
-        answer = self.get_answer(question, status)
+        answer = self.get_answer(question=question, status=status)
         if "answer" not in answer.keys():
             raise Exception("answer not found")
         if "score" not in answer.keys():
@@ -28,7 +31,7 @@ class Talker(object):
             answer["state_update"] = {}
         if not (0.0 <= answer["score"] <= 1.0):
             raise Exception("invalid score")
-        logging.info("%s answered: %s [%f]" % (self.__class__.__name__,
+        logging.info("%s answered: %s [%f]" % (self.my_name(),
                                                answer["answer"],
                                                answer["score"]))
         return answer
