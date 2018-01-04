@@ -9,13 +9,13 @@ from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 #from candidates_talker.candidates_talker import CandidatesTalker
 #from first_year_talker.first_year_talker import FirstYearTalker
 
-def get_talkers(spellchecker):
+def get_talkers():
     talkers = []
     #talkers.append(StupidTalker(spellchecker))
-    talkers.append(VectorSumProxy('data/subtitles.txt', spellchecker))
-    talkers.append(VectorSumProxy('data/yebood.txt', spellchecker))
-    talkers.append(VectorSumProxy('data/dialogi_z_prozy.txt', spellchecker))
-    talkers.append(VectorSumProxy('data/drama_quotes.txt', spellchecker))
+    talkers.append(VectorSumProxy('data/subtitles.txt'))
+    talkers.append(VectorSumProxy('data/yebood.txt'))
+    talkers.append(VectorSumProxy('data/dialogi_z_prozy.txt'))
+    talkers.append(VectorSumProxy('data/drama_quotes.txt'))
     #talkers.append(CandidatesTalker(spellchecker))
     #talkers.append(FirstYearTalker(spellchecker))
 
@@ -68,6 +68,4 @@ if __name__ == "__main__":
         logging.basicConfig(filename='chatbot.log', level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
-    typos = Typos(morph_dictionary_path="big_data/polimorfologik-2.1.txt",
-                  unigrams_path="big_data/1grams")
-    loop(get_talkers(typos))
+    loop(get_talkers())

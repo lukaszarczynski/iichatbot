@@ -1,10 +1,7 @@
 import logging
-
+from helpers.spellcheck import spellcheck
 
 class Talker(object):
-    def __init__(self, spellchecker):
-        self.spellchecker = spellchecker
-
     def get_answer(self, question, *args, **kwargs):
         """
         Return a dictionary with an answer to a given question.
@@ -18,7 +15,7 @@ class Talker(object):
     def get_answer_helper(self, question_raw, status):
         question = {
             "question": question_raw.decode('utf-8'),
-            "fixed_typos": self.spellchecker.correct_line(question_raw)
+            "fixed_typos": spellcheck(question_raw)
         }
         question["preprocessed"] = question["fixed_typos"].split(" ")
 

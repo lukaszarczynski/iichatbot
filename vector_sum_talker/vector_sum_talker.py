@@ -64,8 +64,7 @@ class VectorSumTalker(Talker):
         vec = vec / np.linalg.norm(vec)
         return vec
     
-    def __init__(self, source, spellchecker):
-        Talker.__init__(self, spellchecker)
+    def __init__(self, source):
         self.w2v = w2v_util.loader.get(self.W2V_PATH)
         self.sentences = []
         self.responses = []
