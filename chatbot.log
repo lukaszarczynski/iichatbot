@@ -587,3 +587,5 @@
 2018-01-03 15:13:11: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
 2018-01-03 15:13:11: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
 2018-01-03 15:13:11: Answered: Tak! w cukrowej masce zamaskowana złość! można by przysiąc, że rzecz uczciwa.
+2018-01-04 19:46:12: loading word2vec word embeddings from big_data/word2vec-jarek/vec.bin
+2018-01-04 19:46:23: loading word2vec word embeddings from big_data/word2vec-jarek/vec.bin
