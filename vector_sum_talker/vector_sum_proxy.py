@@ -21,3 +21,7 @@ class VectorSumProxy(Talker):
                      'score': 1,
                      'state_update': {} }
         return self.talker.get_answer(question, *args, **kwargs)
+
+    @property
+    def spellchecker(self):
+        return self.talker.spellchecker

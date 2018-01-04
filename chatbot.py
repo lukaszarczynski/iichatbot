@@ -2,6 +2,8 @@ import argparse
 import logging
 import traceback
 import sys
+
+from helpers.typos import Typos
 from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from candidates_talker.candidates_talker import CandidatesTalker
@@ -18,7 +20,6 @@ def get_talkers(exclude=[]):
     add_talker(VectorSumProxy, 'data/drama_quotes.txt')
     add_talker(FirstYearTalker)
     add_talker(CandidatesTalker)
-
     return talkers
 
 

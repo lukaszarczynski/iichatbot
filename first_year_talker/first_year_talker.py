@@ -10,7 +10,8 @@ my_path = os.path.dirname(__file__)
 
 class FirstYearTalker(Talker):
 
-    def __init__(self):
+    def __init__(self, spellchecker):
+        Talker.__init__(self, spellchecker)
         phrases = {}
         with io.open(os.path.join(my_path, 'pierwszaki.txt'),mode="r", encoding="utf-8") as f:
             for line in f:
