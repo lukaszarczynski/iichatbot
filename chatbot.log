@@ -454,3 +454,136 @@
 2018-01-03 10:23:08: loading sentences from data/dialogi_z_prozy.txt
 2018-01-03 10:23:57: loading sentences from data/drama_quotes.txt
 2018-01-03 10:30:39: loading word2vec word embeddings from big_data/word2vec-jarek/vec.bin
+2018-01-03 14:23:10: loading word2vec word embeddings from big_data/word2vec-jarek/vec.bin
+2018-01-03 14:23:35: loading sentences from data/subtitles.txt
+2018-01-03 14:24:12: loading sentences from data/yebood.txt
+2018-01-03 14:24:17: loading sentences from data/dialogi_z_prozy.txt
+2018-01-03 14:25:05: loading sentences from data/drama_quotes.txt
+2018-01-03 14:31:21: Question asked: dzień dobry!
+2018-01-03 14:31:21: VectorSumTalker (data/subtitles.txt) answered: Bry! [1.000000]
+2018-01-03 14:31:21: VectorSumTalker (data/yebood.txt) answered:  Grzesiu vs dziennikarze oraz jak by wyglądał roolin, gdyby miał coś ciekawego do powiedzenia [0.779321]
+2018-01-03 14:31:22: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Jestem Jan Haugen! [1.000000]
+2018-01-03 14:31:22: VectorSumTalker (data/drama_quotes.txt) answered: Skąd się tu wziąłeś? [1.000000]
+2018-01-03 14:31:22: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:31:22: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:31:22: Answered: Skąd się tu wziąłeś?
+2018-01-03 14:31:25: Question asked: cześć!
+2018-01-03 14:31:26: VectorSumTalker (data/subtitles.txt) answered: Cześć! [1.000000]
+2018-01-03 14:31:26: VectorSumTalker (data/yebood.txt) answered:  :O Z tego, co wiem to np. na polonistyce obnizyli stypy kazdemu o co najmniej 90zl. Ale za to maja remont i nowy tynk na fasadzie swojego instytutu... [0.459998]
+2018-01-03 14:31:26: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Cześć! [1.000000]
+2018-01-03 14:31:26: VectorSumTalker (data/drama_quotes.txt) answered: Cześć królowi, cześć! [1.000000]
+2018-01-03 14:31:26: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:31:26: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:31:26: Answered: Cześć!
+2018-01-03 14:31:46: Question asked: co powiesz o uniwersytecie wrocławskim?
+2018-01-03 14:31:47: VectorSumTalker (data/subtitles.txt) answered: Tak, w King's College w Londynie. [0.678969]
+2018-01-03 14:31:47: VectorSumTalker (data/yebood.txt) answered:  Mnie się kojarzy, że mówiła o pokoju nr 13. [0.659792]
+2018-01-03 14:31:47: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Wcale nie, tatusiu! [0.645003]
+2018-01-03 14:31:47: VectorSumTalker (data/drama_quotes.txt) answered: Ależ tak, z pewnością, oczy masz czerwone, płakałaś, to jasne jak słońce. Cóż to się z tobą dzieje, droga Matyldo? [0.610363]
+2018-01-03 14:31:47: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:31:47: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:31:47: Answered: Tak, w King's College w Londynie.
+2018-01-03 14:33:03: Question asked: hej jak tam?
+2018-01-03 14:33:04: VectorSumTalker (data/subtitles.txt) answered: Podejdź, mój mały przyjacielu. Nie bój się. [0.922199]
+2018-01-03 14:33:04: VectorSumTalker (data/yebood.txt) answered:  lub koleżanki :P [0.748134]
+2018-01-03 14:33:04: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Ostrożnie, Oswaldzie nie wpadnij na kościotrupy. [0.944576]
+2018-01-03 14:33:04: VectorSumTalker (data/drama_quotes.txt) answered: Rety! [0.864132]
+2018-01-03 14:33:04: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:33:04: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:33:04: Answered:  Ostrożnie, Oswaldzie nie wpadnij na kościotrupy.
+2018-01-03 14:34:22: Question asked: będę ostrożny
+2018-01-03 14:34:22: VectorSumTalker (data/subtitles.txt) answered: Nie będę ostrożny. Będę skuteczny. [0.963386]
+2018-01-03 14:34:22: VectorSumTalker (data/yebood.txt) answered:  Jeśli to co autor notki pisze jest prawdą, to kawał z niego tchórza. Jeśli tak bardzo go boli taka sytuacja , powinien sam się tym zająć zamiast anonimowo nagłaśniać , i liczyć że znajdzie się ktoś kto załatwi to za niego. [0.715218]
+2018-01-03 14:34:23: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Pojadę z tobą. [0.997382]
+2018-01-03 14:34:23: VectorSumTalker (data/drama_quotes.txt) answered: Niechże nim zostanie; jego uczciwość będzie mu nagrodą, mojej mu córki nie trzeba w dodatku. [0.783352]
+2018-01-03 14:34:23: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:34:23: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:34:23: Answered:  Pojadę z tobą.
+2018-01-03 14:40:46: Question asked: to jedziemy
+2018-01-03 14:40:47: VectorSumTalker (data/subtitles.txt) answered: Może wezwę taksówkę? [0.962977]
+2018-01-03 14:40:47: VectorSumTalker (data/yebood.txt) answered:  Najbardziej abstrakcyjna rozmowa jaką widziałem w życiu. Czy ktoś może mi ją wytłumaczyć? Jak Tomkiewicz mógł sprawdzić, że Pionczowi jest zbędny dyktafon? [0.645650]
+2018-01-03 14:40:47: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  O panie! [0.973771]
+2018-01-03 14:40:47: VectorSumTalker (data/drama_quotes.txt) answered: Przyznam się, że mógł był ten pan szambelanic powiedzieć mi choć słówko. [0.856081]
+2018-01-03 14:40:47: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:40:47: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:40:47: Answered:  O panie!
+2018-01-03 14:40:49: Question asked: co?
+2018-01-03 14:40:50: VectorSumTalker (data/subtitles.txt) answered: Dlaczego mi pomagasz? [1.000000]
+2018-01-03 14:40:50: VectorSumTalker (data/yebood.txt) answered:  :O Z tego, co wiem to np. na polonistyce obnizyli stypy kazdemu o co najmniej 90zl. Ale za to maja remont i nowy tynk na fasadzie swojego instytutu... [0.746865]
+2018-01-03 14:40:50: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Zbrodnia… [1.000000]
+2018-01-03 14:40:50: VectorSumTalker (data/drama_quotes.txt) answered: Czy masz pełny dzbanek? [1.000000]
+2018-01-03 14:40:50: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:40:50: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:40:50: Answered: Dlaczego mi pomagasz?
+2018-01-03 14:40:57: Question asked: bo ja cię stworzyłem
+2018-01-03 14:40:57: VectorSumTalker (data/subtitles.txt) answered: Dla mnie! [0.932234]
+2018-01-03 14:40:57: VectorSumTalker (data/yebood.txt) answered:  Ja się na policjanta nie nadaje, nie wiem co to za klub czy miejsce było, bym odrazu pomyślał że to jakiś spisek, pójde to wtedy się bójka zacznie i nakopią mi do dupy. Może tamci dwaj policjanci bohaterskich zapędów też nie mieli, ale chyba troche inne zapędy mieli i to nie przystające na policjanta. co najmniej pensje im uciąć. [0.767275]
+2018-01-03 14:40:58: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  No, no! Głupstwo… Zatelegrafuj pan do żony, a sam postaraj się wsiąść po drodze do pośpiesznego pociągu. W ten sposób ją pan dogoni. [0.836276]
+2018-01-03 14:40:58: VectorSumTalker (data/drama_quotes.txt) answered: Jak to, wierutny łotrze? nigdy nie widziałeś Vincentia, ojca twojego pana? [0.829486]
+2018-01-03 14:40:58: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:40:58: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:40:58: Answered: Dla mnie!
+2018-01-03 14:41:49: Question asked: nie, dla mnie
+2018-01-03 14:41:49: VectorSumTalker (data/subtitles.txt) answered: Ty już dostałeś wystarczająco dużo dobrych rzeczy. [0.999008]
+2018-01-03 14:41:49: VectorSumTalker (data/yebood.txt) answered:  W ten piątek będzie wykład z analizy i uważam,że jest to jedyna rozsądna okazja,żeby zrobić rozeznanie w terenie ile osób jest zainteresowanych wykładem. Innej możliwości raczej nie widzę... Wykładowca nie będzie miał nam za złe jeśli do niego przyjdziemy i powiemy,że nas po prostu nie będzie? [0.709754]
+2018-01-03 14:41:50: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Jeden bilet? [0.975432]
+2018-01-03 14:41:50: VectorSumTalker (data/drama_quotes.txt) answered: Właśnie dla ciebie. [0.982175]
+2018-01-03 14:41:50: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:41:50: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:41:50: Answered: Ty już dostałeś wystarczająco dużo dobrych rzeczy.
+2018-01-03 14:41:55: Question asked: no dzięki
+2018-01-03 14:41:55: VectorSumTalker (data/subtitles.txt) answered: Kazałem Lukeli zarządzić poszukiwania Griffina Moore'a. [0.836883]
+2018-01-03 14:41:55: VectorSumTalker (data/yebood.txt) answered:  Gdzie wy widzicie ten bezpłatny antivirus w MSDN (jaki dział) [0.573689]
+2018-01-03 14:41:55: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Najlepiej mi podziękujesz, gdy się pożywisz i spoczniesz. Na Atenę! Odysej w największym nieszczęściu myślał o śnie i jadle. Całą noc spędziłeś pewno w więzieniu. [0.820696]
+2018-01-03 14:41:55: VectorSumTalker (data/drama_quotes.txt) answered: Francuskiego lub mozelskiego? Do woli usłużę. [0.780705]
+2018-01-03 14:41:55: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:41:55: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:41:55: Answered: Kazałem Lukeli zarządzić poszukiwania Griffina Moore'a.
+2018-01-03 14:49:42: Question asked: jesteś głupi
+2018-01-03 14:49:42: VectorSumTalker (data/subtitles.txt) answered: Bogini nie ma kochanków. [0.999511]
+2018-01-03 14:49:42: VectorSumTalker (data/yebood.txt) answered:  Możesz sprecyzować? U mnie działa dobrze - nie bądź jak gaborek i podaj dokładne okoliczności i problem. Mogłem stworzyć instancję WebBrowser, która by mi udostępniła sparsowanego html'a, ale stwierdziłem, że w ten sposób będzie śmieszniej. [0.809860]
+2018-01-03 14:49:42: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Juści niby słyszę [0.944147]
+2018-01-03 14:49:43: VectorSumTalker (data/drama_quotes.txt) answered: Wiem, mówili mi to nieraz. Cóż więc dalej on nabroił? [0.915163]
+2018-01-03 14:49:43: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:49:43: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:49:43: Answered: Bogini nie ma kochanków.
+2018-01-03 14:49:52: Question asked: o czym ty mówisz?
+2018-01-03 14:49:53: VectorSumTalker (data/subtitles.txt) answered: Ta agentka, która cię złapała. [1.000000]
+2018-01-03 14:49:53: VectorSumTalker (data/yebood.txt) answered:  Najbardziej abstrakcyjna rozmowa jaką widziałem w życiu. Czy ktoś może mi ją wytłumaczyć? Jak Tomkiewicz mógł sprawdzić, że Pionczowi jest zbędny dyktafon? [0.724087]
+2018-01-03 14:49:53: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  O wojnie. [1.000000]
+2018-01-03 14:49:53: VectorSumTalker (data/drama_quotes.txt) answered: Mówię, że może pan wszystko przetrząsnąć, aby się przekonać, czy go nie okradłem. [0.867338]
+2018-01-03 14:49:53: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:49:53: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:49:53: Answered:  O wojnie.
+2018-01-03 14:50:02: Question asked: wojnie z kim?
+2018-01-03 14:50:02: VectorSumTalker (data/subtitles.txt) answered: Odwaga zawsze potrzebna. [0.746498]
+2018-01-03 14:50:02: VectorSumTalker (data/yebood.txt) answered:  Ogólnie wystarczyłoby, żeby było powiadomienie z każdym newsem na zapisach. Jeśli nie mają czasów z implementacją każdego z powiadomień, które zamierzali wysyłać xD. [0.454714]
+2018-01-03 14:50:02: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Wie, wie, bo przy niej najpierwej Stanisław opowiadał. Cała we łzach, nieboga… Ale gdym jej rzekł, że trzeba iść, zaraz mi powiedziała: „Idź!” [0.738635]
+2018-01-03 14:50:02: VectorSumTalker (data/drama_quotes.txt) answered: Lecz dobrze, gdy o pokoju i miłości mówię? [0.692914]
+2018-01-03 14:50:02: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 14:50:02: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 14:50:02: Answered: Odwaga zawsze potrzebna.
+2018-01-03 15:10:42: Question asked: jak nazywa się chusteczka, którą noszą eleganccy mężczyźni?
+2018-01-03 15:10:42: VectorSumTalker (data/subtitles.txt) answered: ...i przywieźli je do Japonii. [0.757605]
+2018-01-03 15:10:42: VectorSumTalker (data/yebood.txt) answered:  Maki oryginalnie były na 680x0, ale niech Ci, masz browara. ;) [0.698627]
+2018-01-03 15:10:42: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Ludzie, dajcie mi truciznę! Miejcie litość! [0.774115]
+2018-01-03 15:10:43: VectorSumTalker (data/drama_quotes.txt) answered: Zwyczajnie, jak nic nie znaczący ludzie. [0.768090]
+2018-01-03 15:10:43: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 15:10:43: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 15:10:43: Answered:  Ludzie, dajcie mi truciznę! Miejcie litość!
+2018-01-03 15:12:59: Question asked: chcesz umrzeć?
+2018-01-03 15:13:00: VectorSumTalker (data/subtitles.txt) answered: Nie rozumiesz, że to jeszcze nie koniec. [1.000000]
+2018-01-03 15:13:00: VectorSumTalker (data/yebood.txt) answered:  Hej! Utworzyłem stronę tutorni. Zapraszam do komentowania i współtworzenia - szczególnie tych, którzy tę tutornię prowadzą. Nowa strona tutorni Pozdrawiam, A. [0.694513]
+2018-01-03 15:13:00: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  Życzenie nader miłe i wesołe… [0.914460]
+2018-01-03 15:13:00: VectorSumTalker (data/drama_quotes.txt) answered: Tak, okrutna, skoro tego pragniesz. [0.848426]
+2018-01-03 15:13:00: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 15:13:00: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 15:13:00: Answered: Nie rozumiesz, że to jeszcze nie koniec.
+2018-01-03 15:13:10: Question asked: to na co ci trucizna
+2018-01-03 15:13:10: VectorSumTalker (data/subtitles.txt) answered: Twoje dziecko urodzi się, zanim się obejrzysz. [0.788333]
+2018-01-03 15:13:10: VectorSumTalker (data/yebood.txt) answered:  Witam wszystkich ;-) Od mojego gotowania także nikt sie nie otruł hmm może dlatego ze nigdy jeszcze nic nie ugotowałem poza podejrzewam standardowymi umiejętnościami kucharskimi studentów (zupka chińska i danie w 5 min) potrafię zrobić jeszcze jajecznice ;-) [0.670493]
+2018-01-03 15:13:11: VectorSumTalker (data/dialogi_z_prozy.txt) answered:  A więc co to było? [0.866767]
+2018-01-03 15:13:11: VectorSumTalker (data/drama_quotes.txt) answered: Tak! w cukrowej masce zamaskowana złość! można by przysiąc, że rzecz uczciwa. [0.906993]
+2018-01-03 15:13:11: FirstYearTalker answered: Nie umiem odpowiedzieć. [0.000000]
+2018-01-03 15:13:11: CandidatesTalker answered: Przepraszam ale nie mogę Ci pomóc. [0.500000]
+2018-01-03 15:13:11: Answered: Tak! w cukrowej masce zamaskowana złość! można by przysiąc, że rzecz uczciwa.
