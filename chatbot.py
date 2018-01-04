@@ -3,6 +3,7 @@ import logging
 import traceback
 import sys
 
+import helpers.spellcheck
 from helpers.typos import Typos
 from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
@@ -57,9 +58,11 @@ def loop(talkers):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(description='Chatbot',
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--debug', action='store_true', dest='debug', help='write logs to the console')
-    parser.add_argument('--exclude', nargs='+', dest='exclude', help="don't use bots with specified class names")
+    parser.add_argument('--exclude', nargs='+', dest='exclude', default=[], help="don't use bots with specified class names")
+    parser.add_argument('--spellcheck', dest='spellcheck', default='typos', help='spellchecker type (typos or none)')
     args = parser.parse_args(sys.argv[1:])
     
     if args.debug:
@@ -71,4 +74,6 @@ if __name__ == "__main__":
         logging.basicConfig(filename='chatbot.log', level=logging.INFO,
                         format='%(asctime)s: %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
-    loop(get_talkers(args.exclude or []))
+        
+    helpers.spellcheck.init(args.spellcheck)
+    loop(get_talkers(args.exclude))

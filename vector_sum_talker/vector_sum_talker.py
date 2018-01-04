@@ -6,6 +6,7 @@ import numpy as np
 import traceback
 import idf
 import logging
+from helpers.str_utils import to_unicode
 
 class VectorSumTalker(Talker):
     W2V_PATH = 'big_data/word2vec-jarek/vec.bin'
@@ -38,7 +39,7 @@ class VectorSumTalker(Talker):
                 last_added = added
                 added = False
                 try:
-                    l = l.decode('utf-8').strip()
+                    l = to_unicode(l).strip()
                     if l.startswith('#') or len(l) == 0: continue
                     l = l.split(sep, 1)[1]
                     if last_added:
@@ -85,7 +86,7 @@ class VectorSumTalker(Talker):
         return self.name
 
     def get_answer(self, question, *args, **kwargs):
-        q = question['fixed_typos']
+        q = to_unicode(question['fixed_typos'])
         sentence = self.preprocess(q)
         vec = self.get_vector(sentence)
         if vec is None:

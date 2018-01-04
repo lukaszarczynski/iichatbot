@@ -4,14 +4,14 @@ import io
 import re
 import os
 
+from helpers.str_utils import to_unicode
 from talker import Talker
 
 my_path = os.path.dirname(__file__)
 
 class FirstYearTalker(Talker):
 
-    def __init__(self, spellchecker):
-        Talker.__init__(self, spellchecker)
+    def __init__(self):
         phrases = {}
         with io.open(os.path.join(my_path, 'pierwszaki.txt'),mode="r", encoding="utf-8") as f:
             for line in f:
@@ -22,7 +22,7 @@ class FirstYearTalker(Talker):
 
     def get_answer(self, question, **kwargs):
         q = question["question"]
-        temp = unicode(q, "utf-8", errors="ignore")
+        temp = to_unicode(q)
         for key in self.answers:
             if re.match(key, temp):
                 try:
