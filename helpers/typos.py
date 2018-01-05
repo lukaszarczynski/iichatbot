@@ -9,7 +9,7 @@ import re
 
 from edit_distance import edit_distance
 from typos_utils import remove_polish_symbols_and_duplicates, get_unigrams, normalized_morphosyntactic
-from typos_utils import generate_near_words, additional_search, remove_polish_symbols
+from typos_utils import generate_near_words, additional_search, polish_morphosyntactic
 
 MAX_EDIT_DISTANCE = 1
 
@@ -32,7 +32,8 @@ class Typos(object):
     """
     def __init__(self, unigrams_path="./1grams", morph_dictionary_path="./polimorfologik-2.1.txt"):
         self.unigrams = get_unigrams(unigrams_path)
-        self.morphosyntactic = normalized_morphosyntactic(morph_dictionary_path)
+        self.polish_morphosyntactic = polish_morphosyntactic(morph_dictionary_path)
+        self.normalized_morphosyntactic = normalized_morphosyntactic(self.polish_morphosyntactic)
 
     def _select_correct_word(self, possibly_corrected_polish, wrong, near_words):
         if len(possibly_corrected_polish) > 0:
@@ -43,11 +44,11 @@ class Typos(object):
                 key=lambda x: x[1] / (edit_distance(x[0], wrong) - min_edit_distance + 1))[0]
         else:
             more_distant_words = []
-            more_distant_word = additional_search(near_words[MAX_EDIT_DISTANCE], self.morphosyntactic)
+            more_distant_word = additional_search(near_words[MAX_EDIT_DISTANCE], self.normalized_morphosyntactic)
             if more_distant_word is None:
                 corrected = None
             else:
-                for polish_word in self.morphosyntactic[more_distant_word]:
+                for polish_word in self.normalized_morphosyntactic[more_distant_word]:
                     more_distant_words.append((polish_word, self.unigrams[polish_word]))
 
                 if more_distant_words == []:
@@ -67,14 +68,14 @@ class Typos(object):
         near_words = generate_near_words(remove_polish_symbols_and_duplicates(word_with_typo), MAX_EDIT_DISTANCE)
         for i in range(MAX_EDIT_DISTANCE + 1):
             for w in near_words[i]:
-                if w in self.morphosyntactic:
+                if w in self.normalized_morphosyntactic:
                     k += 1
                     possible_corrections_without_polish_chars.append(w)
             if k > 0:
                 break
 
         for word in possible_corrections_without_polish_chars:
-            for polish_word in self.morphosyntactic[word]:
+            for polish_word in self.normalized_morphosyntactic[word]:
                 possible_corrections.append((polish_word, self.unigrams.get(polish_word, 0)))
 
         return possible_corrections, near_words
@@ -101,7 +102,7 @@ class Typos(object):
         """
         if not isinstance(word_with_typo, unicode):
             word_with_typo = word_with_typo.decode("utf-8")
-        if remove_polish_symbols(word_with_typo) in self.morphosyntactic:
+        if word_with_typo in self.polish_morphosyntactic:
             return word_with_typo
         corrected, _ = self._correct(word_with_typo.lower())
         if corrected is None:

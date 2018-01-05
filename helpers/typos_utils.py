@@ -48,18 +48,32 @@ def get_unigrams(path="1grams", cutoff=1):
     return unigrams
 
 
-def normalized_morphosyntactic(path="./polimorfologik-2.1.txt"):
+def normalized_morphosyntactic(polish_morphosyntactic_dictionary):
     morphosyntactic_dictionary = defaultdict(lambda: set())
+
+    print("+++ creating normalized morphosyntactic dictionary +++\nwords processed:",
+          file=sys.stderr)
+    for word_idx, word in enumerate(polish_morphosyntactic_dictionary):
+        if word_idx % 500000 == 0:
+            print(word_idx, file=sys.stderr)
+        normalized_word = remove_polish_symbols_and_duplicates(word)
+        morphosyntactic_dictionary[normalized_word].add(word)
+    print("+++ normalized dictionary created +++", file=sys.stderr)
+    return morphosyntactic_dictionary
+
+
+def polish_morphosyntactic(path="./polimorfologik-2.1.txt"):
+    morphosyntactic_dictionary = set()
     with open(path, 'r', encoding='utf-8') as file:
-        print("+++ creating normalized unigrams from morphosyntactic dictionary +++\nlines processed:",
+        print("+++ loading morphosyntactic dictionary +++\nlines processed:",
               file=sys.stderr)
         for line_number, line in enumerate(file):
             if line_number % 500000 == 0:
                 print(line_number, file=sys.stderr)
-            base_word, word, _ = line.split(";")
-            morphosyntactic_dictionary[
-                remove_polish_symbols_and_duplicates(word.lower())].add(word.lower())
-        print("+++ unigrams created +++", file=sys.stderr)
+            _, word, _ = line.split(";")
+            word = word.lower()
+            morphosyntactic_dictionary.add(word)
+        print("+++ morphosyntactic dictionary loaded +++", file=sys.stderr)
     return morphosyntactic_dictionary
 
 
