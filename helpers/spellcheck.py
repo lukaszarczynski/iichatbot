@@ -1,26 +1,20 @@
 from typos import Typos
 
-class Spellchecker:
-    @classmethod
-    def __init__(cls, type_):
-        cls.cache = {}
-        if type_ == 'typos':
-            typos = Typos(
-                morph_dictionary_path="big_data/polimorfologik-2.1.txt",
-                unigrams_path="big_data/1grams",
-            )
-            cls.SPELLCHECK_IMPL = typos.correct_line
-        elif type_ == 'none':
-            cls.SPELLCHECK_IMPL = staticmethod(lambda x: x)
-        else:
-            raise Exception('Invalid spellchecker type')
+cache = {}
 
-    @classmethod
-    def fix(cls, s):
-        if s not in cls.cache:
-            cls.cache[s] = cls.SPELLCHECK_IMPL(s)
-        return cls.cache[s]
+def spellcheck_impl(_):
+    raise Exception('spellcheck not initialized')
 
-    @classmethod
-    def get(cls):
-        return cls.SPELLCHECK_IMPL
+def spellcheck(x):
+    if x not in cache:
+        cache[x] = spellcheck_impl(x)
+    return cache[x]
+
+def init(spellcheck_type):
+    global spellcheck_impl
+    if spellcheck_type == 'none':
+        spellcheck_impl = lambda x: x
+    elif spellcheck_type == 'typos':
+        typos = Typos(morph_dictionary_path="big_data/polimorfologik-2.1.txt",
+                      unigrams_path="big_data/1grams")
+        spellcheck_impl = typos.correct_line

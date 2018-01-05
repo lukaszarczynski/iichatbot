@@ -127,7 +127,7 @@ if __name__ == "__main__":
             datefmt='%Y-%m-%d %H:%M:%S',
         )
     grader = TalkerGrade() if args.grade else None
-    helpers.spellcheck.Spellchecker.__init__(args.spellcheck)
+    helpers.spellcheck.init(args.spellcheck)
 
     loop(get_talkers(args.exclude), grader)
 
