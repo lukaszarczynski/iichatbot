@@ -9,7 +9,7 @@ import re
 
 from edit_distance import edit_distance
 from typos_utils import remove_polish_symbols_and_duplicates, get_unigrams, normalized_morphosyntactic
-from typos_utils import generate_near_words, additional_search
+from typos_utils import generate_near_words, additional_search, remove_polish_symbols
 
 MAX_EDIT_DISTANCE = 1
 
@@ -101,6 +101,8 @@ class Typos(object):
         """
         if not isinstance(word_with_typo, unicode):
             word_with_typo = word_with_typo.decode("utf-8")
+        if remove_polish_symbols(word_with_typo) in self.morphosyntactic:
+            return word_with_typo
         corrected, _ = self._correct(word_with_typo.lower())
         if corrected is None:
             corrected = word_with_typo
