@@ -112,7 +112,7 @@ if __name__ == "__main__":
         '--grade_talkers',
         action='store_true',
         dest='grade',
-        help=''
+        help='grade talkers to assign weights further on'
     )
 
     args = parser.parse_args(sys.argv[1:])
