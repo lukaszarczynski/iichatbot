@@ -1,11 +1,11 @@
 import logging
 from helpers.spellcheck import spellcheck
 
+
 class Talker(object):
-    
     def my_name(self):
         return self.__class__.__name__
-    
+
     def get_answer(self, *args, **kwargs):
         """
         Return a dictionary with an answer to a given question.
@@ -27,11 +27,10 @@ class Talker(object):
         if "score" not in answer.keys():
             raise Exception("score not found")
         if "state_update" not in answer.keys():
-            answer["state_update"] = { }
+            answer["state_update"] = {}
         if not (0.0 <= answer["score"] <= 1.0):
             raise Exception("invalid score")
         logging.info("%s answered: %s [%f]" % (self.my_name(),
                                                answer["answer"],
                                                answer["score"]))
         return answer
-
