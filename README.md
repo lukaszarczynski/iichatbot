@@ -15,14 +15,16 @@ Zainstalowanie zależności (wymagane tylko raz, chyba że dojdą kolejne zależ
 pip install --user -r requirements.txt
 ```
 
-Uruchomienie chatbota (bot potrzebuje ~ 2 minut żeby się załadować):
+Uruchomienie chatbota (bot potrzebuje paru minutz żeby się załadować):
 ```
 python chatbot.py
 ```
 
-Jeśli nie chcecie tyle czekać, można dezaktywować vector sum talkery (w taki sam sposób można postąpić też z innymi talkerami)
+Jeśli nie chcecie tyle czekać, można dezaktywować vector sum talkery (w taki sam sposób można postąpić też z innymi talkerami) i/lub spellchecking
 ```
 python chatbot.py --exclude VectorSumProxy
+python chatbot.py --spellcheck none
+python chatbot.py --spellcheck none --exclude VectorSumProxy
 ```
 
 Uruchomienie chatbota z wypisywaniem logów do terminala
