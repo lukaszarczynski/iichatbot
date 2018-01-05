@@ -1,5 +1,6 @@
 *.pyc
 chatbot.log
+.vscode
 
 # Created by https://www.gitignore.io/api/osx,linux,python,windows
 

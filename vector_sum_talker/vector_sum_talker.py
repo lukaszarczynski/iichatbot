@@ -4,7 +4,9 @@ import logging
 import numpy as np
 # import traceback
 import w2v_util.loader
+
 from talker import Talker
+from helpers.str_utils import to_unicode
 
 
 class VectorSumTalker(Talker):
@@ -15,7 +17,7 @@ class VectorSumTalker(Talker):
         return sorted(np.argpartition(vec, -n)[-n:], key=lambda x: -vec[x])
 
     def preprocess(self, l):
-        l = l.lower()
+        l = l.lower()  # noqa
         sentence = ''
         for c in l:
             if c == ' ' or c.isalnum():
@@ -39,13 +41,13 @@ class VectorSumTalker(Talker):
                 last_added = added
                 added = False
                 try:
-                    l = l.decode('utf-8').strip()
+                    l = to_unicode(l).strip()  # noqa
                     if l.startswith('#') or len(l) == 0:
                         continue
-                    l = l.split(sep, 1)[1]
+                    l = l.split(sep, 1)[1]  # noqa
                     if last_added:
                         self.responses[-1] = l
-                    l = self.preprocess(l)
+                    l = self.preprocess(l)  # noqa
                     if not self.has_vector(l):
                         continue
                     self.idf.add_document(l)
@@ -90,7 +92,7 @@ class VectorSumTalker(Talker):
         return self.name
 
     def get_answer(self, question, *args, **kwargs):
-        q = question['question'].decode('utf-8')
+        q = to_unicode(question['fixed_typos'])
         sentence = self.preprocess(q)
         vec = self.get_vector(sentence)
         if vec is None:

@@ -29,10 +29,11 @@ class TalkerGrade:
             print '{let} {ans}'.format(let=i, ans=ans_dict[i][1]['answer'])
 
         while True:
+            print 'G>',
             q = raw_input()
+
             grades = {k: 0 for k in answers.keys()}
             good_answers = {}
-            print 'G>',
 
             for let in q:
                 if let in [' ', '\n']:

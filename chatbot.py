@@ -1,7 +1,9 @@
 import argparse
+import helpers.spellcheck
 import logging
 import traceback
 import sys
+
 from candidates_talker.candidates_talker import CandidatesTalker
 from first_year_talker.first_year_talker import FirstYearTalker
 # from stupid_talker.stupid_talker import StupidTalker
@@ -9,14 +11,30 @@ from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from talker_grade import TalkerGrade
 
 
-def get_talkers():
+def get_talkers(exclude=None):
+    talkers = [
+        # (name, fun, args, kwargs)
+        ('vector_subtitles', VectorSumProxy, ['data/subtitles.txt'], {}),
+        ('vector_yebood', VectorSumProxy, ['data/yebood.txt'], {}),
+        (
+            'vector_dialogi_proza',
+            VectorSumProxy,
+            ['data/dialogi_z_prozy.txt'],
+            {},
+        ),
+        (
+            'vector_dialogi_dramat',
+            VectorSumProxy,
+            ['data/drama_quotes.txt'],
+            {},
+        ),
+        ('first_year', FirstYearTalker, [], {}),
+        ('candidate', CandidatesTalker, [], {}),
+    ]
     return {
-        'vector_subtitles': VectorSumProxy('data/subtitles.txt'),
-        'vector_yebood': VectorSumProxy('data/yebood.txt'),
-        'vector_dialogi_proza': VectorSumProxy('data/dialogi_z_prozy.txt'),
-        'vector_dialogi_dramat': VectorSumProxy('data/drama_quotes.txt'),
-        'first_year': FirstYearTalker(),
-        'candidate': CandidatesTalker(),
+        name: fun(*args, **kwargs)
+        for name, fun, args, kwargs in talkers
+        if fun.__name__ not in (exclude or [])
     }
 
 
@@ -63,7 +81,10 @@ def loop(talkers, grader):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(
+        description='Chatbot',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
     parser.add_argument(
         '-d',
         '--debug',
@@ -72,12 +93,28 @@ if __name__ == "__main__":
         help='write logs to the console',
     )
     parser.add_argument(
+        '-ex',
+        '--exclude',
+        nargs='+',
+        dest='exclude',
+        default=[],
+        help="don't use bots with specified class names",
+    )
+    parser.add_argument(
+        '-sp',
+        '--spellcheck',
+        dest='spellcheck',
+        default='typos',
+        help='spellchecker type (typos or none)',
+    )
+    parser.add_argument(
         '-gt',
         '--grade_talkers',
         action='store_true',
         dest='grade',
         help=''
     )
+
     args = parser.parse_args(sys.argv[1:])
 
     if args.debug:
@@ -94,6 +131,9 @@ if __name__ == "__main__":
             datefmt='%Y-%m-%d %H:%M:%S',
         )
     grader = TalkerGrade() if args.grade else None
-    loop(get_talkers(), grader)
+    helpers.spellcheck.Spellchecker.init(args.spellcheck)
+
+    loop(get_talkers(args.exclude), grader)
+
     if args.grade:
         grader.finalize()

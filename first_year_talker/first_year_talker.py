@@ -4,6 +4,7 @@ import io
 import os
 import re
 
+from helpers.str_utils import to_unicode
 from talker import Talker
 
 my_path = os.path.dirname(__file__)
@@ -28,7 +29,7 @@ class FirstYearTalker(Talker):
 
     def get_answer(self, question, **kwargs):
         q = question["question"]
-        temp = unicode(q, "utf-8", errors="ignore")
+        temp = to_unicode(q)
         for key in self.answers:
             if re.match(key, temp):
                 try:
