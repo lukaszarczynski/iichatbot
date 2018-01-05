@@ -11,32 +11,28 @@ from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from talker_grade import TalkerGrade
 
 
-def get_talkers(exclude=None):
+def get_talkers(exclude=[]):
     talkers = [
         # (name, fun, args, kwargs)
-        ('vector_subtitles', VectorSumProxy, ['data/subtitles.txt'], {}),
-        ('vector_yebood', VectorSumProxy, ['data/yebood.txt'], {}),
+        (VectorSumProxy, ['data/subtitles.txt'], {}),
+        (VectorSumProxy, ['data/yebood.txt'], {}),
         (
-            'vector_dialogi_proza',
             VectorSumProxy,
             ['data/dialogi_z_prozy.txt'],
             {},
         ),
         (
-            'vector_dialogi_dramat',
             VectorSumProxy,
             ['data/drama_quotes.txt'],
             {},
         ),
-        ('first_year', FirstYearTalker, [], {}),
-        ('candidate', CandidatesTalker, [], {}),
+        (FirstYearTalker, [], {}),
+        (CandidatesTalker, [], {}),
     ]
-    return {
-        name: fun(*args, **kwargs)
-        for name, fun, args, kwargs in talkers
-        if fun.__name__ not in (exclude or [])
-    }
-
+    talkers = [fun(*args, **kwargs)
+               for fun, args, kwargs in talkers
+               if fun.__name__ not in exclude]
+    return { talker.my_name(): talker for talker in talkers }
 
 def get_answers(talkers, question, state):
     return {
@@ -131,7 +127,7 @@ if __name__ == "__main__":
             datefmt='%Y-%m-%d %H:%M:%S',
         )
     grader = TalkerGrade() if args.grade else None
-    helpers.spellcheck.Spellchecker.init(args.spellcheck)
+    helpers.spellcheck.init(args.spellcheck)
 
     loop(get_talkers(args.exclude), grader)
 

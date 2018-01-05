@@ -1,5 +1,5 @@
 import logging
-from helpers.spellcheck import Spellchecker
+from helpers.spellcheck import spellcheck
 from helpers.str_utils import to_unicode
 
 
@@ -20,7 +20,7 @@ class Talker(object):
     def get_answer_helper(self, question_raw, status):
         question = {
             "question": to_unicode(question_raw),
-            "fixed_typos": Spellchecker.fix(question_raw),
+            "fixed_typos": spellcheck(question_raw),
         }
         question["preprocessed"] = question["fixed_typos"].split(" ")
 
