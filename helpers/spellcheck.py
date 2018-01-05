@@ -1,10 +1,14 @@
 from typos import Typos
 
+cache = {}
+
 def spellcheck_impl(_):
     raise Exception('spellcheck not initialized')
 
 def spellcheck(x):
-    return spellcheck_impl(x)
+    if x not in cache:
+        cache[x] = spellcheck_impl(x)
+    return cache[x]
 
 def init(spellcheck_type):
     global spellcheck_impl
