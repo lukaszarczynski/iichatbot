@@ -14,7 +14,7 @@ from talker_grade import TalkerGrade
 def get_talkers(exclude=[]):
     talkers = [
         # (name, fun, args, kwargs)
-        (VectorSumProxy, ['data/subtitles.txt'], {}),
+        (VectorSumProxy, ['data/more_subtitles.txt'], {}),
         (VectorSumProxy, ['data/yebood.txt'], {}),
         (
             VectorSumProxy,

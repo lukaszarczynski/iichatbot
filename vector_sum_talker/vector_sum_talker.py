@@ -80,10 +80,7 @@ class VectorSumTalker(Talker):
         self.vectors = []
         self.idf = idf.IDF()
 
-        self.load_sentences(
-            source,
-            ' ' if source == 'data/subtitles.txt' else ':',
-        )
+        self.load_sentences(source, ':')
         self.vectors = np.array(map(self.get_vector, self.sentences))
 
         self.name = 'VectorSumTalker (%s)' % source
