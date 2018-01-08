@@ -35,12 +35,10 @@ class FirstYearTalker(Talker):
                 try:
                     if question["info"]["year"] == 1:
                         score = self.answers[key][1]
-                    elif question["info"]["year"] is None:
-                        score = 0.4
                     else:
-                        score = 0.1
+                        score = 0.2
                 except KeyError:
-                    score = 0.4
+                    score = self.answers[key][1]
                 return {
                     "answer": self.answers[key][0],
                     "score": score,
