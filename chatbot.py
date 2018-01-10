@@ -4,6 +4,7 @@ import logging
 import traceback
 import sys
 
+from MCR_talker.MCR_talker import MCRTalker
 from candidates_talker.candidates_talker import CandidatesTalker
 from first_year_talker.first_year_talker import FirstYearTalker
 # from stupid_talker.stupid_talker import StupidTalker
@@ -11,7 +12,7 @@ from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from talker_grade import TalkerGrade
 
 
-def get_talkers(exclude=[]):
+def get_talkers(exclude=()):
     talkers = [
         # (name, fun, args, kwargs)
         (VectorSumProxy, ['data/more_subtitles.txt'], {}),
@@ -28,11 +29,15 @@ def get_talkers(exclude=[]):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
+        (MCRTalker, [], {"quotes_path": "data/wikiquote_polish_dialogs.txt"}),
+        (MCRTalker, [], {"quotes_path": "data/drama_quotes_longer.txt",
+                         "filter_rare_results": True})
     ]
     talkers = [fun(*args, **kwargs)
                for fun, args, kwargs in talkers
                if fun.__name__ not in exclude]
-    return { talker.my_name(): talker for talker in talkers }
+    return {talker.my_name(): talker for talker in talkers}
+
 
 def get_answers(talkers, question, state):
     return {

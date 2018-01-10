@@ -12,6 +12,7 @@ class Talker(object):
         Return a dictionary with an answer to a given question.
         Args:
             question: dict with question and preprocessed question field
+            status: ...
         Returns:
             dict with answer, score (between 0 and 1), and state_update field
         """

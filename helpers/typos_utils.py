@@ -1,11 +1,15 @@
 # coding=utf-8
 
-from __future__ import unicode_literals, print_function
+from __future__ import unicode_literals, print_function, division
 from codecs import open
 
 from collections import defaultdict
 import string
 import sys
+
+from helpers.progress_bar import progress_bar
+
+MORPHOSYNTACTIC_DICT_LEN = 4811854
 
 
 def remove_polish_symbols(word):
@@ -37,7 +41,7 @@ def remove_polish_symbols_and_duplicates(word):
 
 
 def get_unigrams(path="1grams", cutoff=1):
-    print("+++ loading unigrams+++", file=sys.stderr)
+    print("loading unigrams", file=sys.stderr)
     unigrams = defaultdict(lambda: 0)
     with open(path, encoding="utf8") as file:
         for line in file:
@@ -49,41 +53,39 @@ def get_unigrams(path="1grams", cutoff=1):
             unigrams[word] += int(occurrences)
             if int(occurrences) <= cutoff:
                 break
-    print("+++ unigrams loaded +++", file=sys.stderr)
+    print("unigrams loaded", file=sys.stderr)
     return unigrams
 
 
 def normalized_morphosyntactic(polish_morphosyntactic_dictionary):
     morphosyntactic_dictionary = defaultdict(lambda: set())
 
-    print(
-        "+++ creating normalized morphosyntactic dictionary +++\nwords "
-        "processed:",
-        file=sys.stderr,
-    )
+    print("creating normalized morphosyntactic dictionary",
+          file=sys.stderr)
+    print_progress = progress_bar()
+    polish_dictionary_size = len(polish_morphosyntactic_dictionary)
     for word_idx, word in enumerate(polish_morphosyntactic_dictionary):
-        if word_idx % 500000 == 0:
-            print(word_idx, file=sys.stderr)
+        if word_idx % 10000 == 0:
+            print_progress(word_idx / polish_dictionary_size)
         normalized_word = remove_polish_symbols_and_duplicates(word)
         morphosyntactic_dictionary[normalized_word].add(word)
-    print("+++ normalized dictionary created +++", file=sys.stderr)
+    print("\nnormalized dictionary created", file=sys.stderr)
     return morphosyntactic_dictionary
 
 
 def polish_morphosyntactic(path="./polimorfologik-2.1.txt"):
     morphosyntactic_dictionary = set()
     with open(path, 'r', encoding='utf-8') as file:
-        print(
-            "+++ loading morphosyntactic dictionary +++\nlines processed:",
-            file=sys.stderr,
-        )
+        print("loading morphosyntactic dictionary",
+              file=sys.stderr)
+        print_progress = progress_bar()
         for line_number, line in enumerate(file):
-            if line_number % 500000 == 0:
-                print(line_number, file=sys.stderr)
+            if line_number % 10000 == 0:
+                print_progress(line_number / MORPHOSYNTACTIC_DICT_LEN)
             _, word, _ = line.split(";")
             word = word.lower()
             morphosyntactic_dictionary.add(word)
-        print("+++ morphosyntactic dictionary loaded +++", file=sys.stderr)
+        print("\nmorphosyntactic dictionary loaded", file=sys.stderr)
     return morphosyntactic_dictionary
 
 

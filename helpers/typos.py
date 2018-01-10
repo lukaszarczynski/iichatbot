@@ -8,6 +8,7 @@ import time
 import re
 
 from edit_distance import edit_distance
+from helpers.fix_input import fix_input
 from typos_utils import (
     remove_polish_symbols_and_duplicates,
     get_unigrams,
@@ -19,12 +20,7 @@ from typos_utils import (
 
 MAX_EDIT_DISTANCE = 1
 
-if sys.version_info.major < 3:
-    global input
-
-    def input(*args, **kwargs):
-        """input function similar to one from Python 3"""
-        return raw_input(*args, **kwargs).decode("utf8")
+input = fix_input()
 
 
 class Typos(object):
