@@ -33,7 +33,7 @@ class Talker(object):
             raise Exception("score not found")
         if "state_update" not in answer.keys():
             answer["state_update"] = {}
-        if not (0.0 <= answer["score"] <= 1.0):
+        if not (0.0 <= answer["score"]):
             raise Exception("invalid score")
 
         logging.info(
@@ -45,3 +45,8 @@ class Talker(object):
         )
 
         return answer
+    
+    # Pass the result of this function as score when you know that your answer must be chosen
+    def prioritize(self, score):
+        return score + 10
+    
