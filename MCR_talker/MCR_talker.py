@@ -158,7 +158,7 @@ class MCRTalker(Talker):
     def select_quote(self, results, line):
         # type: (MCRTalker, dict[int, set[int]], list[list[str]]) -> tuple[unicode, float]
         if len(results) == 0:
-            return self.default_quote
+            return self.default_quote, 0.
         if self.filter_rare_results:  # TODO: Test impact on speed and correctness
             if any((len(k) > 1 for k in results.values())):
                 results = {k: v for k, v in results.items() if len(v) > 1}
