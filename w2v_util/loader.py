@@ -3,6 +3,7 @@ import logging
 
 _loaded = {}
 
+
 def get(path):
     if path not in _loaded:
         logging.info('loading word2vec word embeddings from %s', path)
