@@ -4,6 +4,7 @@ from codecs import open
 from helpers.fix_input import fix_input
 
 import sys
+import os
 import random
 import math
 from collections import defaultdict
@@ -14,6 +15,7 @@ from tf_idf import TF_IDF
 from tokenization import tokenize, tokenize_dialogue
 from dialogue_load import load_dialogues_from_file, split_dialogue
 from reverse_index_serialization import load_reverse_index, reverse_index_created, store_reverse_index, IndexType
+from helpers import spellcheck
 
 
 input = fix_input()
@@ -72,7 +74,7 @@ class MCRTalker(Talker):
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
-        self.morphosyntactic.create_morphosyntactic_dictionary()
+        self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
         self.index = self.load_index(quotes_path)
         self.quotes = load_dialogues_from_file(quotes_path,
@@ -83,6 +85,8 @@ class MCRTalker(Talker):
         self.default_quote = default_quote
         self.randomized = randomized
         self.used_quotes = {""}
+        quotes_source = quotes_path.split("/")[-1].split("\\")[-1]
+        self.name = "{0} ({1})".format(self.__class__.__name__, quotes_source)
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -100,6 +104,9 @@ class MCRTalker(Talker):
         selected_quote, score = self.select_quote(results, line)
         # self.used_quotes.add(selected_quote)
         return selected_quote, score
+
+    def my_name(self):
+        return self.name
 
     @staticmethod
     def load_stopwords(stopwords_path):
@@ -123,11 +130,12 @@ class MCRTalker(Talker):
         try:
             while True:
                 line = input("> ").strip()
+                line = spellcheck.spellcheck(line)
                 line = self.tokenize_input(line)
                 results = self.find_matching_quotes(line)
-                selected_quote, _ = self.select_quote(results, line)
+                selected_quote, score = self.select_quote(results, line)
                 self.used_quotes.add(selected_quote)
-                print(selected_quote)
+                print(selected_quote, score)
         except KeyboardInterrupt:
             return
         except EOFError:
@@ -264,6 +272,10 @@ class WordVector:  # TODO: faster!
 
 
 if __name__ == "__main__":
-    talker = MCRTalker(quotes_path="../data/drama_quotes_longer.txt", filter_rare_results=True)
-    print(talker._get_answer("Dzień dobry!"))
+    os.chdir("..")
+    spellcheck.init("typos")
+    talker = MCRTalker(quotes_path="data/wikiquote_polish_dialogs.txt",
+                       # filter_rare_results=True,
+                       morphosyntactic_path="big_data/polimorfologik-2.1.txt")
+    print(talker.my_name(), talker._get_answer("Dzień dobry!"))
     talker.test()
