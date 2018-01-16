@@ -73,7 +73,8 @@ class MCRTalker(Talker):
                  filter_rare_results=False,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
-                 filter_stopwords=False):
+                 filter_stopwords=False,
+                 nonexistent_words_penalty=10):   # TODO: check default value
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -89,6 +90,7 @@ class MCRTalker(Talker):
         quotes_source = quotes_path.split("/")[-1].split("\\")[-1]
         self.name = "{0} ({1})".format(self.__class__.__name__, quotes_source)
         self.filter_stopwords = filter_stopwords
+        self.default_tfidf = nonexistent_words_penalty
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -225,7 +227,7 @@ class MCRTalker(Talker):
         return selected_quote
 
     def _score_function(self, word, quote_idx):
-        return self.tf_idf[quote_idx].get(word, 0)  # TODO: check default value
+        return self.tf_idf[quote_idx].get(word, self.default_tfidf)
 
     def morphologocal_bases(self, quote):
         for dialogue_idx, dialogue in enumerate(quote):
