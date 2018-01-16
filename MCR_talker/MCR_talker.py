@@ -72,7 +72,8 @@ class MCRTalker(Talker):
                  stopwords_path="../data/stopwords.txt",
                  filter_rare_results=False,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
-                 randomized=False):
+                 randomized=False,
+                 filter_stopwords=False):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -87,6 +88,7 @@ class MCRTalker(Talker):
         self.used_quotes = {""}
         quotes_source = quotes_path.split("/")[-1].split("\\")[-1]
         self.name = "{0} ({1})".format(self.__class__.__name__, quotes_source)
+        self.filter_stopwords = filter_stopwords
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -145,7 +147,10 @@ class MCRTalker(Talker):
         if len(line) > 0 and line[0].upper():
             line = line[0].lower() + line[1:]
 
-        line = list(filter(lambda x: x not in self.stopwords, tokenize(line)))
+        if self.filter_stopwords:
+            line = list(filter(lambda x: x not in self.stopwords, tokenize(line)))
+        else:
+            line = tokenize(line)
         line = [self.morphosyntactic.get_dictionary().get(token, []) for token in line]
         return line
 
