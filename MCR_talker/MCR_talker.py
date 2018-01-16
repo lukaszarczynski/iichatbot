@@ -151,8 +151,12 @@ class MCRTalker(Talker):
             line = list(filter(lambda x: x not in self.stopwords, tokenize(line)))
         else:
             line = tokenize(line)
-        line = [self.morphosyntactic.get_dictionary().get(token, []) for token in line]
-        return line
+        tokenized_line = []
+        for token in line:
+            if token.isalpha():
+                token = self.morphosyntactic.get_dictionary().get(token, [token])
+                tokenized_line.append(token)
+        return tokenized_line
 
     def find_matching_quotes(self, line):
         quotes_sets = []
@@ -180,7 +184,7 @@ class MCRTalker(Talker):
 
         possible_quotes = self._get_quotes_from_indices(results)
         for possible_quote in possible_quotes:
-            possible_quote[0], possible_quote[1] = self.evaluate_quote(possible_quote, line)  # TODO: Select best quote
+            possible_quote[0], possible_quote[1] = self.evaluate_quote(possible_quote, line)  # TODO: Select best quote, to powinno być bez tego for, za każdym razem tworzy wektor dla pytania
 
         if self.randomized:
             selected_quote, score = self._select_randomized_quote(possible_quotes)
@@ -221,15 +225,22 @@ class MCRTalker(Talker):
         return selected_quote
 
     def _score_function(self, word, quote_idx):
-        return self.tf_idf[quote_idx].get(word, 0)
+        return self.tf_idf[quote_idx].get(word, 0)  # TODO: check default value
+
+    def morphologocal_bases(self, quote):
+        for dialogue_idx, dialogue in enumerate(quote):
+            _quote_text = []
+            for token in dialogue:
+                if token.isalpha():
+                    _quote_text.append(self.morphosyntactic.get_dictionary().get(token, [token]))
+            quote[dialogue_idx] = _quote_text
+        return quote
 
     def evaluate_quote(self, quote, question, choose_answer=False):
         quote_idx = quote[1]
         raw_quote_text = split_dialogue(quote[0])
         quote_text = tokenize_dialogue(quote[0])  # TODO: faster?
-        for dialogue_idx, dialogue in enumerate(quote_text):
-            _quote_text = [self.morphosyntactic.get_dictionary().get(token, []) for token in dialogue]
-            quote_text[dialogue_idx] = [base_words for base_words in _quote_text if base_words != []]
+        quote_text = self.morphologocal_bases(quote_text)
 
         best_quote = raw_quote_text[0]
         cosine = 0
