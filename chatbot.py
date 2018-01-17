@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import argparse
 import helpers.spellcheck
 import logging
@@ -57,7 +59,7 @@ def loop(talkers, grader):
     state = {}
     while True:
         try:
-            print ">",
+            print(">", end=" ")
             question = raw_input()
             logging.info("Question asked: %s" % question)
             answers = get_answers(talkers, question, state)
@@ -70,12 +72,12 @@ def loop(talkers, grader):
                 key=lambda answer: -answer["score"],
             )
             answer = answers[0]
-            print "<", answer["answer"]
+            print("<", answer["answer"])
             logging.info("Answered: %s" % answer["answer"])
             state = update_state(state, answer["state_update"])
 
         except KeyboardInterrupt:
-            print '\nDo widzenia!'
+            print('\nDo widzenia!')
             return
         except Exception:
             traceback.print_exc()
