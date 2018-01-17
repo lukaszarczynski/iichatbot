@@ -31,9 +31,8 @@ def get_talkers(exclude=()):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
-        (MCRTalker, [], {"quotes_path": "data/wikiquote_polish_dialogs.txt"}),
-        (MCRTalker, [], {"quotes_path": "data/drama_quotes_longer.txt",
-                         "filter_rare_results": True})
+        (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {}),
+        (MCRTalker, ["data/drama_quotes_longer.txt"], {})
     ]
     talkers = []
     for talker_class, args, kwargs in talkers_args:

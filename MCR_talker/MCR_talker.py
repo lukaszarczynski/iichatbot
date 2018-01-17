@@ -65,10 +65,10 @@ def weighted_draw(possible_quotes):
 
 class MCRTalker(Talker):
     def __init__(self,
-                 morphosyntactic_path="big_data/polimorfologik-2.1.txt",
                  quotes_path="../data/drama_quotes_longer.txt",
+                 morphosyntactic_path="big_data/polimorfologik-2.1.txt",
                  stopwords_path="../data/stopwords.txt",
-                 filter_rare_results=False,
+                 filter_rare_results=True,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
                  filter_stopwords=False,
