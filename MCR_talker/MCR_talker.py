@@ -176,8 +176,8 @@ class MCRTalker(Talker):
         # type: (MCRTalker, dict[int, set[int]], list[list[str]]) -> tuple[unicode, float]
         if len(results) == 0:
             return self.default_quote, 0.
-        if self.filter_rare_results:  # TODO: Test impact on speed and correctness
-            if any((len(k) > 1 for k in results.values())):
+        if self.filter_rare_results:
+            if any((len(k) > 1 for k in results.values())):  # TODO: Check on greater lengths
                 results = {k: v for k, v in results.items() if len(v) > 1}
 
         line = [base_words for base_words in line if base_words != []]
@@ -251,11 +251,8 @@ class MCRTalker(Talker):
             quote_slice = [item for sublist in quote_slice for item in sublist]
             quote_vector = WordVector(quote_slice, self._score_function, quote_idx)
 
-            try:
-                new_cosine = ((quote_vector.__matmul__(question_vector)) /
-                              (quote_vector.len() * question_vector.len()))
-            except ZeroDivisionError:  # TODO: Check tf-idf
-                new_cosine = 0
+            new_cosine = ((quote_vector.__matmul__(question_vector)) /
+                          (quote_vector.len() * question_vector.len()))
             if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
