@@ -5,23 +5,18 @@ sys.setdefaultencoding('UTF8')
 
 import unittest
 
-from student_talker.student_talker import StudentTalker
+from courses_talker.coursesDataFetcher import DataFetcher
 
 
 class TestChatbot(unittest.TestCase):
 
-    state = {}
+    def test_downloader_initialization(self):
+	down = DataFetcher();
 
-
-    def test_initialization(self):
-	st = StudentTalker();
-
-
-    def test_get_answer(self):
-	st = StudentTalker();
-	ans = st.get_answer("Czego nauczę się na algebrze", {})
-	print(ans['score'])
-
+'''    def test_description_fetcher(self):
+	down = DataFetcher();
+	down.fetch_course_description(down.co
+'''
 """
     def test_valid_answer(self):
         st = StupidTalker("Answer.", 0.3)

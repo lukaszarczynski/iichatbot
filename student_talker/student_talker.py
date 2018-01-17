@@ -12,10 +12,12 @@ class StudentTalker(Talker):
 	    self.db = json.load(f)['data']
 
     def get_answer(self, question, state):
-	""" A dictionary where key is an answer and the value is a distance between asked question and the one connected to answer from database"""
+	question = question.upper()
+	""" A dictionary where key is an answer 
+and the value is a distance between asked question and the one connected to answer from database"""
         question_dist = {}
         for item in self.db:
-	    question_dist[item['a']] = SequenceMatcher(None, question, item['q']).ratio()
+	    question_dist[item['a']] = SequenceMatcher(None, question, item['q'].upper()).ratio()
 	max_ans = max(question_dist.iteritems(), key=operator.itemgetter(1))[0]
 	return {
 	    "answer": max_ans,
