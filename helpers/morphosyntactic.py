@@ -54,7 +54,7 @@ class Morphosyntactic(object):
         return self.morphosyntactic_dictionary
 
     def polish_words(self):
-        if self._polish_words in None:
+        if self._polish_words is None:
             self._polish_words = set(self.get_dictionary().keys())
         return self._polish_words
 

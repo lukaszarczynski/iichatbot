@@ -8,7 +8,7 @@ from math import log
 from os.path import isfile
 
 from dialogue_load import load_dialogues_from_file
-from morphosyntactic import Morphosyntactic
+from helpers.morphosyntactic import Morphosyntactic
 from tokenization import tokenize
 from helpers.progress_bar import progress_bar
 

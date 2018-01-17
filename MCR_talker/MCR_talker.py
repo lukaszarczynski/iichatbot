@@ -9,14 +9,12 @@ import random
 import math
 from collections import defaultdict
 
-import morphosyntactic as morph
 from talker import Talker
 from tf_idf import TF_IDF
 from tokenization import tokenize, tokenize_dialogue
 from dialogue_load import load_dialogues_from_file, split_dialogue
 from reverse_index_serialization import load_reverse_index, reverse_index_created, store_reverse_index, IndexType
-from helpers import spellcheck
-
+from helpers import spellcheck, morphosyntactic as morph
 
 input = fix_input()
 
