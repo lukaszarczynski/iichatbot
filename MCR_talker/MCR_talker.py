@@ -239,7 +239,7 @@ class MCRTalker(Talker):
     def evaluate_quote(self, quote, question, choose_answer=False):
         quote_idx = quote[1]
         raw_quote_text = split_dialogue(quote[0])
-        quote_text = tokenize_dialogue(quote[0])  # TODO: faster?
+        quote_text = tokenize_dialogue(quote[0])
         quote_text = self.morphologocal_bases(quote_text)
 
         best_quote = raw_quote_text[0]
@@ -250,12 +250,8 @@ class MCRTalker(Talker):
             quote_slice = quote_text[:dialogue_idx + 1]
             quote_slice = [item for sublist in quote_slice for item in sublist]
             quote_vector = WordVector(quote_slice, self._score_function, quote_idx)
-
-            try:
-                new_cosine = ((quote_vector.__matmul__(question_vector)) /
-                              (quote_vector.len() * question_vector.len()))
-            except ZeroDivisionError:  # TODO: Check tf-idf
-                new_cosine = 0
+            new_cosine = quote_vector.__matmul__(question_vector)
+            new_cosine /= quote_vector.len() * question_vector.len()
             if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
