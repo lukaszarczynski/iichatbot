@@ -15,8 +15,8 @@ from talker_grade import TalkerGrade
 
 
 def get_talkers(exclude=()):
-    talkers = [
-        # (name, fun, args, kwargs)
+    talkers_args = [
+        # (talker_class, args, kwargs)
         (VectorSumProxy, ['data/more_subtitles.txt'], {}),
         (VectorSumProxy, ['data/yebood.txt'], {}),
         (
@@ -35,9 +35,14 @@ def get_talkers(exclude=()):
         (MCRTalker, [], {"quotes_path": "data/drama_quotes_longer.txt",
                          "filter_rare_results": True})
     ]
-    talkers = [fun(*args, **kwargs)
-               for fun, args, kwargs in talkers
-               if fun.__name__ not in exclude]
+    talkers = []
+    for talker_class, args, kwargs in talkers_args:
+        if talker_class.__name__ not in exclude:
+            try:
+                talkers.append(talker_class(*args, **kwargs))
+            except Exception:
+                print(talker_class.__name__, " has crashed", file=sys.stderr)
+                traceback.print_exc(file=sys.stderr)
     return {talker.my_name(): talker for talker in talkers}
 
 
