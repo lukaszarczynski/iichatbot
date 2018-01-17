@@ -16,7 +16,7 @@ def tokenize(text):
 
 
 def tokenize_dialogue(dialogue_text):
-    dialogue_list = ([line.split(":")[-1] for line in dialogue_text.split("\n")])
+    dialogue_list = ([":".join(line.split(":")[1:]) for line in dialogue_text.split("\n")])
     dialogue_list = [tokenize(line.lower()) for line in dialogue_list]
     return dialogue_list
 

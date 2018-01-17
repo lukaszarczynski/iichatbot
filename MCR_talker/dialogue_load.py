@@ -14,7 +14,7 @@ def load_dialogues_from_file(document_path,
         dialogues_list = "".join(dialogues_list)
         dialogues_list = dialogues_list.split("\n\n")
         if remove_authors:
-            dialogues_list = ["\n".join([line.split(":")[-1]
+            dialogues_list = ["\n".join([":".join(line.split(":")[1:])
                                          for line in dialogue.split("\n")])
                               for dialogue in dialogues_list]
         if do_tokenization:
@@ -23,7 +23,7 @@ def load_dialogues_from_file(document_path,
 
 
 def split_dialogue(dialogue):
-    dialogue_list = ([line.split(":")[-1] for line in dialogue.split("\n")])
+    dialogue_list = ([":".join(line.split(":")[1:]) for line in dialogue.split("\n")])
     return dialogue_list
 
 
