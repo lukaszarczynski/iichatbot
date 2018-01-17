@@ -47,10 +47,16 @@ def get_talkers(exclude=()):
 
 
 def get_answers(talkers, question, state):
-    return {
-        t_name: talkers[t_name].get_answer_helper(question, state)
-        for t_name in talkers
-    }
+    answers = {}
+    for t_name in talkers:
+        try:
+            answer = talkers[t_name].get_answer_helper(question, state)
+        except Exception:
+            traceback.print_exc(file=sys.stderr)
+            sys.stderr.flush()
+        else:
+            answers[t_name] = answer
+    return answers
 
 
 def update_state(state, update):
