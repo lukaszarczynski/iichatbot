@@ -76,7 +76,8 @@ class MCRTalker(Talker):
                  randomized=False,
                  filter_stopwords=False,
                  nonexistent_words_penalty=1,  # TODO: check default value
-                 stopwords_penalty=.1):
+                 stopwords_penalty=.1,
+                 select_answer_threshold=.99):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -100,6 +101,7 @@ class MCRTalker(Talker):
                                                         self.morphologocal_bases, self._score_function,
                                                         vector_file_extension=self.vector_file_extension)
         self.vector_serialization.load()
+        self.select_answer_threshold = select_answer_threshold
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -281,6 +283,8 @@ class MCRTalker(Talker):
             else:
                 new_cosine = quote_vector.__matmul__(question_vector)
                 new_cosine /= quote_vector.len() * question_vector.len()
+            if new_cosine >= self.select_answer_threshold:
+                choose_answer = True
             if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
