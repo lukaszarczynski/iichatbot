@@ -1,6 +1,7 @@
 # coding=utf-8
 from __future__ import print_function, unicode_literals, division
 from codecs import open
+
 from helpers.fix_input import fix_input
 
 import sys
@@ -8,7 +9,9 @@ import os
 import random
 import math
 from collections import defaultdict
+import cPickle as pickle
 
+from helpers.progress_bar import progress_bar
 from talker import Talker
 from tf_idf import TF_IDF
 from tokenization import tokenize, tokenize_dialogue
@@ -45,7 +48,7 @@ def create_dialogue_reverse_index(path_to_documents_collection, morphosyntactic)
     print("+++ creating reverse index +++", file=sys.stderr)
     for dialogue_idx, dialogue in enumerate(dialogues):
         for token in dialogue:
-            base_tokens = morphosyntactic.get_dictionary().get(token, [])
+            base_tokens = morphosyntactic.get_dictionary().get(token.lower(), [])
             for base_token in base_tokens:
                 index[base_token.encode("utf-8")].add(dialogue_idx)
     print("+++ reverse index created +++", file=sys.stderr)
@@ -72,7 +75,8 @@ class MCRTalker(Talker):
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
                  filter_stopwords=False,
-                 nonexistent_words_penalty=10):   # TODO: check default value
+                 nonexistent_words_penalty=2,  # TODO: check default value
+                 stopwords_penalty=.1):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -80,7 +84,7 @@ class MCRTalker(Talker):
         self.quotes = load_dialogues_from_file(quotes_path,
                                                do_tokenization=False, remove_authors=False)  # type: list[str]
         tf_idf_generator = TF_IDF(quotes_path, self.morphosyntactic)
-        self.tf_idf = tf_idf_generator.load()  # type: dict[int, dict[str, float]]
+        self.idf, self.term_frequency = tf_idf_generator.load()
         self.filter_rare_results = filter_rare_results
         self.default_quote = default_quote
         self.randomized = randomized
@@ -88,7 +92,9 @@ class MCRTalker(Talker):
         quotes_source = quotes_path.split("/")[-1].split("\\")[-1]
         self.name = "{0} ({1})".format(self.__class__.__name__, quotes_source)
         self.filter_stopwords = filter_stopwords
-        self.default_tfidf = nonexistent_words_penalty
+        self.default_tfidf_value = nonexistent_words_penalty
+        self.stopword_tfidf_value = stopwords_penalty
+        self.line_tf = None
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -103,7 +109,7 @@ class MCRTalker(Talker):
     def _get_answer(self, question):
         line = self.tokenize_input(question)
         results = self.find_matching_quotes(line)
-        selected_quote, score = self.select_quote(results, line)
+        selected_quote, score = self.select_quote(results, line, question)
         # self.used_quotes.add(selected_quote)
         return selected_quote, score
 
@@ -132,11 +138,11 @@ class MCRTalker(Talker):
         try:
             while True:
                 line = input("> ").strip()
-                line = spellcheck.spellcheck(line)
-                line = self.tokenize_input(line)
-                results = self.find_matching_quotes(line)
-                selected_quote, score = self.select_quote(results, line)
-                self.used_quotes.add(selected_quote)
+                # line = spellcheck.spellcheck(line)
+                tokenized_line = self.tokenize_input(line)
+                results = self.find_matching_quotes(tokenized_line)
+                selected_quote, score = self.select_quote(results, tokenized_line, line)
+                # self.used_quotes.add(selected_quote)
                 print(selected_quote, score)
         except KeyboardInterrupt:
             return
@@ -147,10 +153,12 @@ class MCRTalker(Talker):
         if len(line) > 0 and line[0].upper():
             line = line[0].lower() + line[1:]
 
+        line = tokenize(line)
         if self.filter_stopwords:
-            line = list(filter(lambda x: x not in self.stopwords, tokenize(line)))
-        else:
-            line = tokenize(line)
+            for word_idx, word in enumerate(line):
+                if word in self.stopwords:
+                    line[word_idx] = "__" + word
+
         tokenized_line = []
         for token in line:
             if token.isalpha():
@@ -172,20 +180,20 @@ class MCRTalker(Talker):
                 results[quote_number].add(i)
         return results
 
-    def select_quote(self, results, line):
-        # type: (MCRTalker, dict[int, set[int]], list[list[str]]) -> tuple[unicode, float]
+    def select_quote(self, results, line, raw_question):
+        # type: (MCRTalker, dict[int, set[int]], list[list[str]], str) -> tuple[unicode, float]
         if len(results) == 0:
             return self.default_quote, 0.
         if self.filter_rare_results:  # TODO: Test impact on speed and correctness
             if any((len(k) > 1 for k in results.values())):
                 results = {k: v for k, v in results.items() if len(v) > 1}
 
-        line = [base_words for base_words in line if base_words != []]
-
+        self.line_tf = TF_IDF("__temp", self.morphosyntactic).compute_dialogue_tf([raw_question])
         possible_quotes = self._get_quotes_from_indices(results)
+        question_vector = WordVector(line, self._question_score_function)
         for possible_quote in possible_quotes:
-            possible_quote[0], possible_quote[1] = self.evaluate_quote(possible_quote, line)  # TODO: Select best quote, to powinno być bez tego for, za każdym razem tworzy wektor dla pytania
-
+            possible_quote[0], possible_quote[1] = self.evaluate_quote(possible_quote, question_vector)  # TODO: Select best quote, to powinno być bez tego for, za każdym razem tworzy wektor dla pytania
+        self.line_tf = None
         if self.randomized:
             selected_quote, score = self._select_randomized_quote(possible_quotes)
         else:
@@ -224,8 +232,28 @@ class MCRTalker(Talker):
                 return self.default_quote
         return selected_quote
 
-    def _score_function(self, word, quote_idx):
-        return self.tf_idf[quote_idx].get(word, self.default_tfidf)
+    def _base_score_function(self, word, line_idx, term_frequency):
+        if word not in self.idf:
+            if "".startswith("__"):
+                return self.stopword_tfidf_value
+            else:
+                return self.default_tfidf_value
+        else:
+            word_frequency = 0
+            for idx in range(line_idx + 1):
+                try:
+                    word_frequency += term_frequency[idx].get(word, 0)
+                except IndexError:
+                    raise
+            if word_frequency == 0:
+                word_frequency = 1
+            return word_frequency * self.idf[word]
+
+    def _score_function(self, word, quote_idx, line_idx):
+        return self._base_score_function(word, line_idx, self.term_frequency[quote_idx])
+
+    def _question_score_function(self, word, *args):
+        return self._base_score_function(word, 0, self.line_tf[0])
 
     def morphologocal_bases(self, quote):
         for dialogue_idx, dialogue in enumerate(quote):
@@ -236,7 +264,7 @@ class MCRTalker(Talker):
             quote[dialogue_idx] = _quote_text
         return quote
 
-    def evaluate_quote(self, quote, question, choose_answer=False):
+    def evaluate_quote(self, quote, question_vector, choose_answer=False):
         quote_idx = quote[1]
         raw_quote_text = split_dialogue(quote[0])
         quote_text = tokenize_dialogue(quote[0])
@@ -244,12 +272,11 @@ class MCRTalker(Talker):
 
         best_quote = raw_quote_text[0]
         cosine = 0
-        question_vector = WordVector(question, self._score_function, quote_idx)
 
         for dialogue_idx, dialogue in enumerate(quote_text):
             quote_slice = quote_text[:dialogue_idx + 1]
             quote_slice = [item for sublist in quote_slice for item in sublist]
-            quote_vector = WordVector(quote_slice, self._score_function, quote_idx)
+            quote_vector = WordVector(quote_slice, self._score_function, quote_idx, dialogue_idx)
             new_cosine = quote_vector.__matmul__(question_vector)
             new_cosine /= quote_vector.len() * question_vector.len()
             if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
@@ -260,16 +287,17 @@ class MCRTalker(Talker):
 
 
 class WordVector:  # TODO: faster!
-    def __init__(self, quote, score_function, quote_idx):
+    def __init__(self, quote, score_function, quote_idx=None, line_idx=None):
         self.vector = defaultdict(lambda: 0)
         for possible_words in quote:
             for base_word in possible_words:
-                base_word_score = score_function(base_word, quote_idx)
+                base_word_score = score_function(base_word, quote_idx, line_idx)
                 self.vector[base_word] = base_word_score
+        length = sum(value ** 2 for value in self.vector.values())
+        self._len = math.sqrt(length)
 
     def len(self):
-        length = sum(value ** 2 for value in self.vector.values())
-        return math.sqrt(length)
+        return self._len
 
     def __getitem__(self, item):
         return self.vector[item]
@@ -285,9 +313,8 @@ class WordVector:  # TODO: faster!
 
 if __name__ == "__main__":
     os.chdir("..")
-    spellcheck.init("typos")
     talker = MCRTalker(quotes_path="data/wikiquote_polish_dialogs.txt",
-                       # filter_rare_results=True,
-                       morphosyntactic_path="big_data/polimorfologik-2.1.txt")
+                       morphosyntactic_path="big_data/polimorfologik-2.1.txt",
+                       filter_rare_results=True)
     print(talker.my_name(), talker._get_answer("Dzień dobry!"))
     talker.test()
