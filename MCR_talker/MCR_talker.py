@@ -75,7 +75,7 @@ class MCRTalker(Talker):
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
                  filter_stopwords=False,
-                 nonexistent_words_penalty=2,  # TODO: check default value
+                 nonexistent_words_penalty=1,  # TODO: check default value
                  stopwords_penalty=.1):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
@@ -95,6 +95,11 @@ class MCRTalker(Talker):
         self.default_tfidf_value = nonexistent_words_penalty
         self.stopword_tfidf_value = stopwords_penalty
         self.line_tf = None
+        self.vector_file_extension = ".vec"
+        self.vector_serialization = VectorSerialization(quotes_path, self.quotes,
+                                                        self.morphologocal_bases, self._score_function,
+                                                        vector_file_extension=self.vector_file_extension)
+        self.vector_serialization.load()
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -241,10 +246,7 @@ class MCRTalker(Talker):
         else:
             word_frequency = 0
             for idx in range(line_idx + 1):
-                try:
-                    word_frequency += term_frequency[idx].get(word, 0)
-                except IndexError:
-                    raise
+                word_frequency += term_frequency[idx].get(word, 0)
             if word_frequency == 0:
                 word_frequency = 1
             return word_frequency * self.idf[word]
@@ -269,20 +271,19 @@ class MCRTalker(Talker):
         raw_quote_text = split_dialogue(quote[0])
         quote_text = tokenize_dialogue(quote[0])
         quote_text = self.morphologocal_bases(quote_text)
-
         best_quote = raw_quote_text[0]
         cosine = 0
 
-        for dialogue_idx, dialogue in enumerate(quote_text):
-            quote_slice = quote_text[:dialogue_idx + 1]
-            quote_slice = [item for sublist in quote_slice for item in sublist]
-            quote_vector = WordVector(quote_slice, self._score_function, quote_idx, dialogue_idx)
-            new_cosine = quote_vector.__matmul__(question_vector)
-            new_cosine /= quote_vector.len() * question_vector.len()
+        for dialogue_idx in range(len(quote_text)):
+            quote_vector = self.vector_serialization.word_vectors[quote_idx][dialogue_idx]
+            if quote_vector.len() == 0 or question_vector.len() == 0:
+                new_cosine = 0
+            else:
+                new_cosine = quote_vector.__matmul__(question_vector)
+                new_cosine /= quote_vector.len() * question_vector.len()
             if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
-
         return best_quote, cosine
 
 
@@ -293,6 +294,7 @@ class WordVector:  # TODO: faster!
             for base_word in possible_words:
                 base_word_score = score_function(base_word, quote_idx, line_idx)
                 self.vector[base_word] = base_word_score
+        self.vector = dict(self.vector)
         length = sum(value ** 2 for value in self.vector.values())
         self._len = math.sqrt(length)
 
@@ -304,11 +306,64 @@ class WordVector:  # TODO: faster!
 
     def __matmul__(self, other):
         dot_product = sum(self[word] * other[word]
-                          for word in set.union(set(self.vector.keys()), set(other.vector.keys())))
+                          for word in set.intersection(set(self.vector.keys()), set(other.vector.keys())))
         return dot_product
 
     def __str__(self):
         return str(self.vector)
+
+
+class VectorSerialization(object):
+    def __init__(self, collection_path, dialogues,
+                 morphologocal_bases_function, score_function,
+                 vector_file_extension=".vec",):
+        self.dialogues = dialogues
+        self.collection_path = collection_path
+        self.vector_file_extension = vector_file_extension
+        self.vector_path = self.collection_path + self.vector_file_extension
+        self.word_vectors = []
+        self.morphologocal_bases = morphologocal_bases_function
+        self.score_function = score_function
+
+    def compute_vectors(self):
+        print("Creating vector representation", file=sys.stderr)
+        print_progress = progress_bar()
+        dialogues_size = len(self.dialogues)
+        for quote_idx, quote in enumerate(self.dialogues):
+            if quote_idx % 200 == 0:
+                print_progress(quote_idx / dialogues_size)
+            self.word_vectors.append(self.create_vector(quote, quote_idx))
+
+    def create_vector(self, quote, quote_idx):
+        quote_text = tokenize_dialogue(quote)
+        quote_text = self.morphologocal_bases(quote_text)
+        slice_vectors = []
+
+        for dialogue_idx, dialogue in enumerate(quote_text):
+            quote_slice = quote_text[:dialogue_idx + 1]
+            quote_slice = [item for sublist in quote_slice for item in sublist]
+            quote_vector = WordVector(quote_slice, self.score_function, quote_idx, dialogue_idx)
+            slice_vectors.append(quote_vector)
+        return slice_vectors
+
+    def save(self):
+        if len(self.word_vectors) == 0:
+            self.compute_vectors()
+        with open(self.vector_path, "wb") as vector_file:
+            pickle.dump(self.word_vectors, vector_file)
+        return self.vector_path
+
+    def load(self):
+        if self.vector_file_created():
+            with open(self.vector_path, "rb") as vector_file:
+                self.word_vectors = pickle.load(vector_file)
+        else:
+            self.compute_vectors()
+            self.save()
+        return self.word_vectors
+
+    def vector_file_created(self):
+        return os.path.isfile(self.collection_path + self.vector_file_extension)
 
 
 if __name__ == "__main__":

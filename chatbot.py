@@ -6,7 +6,7 @@ import logging
 import traceback
 import sys
 
-from MCR_talker.MCR_talker import MCRTalker
+from MCR_talker.MCR_talker import MCRTalker, WordVector
 from candidates_talker.candidates_talker import CandidatesTalker
 from first_year_talker.first_year_talker import FirstYearTalker
 # from stupid_talker.stupid_talker import StupidTalker
@@ -40,7 +40,7 @@ def get_talkers(exclude=()):
             try:
                 talkers.append(talker_class(*args, **kwargs))
             except Exception:
-                print(talker_class.__name__, " has crashed", file=sys.stderr)
+                print(talker_class.__name__, "has crashed", file=sys.stderr)
                 traceback.print_exc(file=sys.stderr)
     return {talker.my_name(): talker for talker in talkers}
 
@@ -51,6 +51,7 @@ def get_answers(talkers, question, state):
         try:
             answer = talkers[t_name].get_answer_helper(question, state)
         except Exception:
+            print(t_name, "has encounterred error", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
             sys.stderr.flush()
         else:
