@@ -1,0 +1,139 @@
+{
+    "data": [{
+	    "q": "Czego nauczę się na analizie matematycznej",
+	    "a": "Dowiesz się, czym jest zbieżność, granica; nauczysz się różniczkowania i całkowania oraz badania zmienności funkcji."
+	},
+	{
+	    "q": "Czego nauczę się na logice",
+	    "a": "Logika pomoże Ci poprawnie używać terminologii matematycznej oraz przeprowadzania ścisłych dowodów."
+	},
+	{
+	    "q": "Czego nauczę się na algebrze",
+	    "a": "Na zajęciach omówisz pojęcia abstrakcyjne, jak grupy, ciała, pierścienia. Dowiesz się o algebrze liniowej i podstawach operacji macierzowych."
+	},
+	{
+	    "q": "Czego nauczę się na matematyce dyskretnej",
+	    "a": "Matematyka dyskretna do duży przedmiot. Omawia teorię liczb i kombinatorykę. Będą też podstawy teorii grafów (np. drzewa rozpinające)."
+	},
+	{
+	    "q": "Czego nauczę się na rachunku prawdopodobieństwa",
+	    "a": "Dowiesz się czym jest prawdopodobieństwo ciągłe i dyskretne oraz wartość oczekiwana. Nauczysz się analizować zdarzenia, zmienne losowe, obliczać prawdopodobieństwo, wartość oczekiwaną i odchylenie standardowe."
+	},
+	{
+	    "q": "Czego nauczę się na wprowadzeniu do informatyki",
+	    "a": "W czasie WdI przejdziesz przez podstawy teorii programowania; od systemu binarnego, przez tablice, wskaźniki i pętle. Omówione zostaną także niezmienniki pozwalające na udowadnianie poprawności programów i algorytmów."
+	},
+	{
+	    "q": "Czego nauczę się na algorytmach i strukturach danych",
+	    "a": "AiSD to chyba największy przedmiot na tej uczelni. Będzie mowa o różnych klasach algorytmów (dynamiczne, dziel i rządź...), o algorytmach grafowych, haszowaniu, sortowaniu; omówione zostaną sposoby wyznaczania złożoności algorytmów; będzie też o wielu strukturach danych."
+	},
+	{
+	    "q": "Czego nauczę się na metodach numerycznych",
+	    "a": "Na metodahc numerycznych dowiesz się, że komputer nie potrafi liczyć. Poznasz też sposoby radzenia sobie z tymi problemami."
+	},
+	{
+	    "q": "Czego nauczę się na programowaniu obiektowym",
+	    "a": "Na tym przedmiocie będziesz programować w trzech różnych językach obiektowych - Pythonie, Java'ie i Rubym."
+	},
+	{
+	    "q": "Czego nauczę się na metodach programowania",
+	    "a": "Poznasz języki funkcyjne - Prologa i Haskella oraz nauczysz się programowania w tych językach."
+	},
+	{
+	    "q": "Czego nauczę się na inżynierii oprogramowania",
+	    "a": "Na tym przedmiocie dowiesz się w jaki sposób planować tworzenie programu; od pomysłu do technicznego opisu aplikacji."
+	},
+	{
+	    "q": "Czego nauczę się na sieciach komputerowych",
+	    "a": "Na sieciach dowiesz się co tak naprawdę dzieje się w momencie, gdy łączysz się z Internetem. Duży nacisk jest położony na praktykę."
+	},
+	{
+	    "q": "Czego nauczę się na bazach danych",
+	    "a": "Nauczysz się teorii baz danych oraz stworzysz projekt wykorzystujący relacyjną bazę danych."
+	},
+	{
+	    "q": "Czym jest O1",
+	    "a": "Są to przedmioty obowiązkowe w pierwszym roku studiów (tzn. Logika, Analiza matematyczne, Algebra i Metody programowania)."
+	},
+	{
+	    "q": "Czym jest O2",
+	    "a": "Są to przedmioty obowiązkowe w drugim roku studiów (tzn. Matematyka dyskretna, Analiza numeryczna oraz Algorytmy i struktury danych)."
+	},
+	{
+	    "q": "Czym jest O3",
+	    "a": "Są to przedmioty rozszerzone wymagana na studiach magisterskich. Obowiązkowym przedmiotem tej grupy są Języki formalne i złożoność obliczeniowa."
+	},
+	{
+	    "q": "Czym jest I1",
+	    "a": "Są to przedmioty dot. praktycznej informatyki. Wiedza zdobyta na przedmiotach oznaczonych jako I1 na pewno przydadzą Ci się w pracy zawodowej."
+	},
+	{
+	    "q": "Czym jest I2",
+	    "a": "Przedmioty I2 zawierają bardziej zaawansowane treści informatyczne, które mogą przydać się jedynie w niektórych przypadkach. Z I2 warto wybierać tylko te przedmioty, które naprawdę Cię interesują."
+	},
+	{
+	    "q": "Czym jest I.inż",
+	    "a": "Przedmioty I.Inż są przeznaczone dla studentów pragnących uzyskać tytuł inżyniera. Poruszają praktyczne aspekty informatyki, np. programowanie mikroprocesorów."
+	},
+	{
+	    "q": "Czym jest K1",
+	    "a": "K1 to kursy dotyczące podstawowych zagadnień informatycznych."
+	},
+	{
+	    "q": "Czym jest K2",
+	    "a": "K2 to kursy dotyczące bardziej zaawansowanych zagadnień informatycznych."
+	},
+	{
+	    "q": "Czym jest K.inż",
+	    "a": "K.inż to kursy przeznaczone dla tych, który chcą ukończyć studia z tytułem inżyniera."
+	},
+	{
+	    "q": "Czym są seminaria",
+	    "a": "Seminaria zwykle mają formę wykładów prowadzonych przez studentów. Na każdych zajęciach inna osoba omawia jakiś szczegółowy zakres materiału."
+	},
+	{
+	    "q": "Czym jest praktyka zawodowa",
+	    "a": "Częścią studiów jest praktyka, którą odbywasz w jednej z firm informatycznych. Jeżeli masz problem ze znalezieniem pracodawcy, który zapewni staż, zgłoś się do pracowników Instytutu."
+	},
+	{
+	    "q": "Co to jest przedmiot nieinformatyczny",
+	    "a": "W trakcie studiów musisz uzyskać przynajmniej 4 ECTSy za przedmioty nieinformatyczne. Przedmioty te traktują zwykle o ekonomii, prawie, psychologii albo historii."
+	},
+	{
+	    "q": "Czy muszę chodzić na WF",
+	    "a": "Studenci Instytutu Informatyki mogą, lecz nie muszą zaliczyć zajęć sportowych."
+	},
+	{
+	    "q": "Ile ECTSów potrzebuję żeby zaliczyć 3 semestr",
+	    "a": "90."
+	},
+	{
+	    "q": "Ile ECTSów potrzebuję żeby zaliczyć 4 semestr",
+	    "a": "120."
+	},
+	{
+	    "q": "Ile ECTSów potrzebuję żeby zaliczyć 5 semestr",
+	    "a": "150."
+	},
+	{
+	    "q": "Ile ECTSów potrzebuję żeby zaliczyć 6 semestr",
+	    "a": "180 (albo 170 w przypadku studiów inżynierskich)."
+	},
+	{
+	    "q": "Ile ECTSów potrzebuję żeby zaliczyć 7 semestr",
+	    "a": "210."
+	},
+	{
+	    "q": "Co muszę zrobić aby ukończyć studia licencjackie",
+	    "a": "Musisz zaliczyć wszystkie przedmioty obowiązkowe, uzyskać przynajmniej 180 ECTSów, zaliczyć język obcy na poziomie B2 II (j. ang. na poziomie co najmniej A2 II), zaliczyć 1 seminarium, wziąć udział w projekcie programistycznym, zaliczyć co najmniej 3 tygodnie praktyki, uzyskać 54 ECTSy z przedmiotów I1 i I2, uzyskać co najmniej 4 punkty z przedmiotów nieinformatycznych."
+	},
+	{
+	    "q": "Co muszę zrobić aby ukończyć studia inżynierskie",
+	    "a": "Musisz zaliczyć wszystkie przedmioty obowiązkowe, uzyskać przynajmniej 210 ECTSów, zaliczyć język obcy na poziomie B2 II (j. ang. na poziomie co najmniej A2 II), zaliczyć 1 seminarium, wziąć udział w zespołowym projekcie programistycznym, zaliczyć co najmniej 4 tygodnie praktyki, uzyskać 66 ECTSy z przedmiotów I1, I2 i I.inż (z I.inż co najmniej 12 ECTSów), uzyskać co najmniej 4 punkty z przedmiotów nieinformatyczych, z czego jeden musi obejmować treści ekonomiczne."
+	},
+	{
+	    "q": "Gdzie znajduje się program studiów",
+	    "a": "Znajdziesz go na stronie http://ii.uni.wroc.pl/media/uploads/program13_AallMBL.html"
+	}
+    ]
+}
