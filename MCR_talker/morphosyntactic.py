@@ -2,38 +2,18 @@
 from __future__ import print_function, unicode_literals, division
 from codecs import open
 
-import sys, os
-import cPickle as pickle
-from singleton_decorator import singleton
+import sys
 
 from helpers.progress_bar import progress_bar
 
 DICT_LEN = 4811854
 
 
-@singleton
-class Morphosyntactic(object):
+class Morphosyntactic:
     """Stores morphosyntactic dictionary"""
-    def __init__(self, dictionary_file_path, extension=".morph"):
+    def __init__(self, dictionary_file_path):
         self.morphosyntactic_dictionary = {}
         self.dictionary_file_path = dictionary_file_path
-        self.extension=extension
-        self._polish_words = None
-
-    def dictionary_stored(self):
-        return os.path.isfile(self.dictionary_file_path + self.extension)
-
-    def load_morphosyntactic_dictionary(self):
-        if self.dictionary_stored():
-            with open(self.dictionary_file_path + self.extension, "rb") as file:
-                self.morphosyntactic_dictionary = pickle.load(file)
-                return self.morphosyntactic_dictionary
-        else:
-            return self.create_morphosyntactic_dictionary()
-
-    def store_morphosyntactic_dictionary(self):
-        with open(self.dictionary_file_path + self.extension, "wb") as file:
-            pickle.dump(self.morphosyntactic_dictionary, file)
 
     def create_morphosyntactic_dictionary(self):
         """Creates dictionary representation from file"""
@@ -50,23 +30,17 @@ class Morphosyntactic(object):
                 else:
                     self.morphosyntactic_dictionary[word.lower()] = [base_word]
             print("\n", file=sys.stderr)
-        self.store_morphosyntactic_dictionary()
         return self.morphosyntactic_dictionary
 
-    def polish_words(self):
-        if self._polish_words is None:
-            self._polish_words = set(self.get_dictionary().keys())
-        return self._polish_words
-
     def get_dictionary(self):
-        if self.morphosyntactic_dictionary == {}:
-            self.load_morphosyntactic_dictionary()
+        if len(self.morphosyntactic_dictionary) == 0:
+            self.create_morphosyntactic_dictionary()
         return self.morphosyntactic_dictionary
 
 
 if __name__ == "__main__":
     morph = Morphosyntactic("data/polimorfologik-2.1.txt")
-    morph.get_dictionary()
+    morph.create_morphosyntactic_dictionary()
     d = morph.morphosyntactic_dictionary
     print(d["pić"])
     print(d["piła"])

@@ -7,7 +7,6 @@ from collections import defaultdict
 import string
 import sys
 
-from helpers import morphosyntactic as morph
 from helpers.progress_bar import progress_bar
 
 MORPHOSYNTACTIC_DICT_LEN = 4811854
@@ -75,8 +74,19 @@ def normalized_morphosyntactic(polish_morphosyntactic_dictionary):
 
 
 def polish_morphosyntactic(path="./polimorfologik-2.1.txt"):
-    morphosyntactic = morph.Morphosyntactic(path)
-    return morphosyntactic.polish_words()
+    morphosyntactic_dictionary = set()
+    with open(path, 'r', encoding='utf-8') as file:
+        print("loading morphosyntactic dictionary",
+              file=sys.stderr)
+        print_progress = progress_bar()
+        for line_number, line in enumerate(file):
+            if line_number % 10000 == 0:
+                print_progress(line_number / MORPHOSYNTACTIC_DICT_LEN)
+            _, word, _ = line.split(";")
+            word = word.lower()
+            morphosyntactic_dictionary.add(word)
+        print("\nmorphosyntactic dictionary loaded", file=sys.stderr)
+    return morphosyntactic_dictionary
 
 
 def generate_near_words(word, edit_distance):

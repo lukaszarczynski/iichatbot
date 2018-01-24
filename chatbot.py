@@ -1,12 +1,10 @@
-from __future__ import print_function
-
 import argparse
 import helpers.spellcheck
 import logging
 import traceback
 import sys
 
-from MCR_talker.MCR_talker import MCRTalker, WordVector
+from MCR_talker.MCR_talker import MCRTalker
 from candidates_talker.candidates_talker import CandidatesTalker
 from first_year_talker.first_year_talker import FirstYearTalker
 # from stupid_talker.stupid_talker import StupidTalker
@@ -15,8 +13,8 @@ from talker_grade import TalkerGrade
 
 
 def get_talkers(exclude=()):
-    talkers_args = [
-        # (talker_class, args, kwargs)
+    talkers = [
+        # (name, fun, args, kwargs)
         (VectorSumProxy, ['data/more_subtitles.txt'], {}),
         (VectorSumProxy, ['data/yebood.txt'], {}),
         (
@@ -31,32 +29,21 @@ def get_talkers(exclude=()):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
-        (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {}),
-        (MCRTalker, ["data/drama_quotes_longer.txt"], {})
+        (MCRTalker, [], {"quotes_path": "data/wikiquote_polish_dialogs.txt"}),
+        (MCRTalker, [], {"quotes_path": "data/drama_quotes_longer.txt",
+                         "filter_rare_results": True})
     ]
-    talkers = []
-    for talker_class, args, kwargs in talkers_args:
-        if talker_class.__name__ not in exclude:
-            try:
-                talkers.append(talker_class(*args, **kwargs))
-            except Exception:
-                print(talker_class.__name__, "has crashed", file=sys.stderr)
-                traceback.print_exc(file=sys.stderr)
+    talkers = [fun(*args, **kwargs)
+               for fun, args, kwargs in talkers
+               if fun.__name__ not in exclude]
     return {talker.my_name(): talker for talker in talkers}
 
 
 def get_answers(talkers, question, state):
-    answers = {}
-    for t_name in talkers:
-        try:
-            answer = talkers[t_name].get_answer_helper(question, state)
-        except Exception:
-            print(t_name, "has encounterred error", file=sys.stderr)
-            traceback.print_exc(file=sys.stderr)
-            sys.stderr.flush()
-        else:
-            answers[t_name] = answer
-    return answers
+    return {
+        t_name: talkers[t_name].get_answer_helper(question, state)
+        for t_name in talkers
+    }
 
 
 def update_state(state, update):
@@ -70,7 +57,7 @@ def loop(talkers, grader):
     state = {}
     while True:
         try:
-            print(">", end=" ")
+            print ">",
             question = raw_input()
             logging.info("Question asked: %s" % question)
             answers = get_answers(talkers, question, state)
@@ -83,12 +70,12 @@ def loop(talkers, grader):
                 key=lambda answer: -answer["score"],
             )
             answer = answers[0]
-            print("<", answer["answer"])
+            print "<", answer["answer"]
             logging.info("Answered: %s" % answer["answer"])
             state = update_state(state, answer["state_update"])
 
         except KeyboardInterrupt:
-            print('\nDo widzenia!')
+            print '\nDo widzenia!'
             return
         except Exception:
             traceback.print_exc()

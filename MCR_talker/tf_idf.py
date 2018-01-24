@@ -2,82 +2,55 @@
 from __future__ import unicode_literals, print_function, division
 
 import sys
-import cPickle as pickle
+import pickle
 from collections import defaultdict
 from math import log
 from os.path import isfile
 
-import math
-
 from dialogue_load import load_dialogues_from_file
-from helpers.morphosyntactic import Morphosyntactic
-from tokenization import tokenize, remove_authors_from_dialogues, tokenize_list
+from morphosyntactic import Morphosyntactic
+from tokenization import tokenize
 from helpers.progress_bar import progress_bar
 
 
 class TF_IDF:
     def __init__(self, document_path, morphosyntactic=None):
         self.document_path = document_path
-        self.idf_file_extension = ".idf"
-        self.tf_file_extension = ".tf"
+        self.file_extension = ".tfidf"
         self.morphosyntactic = morphosyntactic
-        self.dialogues_bag_of_words = None
-        self.dialogues_lines = None
-        self.idf = {}
-        self.dialogue_term_frequency = []  # type: list[list[dict[str, float]]]
+        self.dialogues_list = None
+        self.tf_idf = {}
+        self.term_frequency = defaultdict(lambda: defaultdict(lambda: 0))
         self.document_frequency = defaultdict(lambda: 0)
 
-    def get_dialogues_bag_of_words(self):
-        if self.dialogues_bag_of_words is None:
-            self.dialogues_bag_of_words = load_dialogues_from_file(self.document_path,
-                                                                   remove_authors=True)
-        return self.dialogues_bag_of_words
-
-    def get_dialogues_lines(self):
-        if self.dialogues_lines is None:
-            self.dialogues_lines = load_dialogues_from_file(self.document_path,
-                                                            remove_authors=True, do_tokenization=False)
-            self.dialogues_lines = [dialogue.split("\n") for dialogue in self.dialogues_lines]
-        return self.dialogues_lines
+    def get_dialogues_list(self):
+        if self.dialogues_list is None:
+            self.dialogues_list = load_dialogues_from_file(self.document_path, remove_authors=True)
+        return self.dialogues_list
 
     def save(self):
-        if len(self.idf) == 0:
-            self.compute_idf()
-        if len(self.dialogue_term_frequency) == 0:
-            self.compute_dialogue_tf()
-        idf_path = self.document_path + self.idf_file_extension
-        tf_path = self.document_path + self.tf_file_extension
-        with open(idf_path, "wb") as idf_file:
-            pickle.dump(self.idf, idf_file)
-        with open(tf_path, "wb") as tf_file:
-            pickle.dump(self.dialogue_term_frequency, tf_file)
-        return idf_path
+        if len(self.tf_idf) == 0:
+            self.compute()
+        path = self.document_path + self.file_extension
+        with open(path, "wb") as tfidf_file:
+            pickle.dump(self.tf_idf, tfidf_file)
+        return path
 
     def load(self):
-        idf_path = self.document_path + self.idf_file_extension
-        tf_path = self.document_path + self.tf_file_extension
-        if isfile(idf_path) and isfile(tf_path):
-            with open(self.document_path + self.idf_file_extension, "rb") as idf_file:
-                self.idf = pickle.load(idf_file)
-            with open(self.document_path + self.tf_file_extension, "rb") as tf_file:
-                self.dialogue_term_frequency = pickle.load(tf_file)
+        path = self.document_path + self.file_extension
+        if isfile(path):
+            with open(self.document_path + self.file_extension, "rb") as tfidf_file:
+                self.tf_idf = pickle.load(tfidf_file)
         else:
-            self.compute_idf()
-            self.compute_dialogue_tf()
+            self.compute()
             self.save()
-        return self.idf, self.dialogue_term_frequency
+        return self.tf_idf
 
-    def _increase_dialogue_tf(self, term, line_idx, document_idx):
-        while len(self.dialogue_term_frequency) <= document_idx:
-            self.dialogue_term_frequency.append([])
-        while len(self.dialogue_term_frequency[document_idx]) <= line_idx:
-            self.dialogue_term_frequency[document_idx].append({})
+    def _increase_tf(self, term, document_idx):
         if term in self.morphosyntactic.get_dictionary():
             base_forms = self.morphosyntactic.get_dictionary()[term]
             for base_form in base_forms:
-                if base_form not in self.dialogue_term_frequency[document_idx][line_idx]:
-                    self.dialogue_term_frequency[document_idx][line_idx][base_form] = 0
-                self.dialogue_term_frequency[document_idx][line_idx][base_form] += 1 / math.sqrt(len(base_forms))
+                self.term_frequency[document_idx][base_form] += 1
 
     def _df_increaser(self):
         def increase_df_once(term):
@@ -92,28 +65,13 @@ class TF_IDF:
 
         return increase_df_once
 
-    def compute_dialogue_tf(self, text=None):
-        if text is not None:
-            dialogues = [dialogue.split("\n") for dialogue in text]
-        else:
-            dialogues = self.get_dialogues_lines()
-
-        self.dialogue_term_frequency = []
-        for document_idx, document in enumerate(dialogues):
-            for line_idx, line in enumerate(document):
-                for term in tokenize(line):
-                    term = term.lower()
-                    if term.isalpha():
-                        self._increase_dialogue_tf(term, line_idx, document_idx)
-        return self.dialogue_term_frequency
-
-    def compute_idf(self, text=None):
+    def compute(self, text=None):
         if text is not None:
             dialogues = text
         else:
-            dialogues = self.get_dialogues_bag_of_words()
+            dialogues = self.get_dialogues_list()
 
-        print("Computing idf", file=sys.stderr)
+        print("Computing tf", file=sys.stderr)
         print_progress = progress_bar()
         dialogues_size = len(dialogues)
         for document_idx, document in enumerate(dialogues):
@@ -123,12 +81,24 @@ class TF_IDF:
             for term in document:
                 term = term.lower()
                 if term.isalpha():
+                    self._increase_tf(term, document_idx)
                     increase_df(term)
-
-        self.idf = {term: log(len(dialogues) / frequency, 2)
-                    for term, frequency in self.document_frequency.items()}
+        idf = {term: log(len(dialogues) / frequency, 2)
+               for term, frequency in self.document_frequency.items()}
+        idx_idx = 0
+        print("\nComputing tf-idf", file=sys.stderr)
+        print_progress = progress_bar()
+        term_frequency_size = len(self.term_frequency)
+        for document_idx in self.term_frequency.keys():
+            if idx_idx % 200 == 0:
+                print_progress(document_idx / term_frequency_size)
+            idx_idx += 1
+            self.tf_idf[document_idx] = {term: idf[term] * self.term_frequency[document_idx][term]
+                                         for term in
+                                         set.intersection(set(self.term_frequency[document_idx].keys()),
+                                                          set(idf.keys()))}
         print("\n", file=sys.stderr)
-        return self.idf
+        return self.tf_idf
 
 
 if __name__ == "__main__":
@@ -140,27 +110,26 @@ if __name__ == "__main__":
             "Ktoś:Roboty mają lśniące, metalowe tyłki, których nie należy gryźć.",
             "Ktoś:I mają \nKtoś inny:plan."]
 
-    tokenized_text = tokenize_list(text)
-    text_without_authors = remove_authors_from_dialogues(text)
+    text = [tokenize(phrase) for phrase in text]
 
-    morph = Morphosyntactic("../big_data/polimorfologik-2.1.txt")
-    tfidf = TF_IDF("../data/tf_idf_test", morph)
-    tfidf.compute_idf(tokenized_text)
-    tfidf.compute_dialogue_tf(text_without_authors)
+    morph = Morphosyntactic("data/polimorfologik-2.1.txt")
+    tfidf = TF_IDF("data/tf_idf_test", morph)
+    tfidf.compute(text)
 
-    print("dialogue_term_frequency", tfidf.dialogue_term_frequency)
+    print("term_frequency", tfidf.term_frequency)
     print("document_frequency", tfidf.document_frequency)
-    print("idf", tfidf.idf, "\n")
+    print("tf_idf", tfidf.tf_idf)
 
     saved_path = tfidf.save()
     del tfidf
-    tf_idf = TF_IDF("../data/tf_idf_test", morph).load()
+    tf_idf = TF_IDF("data/tf_idf_test", morph).load()
     print(tf_idf)
 
-    tf_idf = TF_IDF("../data/dzien_dobry.txt", morph)
-    tf_idf.compute_idf()
-    tf_idf.compute_dialogue_tf()
+    tf_idf = TF_IDF("data/drama_quotes_test.txt", morph)
+    tf_idf.compute()
 
-    print("dialogue_term_frequency", tf_idf.dialogue_term_frequency)
+    print("term_frequency", tf_idf.term_frequency)
     print("document_frequency", tf_idf.document_frequency)
-    print("tf_idf", tf_idf.idf)
+    print("tf_idf", tf_idf.tf_idf)
+    assert "malarz" in tf_idf.document_frequency
+    assert "akwarelista" not in tf_idf.document_frequency

@@ -2,7 +2,7 @@
 from __future__ import print_function, unicode_literals, division
 from codecs import open
 
-from tokenization import tokenize_list, remove_authors_from_dialogues
+from tokenization import tokenize
 
 
 def load_dialogues_from_file(document_path,
@@ -14,15 +14,16 @@ def load_dialogues_from_file(document_path,
         dialogues_list = "".join(dialogues_list)
         dialogues_list = dialogues_list.split("\n\n")
         if remove_authors:
-            dialogues_list = remove_authors_from_dialogues(dialogues_list)
+            dialogues_list = ["\n".join([line.split(":")[-1]
+                                         for line in dialogue.split("\n")])
+                              for dialogue in dialogues_list]
         if do_tokenization:
-            dialogues_list = tokenize_list(dialogues_list)
+            dialogues_list = [tokenize(line) for line in dialogues_list]
     return dialogues_list
 
 
 def split_dialogue(dialogue):
-    dialogue_list = [":".join(line.split(":")[1:]) for line in dialogue.split("\n") if line.strip() != ""]
-    dialogue_list = [line for line in dialogue_list if line.strip() != ""]
+    dialogue_list = ([line.split(":")[-1] for line in dialogue.split("\n")])
     return dialogue_list
 
 
