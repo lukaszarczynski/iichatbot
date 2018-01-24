@@ -63,14 +63,17 @@ class VectorSumTalker(Talker):
 
     def get_vector(self, s):
         vec = []
-        words = [w for w in s.split() if w in self.w2v.vocab_hash]
+        all_words = s.split()
+        words = filter(lambda w: w in self.w2v.vocab_hash, all_words)
         if len(words) == 0:
             return None
         vec = [self.w2v.get_vector(w) for w in words]
         vec = np.mean(vec * self.idf.idf(words)[:, None], axis=0)
         if np.linalg.norm(vec) > 1e-7:
             vec = vec / np.linalg.norm(vec)
-        return vec
+        unknown_penalty = 0.9 ** (len(all_words) - len(words))
+        length_penalty = 0.99 ** len(words)
+        return vec * unknown_penalty * length_penalty
 
     def __init__(self, source):
         reload(idf)
@@ -78,6 +81,7 @@ class VectorSumTalker(Talker):
         self.sentences = []
         self.responses = []
         self.vectors = []
+        self.responses_vectors = []
         self.idf = idf.IDF()
 
         self.load_sentences(source, ':')
@@ -87,6 +91,14 @@ class VectorSumTalker(Talker):
 
     def my_name(self):
         return self.name
+    
+    def choose_average(self, weights, sentences):
+        vectors = [self.get_vector(self.preprocess(s)) for s in sentences]
+        avg = np.sum(filter(lambda x: x is not None, vectors), axis=0)
+        avg = avg / np.linalg.norm(avg)
+        results = [w * (v * avg).sum() if v is not None else 0 for w, v in zip(weights, vectors)]
+        best = np.argmax(results)
+        return sentences[best], results[best]
 
     def get_answer(self, question, *args, **kwargs):
         q = to_unicode(question['fixed_typos'])
@@ -99,14 +111,16 @@ class VectorSumTalker(Talker):
             }
         cosine = (self.vectors * vec.reshape(1, -1)).sum(axis=1)
         best = sorted(range(len(cosine)), key=lambda x: -cosine[x])
-        for i in best:
-            if self.responses[i] != '':
-                return {
-                    "answer": self.responses[i].encode('utf-8'),
-                    "score": max(0, min(cosine[i], 1)),
-                    "state_update": {}
-                }
+        best = filter(lambda i: self.responses[i] != '', best)
+        if len(best) == 0:
+            return {
+                "answer": "nic nie zrozumiałem",
+                "score": 0
+            }
+        
+        best = best[:5]
+        answer, score = self.choose_average(cosine[best], [self.responses[i] for i in best])
         return {
-            "answer": "nic nie zrozumiałem",
-            "score": 0
+            "answer": answer,
+            "score": score ** 0.7
         }
