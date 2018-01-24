@@ -130,12 +130,14 @@ tagToAnswer = {
 
 class CandidatesTalker(Talker):
 
-    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.5):
+    def __init__(self, answer="Przepraszam ale nie mogę Ci pomóc.", score=0.7):
         self.answer = answer
         self.score = score
 
     def get_answer(self, question, status):
         self.answer = self.ask(question)
+        if(self.answer == "Przepraszam ale nie mogę Ci pomóc."):
+        	self.score = 0.01
         return {
             "answer": self.answer,
             "score": self.score
