@@ -1,10 +1,12 @@
 from __future__ import print_function
 
 import argparse
-import helpers.spellcheck
+import time
 import logging
 import traceback
 import sys
+
+import helpers.spellcheck
 
 from MCR_talker.MCR_talker import MCRTalker, WordVector
 from candidates_talker.candidates_talker import CandidatesTalker
@@ -12,6 +14,7 @@ from first_year_talker.first_year_talker import FirstYearTalker
 # from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from talker_grade import TalkerGrade
+from helpers.progress_bar import progress_bar
 
 
 def get_talkers(exclude=()):
@@ -35,13 +38,19 @@ def get_talkers(exclude=()):
         (MCRTalker, ["data/drama_quotes_longer.txt"], {})
     ]
     talkers = []
-    for talker_class, args, kwargs in talkers_args:
+    print_progress = progress_bar()
+    print("Loading talkers", file=sys.stderr)
+    for talker_idx, (talker_class, args, kwargs) in enumerate(talkers_args):
         if talker_class.__name__ not in exclude:
             try:
                 talkers.append(talker_class(*args, **kwargs))
             except Exception:
                 print(talker_class.__name__, "has crashed", file=sys.stderr)
                 traceback.print_exc(file=sys.stderr)
+        print_progress((talker_idx+1) / len(talkers_args))
+    print("\n", file=sys.stderr)
+    sys.stderr.flush()
+    time.sleep(0.01)
     return {talker.my_name(): talker for talker in talkers}
 
 
