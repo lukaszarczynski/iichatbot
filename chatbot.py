@@ -40,6 +40,8 @@ def get_talkers(exclude=()):
     talkers = []
     print_progress = progress_bar()
     print("Loading talkers", file=sys.stderr)
+    sys.stderr.flush()
+    time.sleep(0.01)
     for talker_idx, (talker_class, args, kwargs) in enumerate(talkers_args):
         if talker_class.__name__ not in exclude:
             try:
@@ -47,7 +49,7 @@ def get_talkers(exclude=()):
             except Exception:
                 print(talker_class.__name__, "has crashed", file=sys.stderr)
                 traceback.print_exc(file=sys.stderr)
-        print_progress((talker_idx+1) / len(talkers_args))
+        print_progress((talker_idx+1.) / len(talkers_args))
     print("\n", file=sys.stderr)
     sys.stderr.flush()
     time.sleep(0.01)
