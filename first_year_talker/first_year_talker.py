@@ -47,21 +47,24 @@ class FirstYearTalker(Talker):
     def __init__(self):
         self.answers = answ
 
-    def get_answer(self, question, **kwargs):
+    def get_answer(self, question ,status,  **kwargs):
         q = question["question"]
         temp = to_unicode(q)
         for key in self.answers:
             if re.match(key, temp):
+                st = {}
                 try:
-                    if question["info"]["year"] == 1:
-                        score = self.answers[key][1]
+                    if status["firstyear"]:
+                        score = self.answers[key][1]*0.99
                     else:
                         score = 0.2
                 except KeyError:
                     score = self.answers[key][1]
+                    st = {"firstyear": "?"}
                 return {
                     "answer": (self.answers[key][0]).decode('utf-8'),
                     "score": score,
+                    "state_update": st
                 }
         return {
             "answer": "Nie umiem odpowiedzieć.",

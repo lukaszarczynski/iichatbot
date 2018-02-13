@@ -11,6 +11,7 @@ import helpers.spellcheck
 from MCR_talker.MCR_talker import MCRTalker, WordVector
 from candidates_talker.candidates_talker import CandidatesTalker
 from first_year_talker.first_year_talker import FirstYearTalker
+from interview_talker.interview_talker import InterviewTalker
 # from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
 from talker_grade import TalkerGrade
@@ -80,15 +81,33 @@ def update_state(state, update):
     # TO DO
     return state
 
+def doubts(answers):
+    res = {}
+    for key in answers:
+        state = answers[key]["state_update"]
+        for info in state:
+            if state[info] == '?':
+                res[info] = '?'
+    return res
 
 def loop(talkers, grader):
     state = {}
+    interview = False
+    interviewTalker = InterviewTalker()
     while True:
         try:
             print(">", end=" ")
             question = raw_input()
             logging.info("Question asked: %s" % question)
             answers = get_answers(talkers, question, state)
+            to_ask = doubts(answers)
+            if to_ask != {}:
+                interview=True
+            if interview:
+                answer = interviewTalker.get_answer_helper(question, to_ask)
+                answers= {interviewTalker.my_name(): answer}
+                if answer["score"]<0.1:
+                    interview=False
 
             if grader:
                 answers = grader.grade(question, answers)
@@ -97,6 +116,8 @@ def loop(talkers, grader):
                 answers.values(),
                 key=lambda answer: -answer["score"],
             )
+            
+            
             answer = answers[0]
             print("<", answer["answer"])
             logging.info("Answered: %s" % answer["answer"])
