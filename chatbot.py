@@ -35,7 +35,11 @@ def get_talkers(exclude=()):
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
         (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {}),
-        (MCRTalker, ["data/drama_quotes_longer.txt"], {})
+        (MCRTalker, ["data/drama_quotes_longer.txt"], {}),
+        (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {}),
+        (MCRTalker, ["data/przyslowia_formatted.txt"], {}),
+        (MCRTalker, ["data/subtitles_fixed.txt"], {}),
+        (MCRTalker, ["data/yebood.txt"], {}),
     ]
     talkers = []
     print_progress = progress_bar()
