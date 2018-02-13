@@ -41,7 +41,7 @@ def get_talkers(exclude=()):
     print_progress = progress_bar()
     print("Loading talkers", file=sys.stderr)
     sys.stderr.flush()
-    time.sleep(0.01)
+    time.sleep(0.05)
     for talker_idx, (talker_class, args, kwargs) in enumerate(talkers_args):
         if talker_class.__name__ not in exclude:
             try:
@@ -52,7 +52,7 @@ def get_talkers(exclude=()):
         print_progress((talker_idx+1.) / len(talkers_args))
     print("\n", file=sys.stderr)
     sys.stderr.flush()
-    time.sleep(0.01)
+    time.sleep(0.05)
     return {talker.my_name(): talker for talker in talkers}
 
 

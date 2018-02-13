@@ -103,7 +103,7 @@ class TF_IDF:
             for line_idx, line in enumerate(document):
                 for term in tokenize(line):
                     term = term.lower()
-                    if term.isalpha():
+                    if term.isalnum():
                         self._increase_dialogue_tf(term, line_idx, document_idx)
         return self.dialogue_term_frequency
 

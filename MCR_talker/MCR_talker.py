@@ -70,7 +70,7 @@ class MCRTalker(Talker):
     def __init__(self,
                  quotes_path="../data/drama_quotes_longer.txt",
                  morphosyntactic_path="big_data/polimorfologik-2.1.txt",
-                 stopwords_path="../data/stopwords.txt",
+                 stopwords_path="./data/stopwords.txt",
                  filter_rare_results=True,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
@@ -239,7 +239,7 @@ class MCRTalker(Talker):
 
     def _base_score_function(self, word, line_idx, term_frequency):
         if word not in self.idf:
-            if "".startswith("__"):
+            if word.startswith("__"):
                 return self.stopword_tfidf_value
             else:
                 return self.default_tfidf_value
@@ -281,20 +281,20 @@ class MCRTalker(Talker):
             else:
                 new_cosine = quote_vector.__matmul__(question_vector)
                 new_cosine /= quote_vector.len() * question_vector.len()
-            if new_cosine > cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
+            if new_cosine >= cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
         return best_quote, cosine
 
 
-class WordVector:  # TODO: faster!
+class WordVector:
     def __init__(self, quote, score_function, quote_idx=None, line_idx=None):
         self.vector = defaultdict(lambda: 0)
         for possible_words in quote:
             for base_word in possible_words:
                 base_word_score = score_function(base_word, quote_idx, line_idx)
                 self.vector[base_word] = base_word_score
-        self.vector = dict(self.vector)
+        self.vector = dict(self.vector)  # if len(quote) == 0:;
         length = sum(value ** 2 for value in self.vector.values())
         self._len = math.sqrt(length)
 
@@ -330,7 +330,7 @@ class VectorSerialization(object):
         print_progress = progress_bar()
         dialogues_size = len(self.dialogues)
         for quote_idx, quote in enumerate(self.dialogues):
-            if quote_idx % 200 == 0:
+            if quote_idx % 100 == 0:
                 print_progress(quote_idx / dialogues_size)
             self.word_vectors.append(self.create_vector(quote, quote_idx))
 
@@ -368,7 +368,7 @@ class VectorSerialization(object):
 
 if __name__ == "__main__":
     os.chdir("..")
-    talker = MCRTalker(quotes_path="data/wikiquote_polish_dialogs.txt",
+    talker = MCRTalker(quotes_path="data/subtitles_fixed.txt",
                        morphosyntactic_path="big_data/polimorfologik-2.1.txt",
                        filter_rare_results=True)
     print(talker.my_name(), talker._get_answer("Dzień dobry!"))
