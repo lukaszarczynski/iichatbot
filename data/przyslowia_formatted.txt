@@ -1,0 +1,2232 @@
+#Format: P:<przysłowie> \n W:<wytłumaczenie> \n \n
+P:cicha woda brzegi rwie
+W:osoba, która wydaje się z pozoru cicha, nieśmiała, mało towarzyska, może się okazać w rzeczywistości zupełnie inna – energiczna, zabawna, towarzyska
+
+P:chleb i woda, nie ma głoda
+W:tam, gdzie jest chleb i woda pitna, nie ma jeszcze głodu
+
+P:łaska pańska na pstrym koniu jeździ
+W:sympatia, pomoc, przychylność osób bogatych, na wysokich stanowiskach łatwo ulega zmianom, jest niestała i zależna od chęci, kaprysów
+
+P:apetyt rośnie w miarę jedzenia
+W:im więcej masz, tym więcej chcesz mieć
+
+P:prawdziwych przyjaciół poznaje się w biedzie
+W:szczery przyjaciel nie opuszcza kogoś, gdy ten ma kłopoty; w nieszczęściu, niepowodzeniu okazuje się, kto jest prawdziwym przyjacielem
+
+P:jak się chce psa uderzyć, kij się znajdzie
+W:jeśli ktoś chce dokuczyć, zawsze znajdzie jakiś sposób i pretekst
+
+P:myszy dokazują, gdy kota nie czują
+W:gdy nie ma kontroli, nadzoru, wszyscy robią co chcą
+
+P:stara miłość nie rdzewieje
+W:miłość, zwłaszcza przeżyta w młodości, nie przemija z upływem czasu
+
+P:nie wszystko złoto, co się świeci
+W:nie wszystko, co na pozór wydaje się idealne, jest takie w rzeczywistości
+
+P:pieczone gołąbki nie lecą same do gąbki
+W:nic w życiu nie przychodzi bez trudu, bez działania
+
+P:ten się śmieje, kto się śmieje ostatni
+W:nie należy przedwcześnie cieszyć się z własnego sukcesu lub z porażki innych, gdyż sukces może się okazać nietrwały
+
+P:nie wywołuj wilka z lasu
+W:nie przewiduj pesymistycznie, bo się sprawdzi
+
+P:krowa, która dużo ryczy, mało mleka daje
+W:z przechwałek niewiele wynika
+
+P:człowiek strzela, Pan Bóg kule nosi
+W:zamierzenia, plany nie zawsze udaje się zrealizować
+
+P:na bezrybiu i rak ryba
+W:trzeba zadowolić się tym, co jest dostępne
+
+P:zapomniał wół, kiedy cielęciem był
+W:używane, gdy chce się zwrócić komuś uwagę, że nie powinien pouczać, gdyż sam kiedyś (w młodości) zachowywał się tak samo
+
+P:powiedziałeś A, powiedz B
+W:jeśli się coś zaczęło robić, należy rzecz dokończyć
+
+P:kto pod kim dołki kopie, sam w nie wpada
+W:intrygi zwykle obracają się przeciw intrygantowi
+
+P:szukajcie, a znajdziecie
+W:tylko aktywni osiągną cel; bierność nie przyniesie oczekiwanego efektu
+
+P:kto szuka, ten znajdzie
+W:jeśli jest się wytrwałym w swoich postanowieniach, na pewno osiągnie się swój cel
+
+P:prawo jest po to, aby je omijać
+W:przysłowie wyrażające pogląd, że czasami można nie przestrzegać przepisów prawa
+
+P:Bogu świeczka, a diabłu ogarek
+W:przezorny ubezpiecza się ze wszystkich stron. Wersja łacińska najlepiej oddaje znaczenie przysłowia: jednemu ofiaruję, by pomagał, drugiemu, by nie szkodził.
+
+P:kłamstwem daleko się nie zajdzie
+W:kłamstwo zawsze zostanie ujawnione, nie da się go ukryć
+
+P:kłamstwo ma krótkie nogi
+W:kłamstwo zawsze wyjdzie na jaw
+
+P:kowal zawinił, a Cygana powiesili
+W:ktoś (Cygan) został oskarżony niewinnie
+
+P:psie głosy nie idą w niebiosy
+W:ktoś mówi o czymś i nie zostaje wysłuchany/zauważony
+
+P:śmiałym szczęście sprzyja
+W:zachęta do podjęcia ryzyka
+
+P:gdy kota nie ma, myszy harcują
+W:kiedy nie ma przez jakiś czas kontroli („kota”) nad podwładnymi lub podopiecznymi („myszami”), to następuje lekceważenie reguł, obowiązków itp.
+
+P:kto późno przychodzi, sam sobie szkodzi
+W:osoba spóźniona musi się liczyć z tym, że poniesie jakąś stratę
+
+P:grosz do grosza, a będzie kokosza
+W:dzięki cierpliwemu oszczędzaniu można sobie pozwolić na więcej
+
+P:jak Kuba Bogu, tak Bóg Kubie
+W:jak uczynisz komuś, tak on uczyni tobie
+
+P:dzieci i ryby głosu nie mają
+W:dzieci nie mają własnego zdania, dorośli nie liczą się ze zdaniem dzieci.
+
+P:co dwie głowy, to nie jedna
+W:dwie osoby zrobią coś lepiej niż jedna; będą miały więcej pomysłów i rozwiązań
+
+P:nie ma róży bez kolców
+W:nie ma radości bez smutku; wszystko ma zalety i wady
+
+P:cel uświęca środki
+W:można stosować wszystkie metody, żeby tylko osiągnąć cel
+
+P:bez pracy nie ma kołaczy
+W:żeby coś osiągnąć, trzeba najpierw na to zapracować
+
+P:Bóg pomaga tym, co sami sobie pomagają
+W:jeśli chcesz coś osiągnąć, działaj, a nie bądź bierny; pomóż losowi, a nie tylko czekaj na mannę z nieba
+
+P:ćwiczenie czyni mistrza
+W:im bardziej coś ćwiczysz, tym jesteś w tym lepszy
+
+P:kruk krukowi oka nie wykole
+W:osoby znające się, zaprzyjaźnione i podobne do siebie, osoby należące do tej samej grupy interesów, do tej samej grupy zawodowej nie będą robiły sobie krzywdy
+
+P:nie od razu Kraków zbudowano
+W:nie osiąga się natychmiast imponujących wyników
+
+P:szlachcic na zagrodzie równy wojewodzie
+W:każdy człowiek stanu szlacheckiego ma takie same prawa, niezależnie od tego, czy jest bogaty, czy biedny
+
+P:jakim człowiek się zdaje, takim chyłkiem zostaje
+W:gdy ludzie będą postrzegać kogoś w pewien sposób, to tamta osoba zacznie zachowywać się w odpowiadający temu sposób, mimo że w rzeczywistości taka nie jest
+
+P:źle się dzieje w państwie duńskim
+W:sytuacja ogólna jest niedobra, niepokojąca
+
+P:prawda w oczy kole
+W:inni mają rację, a my nie potrafimy się z tym pogodzić
+
+P:nie czyń drugiemu, co tobie niemiłe
+W:nie należy robić komuś rzeczy, które nie są miłe dla nas.
+
+P:bęben dlatego tak głośny, bo próżny
+W:ten, kto wiele mówi, często jest głupi i zarozumiały
+
+P:dobry żart tynfa wart
+W:pochwała dobrego żartu
+
+P:czego Jaś się nie nauczy, tego Jan nie będzie umiał
+W:tego, czego ktoś nie nauczy się w młodości, tego na starość nie będzie umiał
+
+P:co nagle, to po diable
+W:jeśli robi się coś szybko, to nie wychodzi to na dobre
+
+P:indyk myślał o niedzieli, a w sobotę łeb mu ścięli
+W:o kimś, kto się zbyt długo lub niepotrzebnie namyśla
+
+P:jak cię widzą, tak cię piszą
+W:ludzi często ocenia się po ich wyglądzie i zachowaniu
+
+P:bez ludzi i raj się znudzi
+W:być samym nie ma sensu, nawet nawiększe bogactwa nie zastąpią innych ludzi
+
+P:kuć żelazo, póki gorące
+W:robić coś wykorzystując sprzyjające okoliczności; próbować zdążyć ze swoim celem póki jest to możliwe
+
+P:dla chcącego nic trudnego
+W:jeśli bardzo czegoś pragniemy, to nie jest problemem, abyśmy to zdobyli
+
+P:mądrej głowie dość dwie słowie
+W:mądremu człowiekowi nie trzeba wiele mówić, bo szybko rozumie, o co chodzi
+
+P:nie szata zdobi człowieka
+W:nie należy oceniać ludzi po stroju czy wyglądzie, a po charakterze
+
+P:umarł król, niech żyje król
+W:pierwotnie w średniowieczu słowa marszałka dworu francuskiego, wygłaszane po śmierci króla Francji i od razu ogłaszające nowego monarchę, zapewniające brak kłótni i walk o sukcesję
+
+P:król jest nagi
+W:stwierdzenie oczywistości, której inni nie chcą lub boją się zauważyć, kiedy wygodniej im jest udawać, że wszystko jest w porządku
+
+P:kwiecień plecień, bo przeplata trochę zimy, trochę lata
+W:w kwietniu występuje duża zmienność pogodowa (szybka zmiana pogody, np. z ciepłego słonecznego dnia na zimny i pochmurny)
+
+P:pierwsze koty za płoty
+W:pierwsze poczynione próby nie muszą być udane
+
+P:lepiej późno niż wcale
+W:sytuacja, w której robi się coś po właściwym czasie, z opóźnieniem, jest lepsza niż niezrobienie tej czynności wcale
+
+P:czas to pieniądz
+W:czas jest wartościowy, tracąc go traci się pieniądze, które by się wtedy zarobiło
+
+P:kto rano wstaje, temu Pan Bóg daje
+W:ludziom pracowitym dobrze się wiedzie, bo wszystko im sprzyja, nawet sam Bóg
+
+P:wysoki jak brzoza, a głupi jak koza
+W:pogardliwe określenie kogoś nad wiek rozwiniętego fizycznie, ale niezbyt rozgarniętego
+
+P:raz na wozie, raz pod wozem
+W:''znaczące tyle co:'' czasem w życiu dzieje się lepiej, czasem gorzej
+
+P:miłość jest ślepa
+W:osoba kochająca nie widzi wad, błędów osoby, którą kocha
+
+P:dopóty dzban wodę nosi, dopóki mu się ucho nie urwie
+W:każdy ma swoje granice wytrzymałości
+
+P:ściany mają uszy
+W:mówiąc coś poufnego, należy uważać, aby nie usłyszał lub nie podsłuchał tego ktoś niepożądany
+
+P:jeśli wejdziesz między wrony, musisz krakać jak i one
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien upodobnić się (dostosować się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:fortuna kołem się toczy
+W:w każdej chwili może nastąpić nagła odmiana losu na złe lub dobre
+
+P:wyszło szydło z worka
+W:okazało się, jaka jest prawda, ujawniły się prawdziwe intencje
+
+P:wilk syty i owca cała
+W:rozwiązanie problemu z korzyścią dla obu stron
+
+P:i wilk syty, i owca cała
+W:rozwiązanie problemu z korzyścią dla obu stron
+
+P:kto nie ma w głowie, ten ma w nogach
+W:jeśli ktoś nie ma dobrej pamięci, musi często wracać po to, o czym zapomniał
+
+P:skleroza nie boli, ale nachodzić się trzeba
+W:jeśli ktoś nie ma dobrej pamięci, musi często wracać po to, o czym zapomniał.
+
+P:skleroza nie choroba, tylko nogi bolą
+W:jeśli ktoś nie ma dobrej pamięci, musi często wracać po to, o czym zapomniał
+
+P:pieniądze nie śmierdzą
+W:pieniądze bez względu na sposób ich zarobienia są tak samo chętnie przyjmowane
+
+P:głową muru nie przebijesz
+W:nie warto walczyć z przeciwnościami w beznadziejnej sytuacji
+
+P:lepszy wróbel w garści niż gołąb na dachu
+W:lepsze coś, co jest niedoskonałe, ale pewne, dostępne niż niedostępny ideał
+
+P:dla towarzystwa dał się Cygan powiesić
+W:o osobie towarzyskiej, prowadzącej nieuporządkowane życie
+
+P:zgoda buduje, niezgoda rujnuje
+W:współpraca i dobre stosunki są warunkiem koniecznym do osiągnięcia wspólnego celu
+
+P:jak sobie pościelesz, tak się wyśpisz
+W:sami mamy wpływ na to, co się dzieje w naszym życiu, na jego jakość
+
+P:nie rób drugiemu, co tobie niemiłe
+W:nie należy robić rzeczy, których sami nie chcielibyśmy doświadczyć od innych
+
+P:nie chwal dnia przed zachodem słońca
+W:nie ciesz się z pozytywnych efektów zbyt wcześnie, bo możesz zapeszyć
+
+P:czekaj tatka latka
+W:nie należy mieć większej nadziei na spełnienie danych oczekiwań, obietnic
+
+P:grudzień – łudzień
+W:pogoda w grudniu jest zwodnicza
+
+P:kwiecień plecień, bo przeplata: trochę zimy, trochę lata
+W:w kwietniu występuje duża zmienność pogodowa (szybka zmiana pogody, np. z ciepłego słonecznego dnia na zimny i pochmurny)
+
+P:gówno chłopu nie zegarek
+W:nie można dać komuś czegoś wartościowego, bo to zniszczy
+
+P:daj psu spokój, pies ci da dwa
+W:jeśli nie chce się być zaczepianym, atakowanym przez psa, to samemu nie należy go drażnić
+
+P:dobra psu i mucha
+W:należy czerpać zadowolenie z rzeczy drobnych
+
+P:Pan Bóg nierychliwy, ale sprawiedliwy
+W:sprawiedliwość boska czasami jest powolna, ale jest zapewniona
+
+P:mądry Polak po szkodzie
+W:o charakterystycznym dla Polaków uczeniu się na błędach już popełnionych zamiast przewidywania negatywnych skutków
+
+P:nosił wilk razy kilka, ponieśli i wilka
+W:przez pewien czas komuś udawało się robić coś złego, ale w końcu musiał za to zapłacić, ponieść straty
+
+P:kto mieczem wojuje, (ten) od miecza ginie
+W:jeśli ktoś próbuje kogoś skrzywdzić, to najczęściej sam zostaje poszkodowany, pokonany takimi samymi metodami
+
+P:będzie z niego ksiądz jak z diabła kościelny
+W:na pewno nie zostanie on tym, kim go ktoś inny chce uczynić
+
+P:elektryka prąd nie tyka
+W:jeśli ktoś jest dobry w danej dziedzinie, to potrafi zapanować nad niebezpieczeństwami z nią związanymi
+
+P:z braku laku dobry kit
+W:z braku czegoś lepszego, trzeba zadowolić się czymkolwiek
+
+P:darowanemu koniowi w zęby się nie zagląda
+W:nie powinno się krytykować czegoś, co otrzymuje się w prezencie
+
+P:żadna praca nie hańbi
+W:osobliwość kształtuje się nie przez piekne słowa lecz pracą i własnym wysiłkiem
+
+P:człowiek człowiekowi wilkiem
+W:ludzie nie są sobie życzliwi
+
+P:do trzech razy sztuka
+W:trzecia próba czegoś będzie udana
+
+P:nie samym chlebem człowiek żyje
+W:człowiek, oprócz podstawowych potrzeb materialnych, ma także wyższe potrzeby — duchowe
+
+P:szkoda psu białego chleba
+W:Nie należy marnować czegoś cennego tam, gdzie nie będzie to należycie docenione.
+
+P:wszystkie drogi prowadzą do Rzymu
+W:do jednego miejsca, celu można dojść na różne sposoby
+
+P:dobry chleb, gdy kołacza nie masz
+W:trzeba zadowolić się tym, co jest dostępne
+
+P:głodnemu chleb na myśli
+W:człowiek naturalnie kieruje swoje myśli i starania ku temu, czego mu najdotkliwiej brakuje
+
+P:nic po chlebie, kiedy brak zębów
+W:O człowieku, który osiągnął coś zbyt późno, by z tego skorzystać
+
+P:kto dał zęby, da i chleb
+W:Bóg, który stworzył człowieka, nie opuści go w potrzebie
+
+P:na kogo Bóg, na tego i ludzie
+W:komu Bóg dał szczęście w życiu, ten ma wielu przyjaciół; i odwrotnie: kogo Bóg pokarał złym losem, od tego także ludzie się odwracają
+
+P:przez pany do króla, a przez święte do Boga
+W:w przenośni: każda prośba ma większe szanse na wysłuchanie, jeżeli jest poparta odpowiednim wstawiennictwem; dosłownie: prośby do Boga należy zanosić za pośrednictwem świętych
+
+P:Bóg nie opuści, kto się nań spuści
+W:Bóg pomaga w potrzebie tym, którzy mu ufają
+
+P:do Boga, gdy trwoga
+W:o kimś, kogo dopiero krytyczna sytuacja skłania do modlitwy
+
+P:jak trwoga, to do Boga
+W:niektórych ludzi dopiero krytyczna sytuacja skłania do modlitwy
+
+P:hulaj dusza – piekła nie ma
+W:o sytuacji, w której wszystko jest dozwolone, można się nie przejmować konsekwencjami swoich zachowań
+
+P:nie święci garnki lepią
+W:nie ma rzeczy niemożliwych do wykonania; bierzmy się do roboty
+
+P:Panu Bogu świeczkę i diabłu ogarek
+W:zadowolić obydwie przeciwstawne strony
+
+P:diabeł się w ornat ubrał i ogonem na mszę dzwoni
+W:ktoś, mając złe zamiary, nieudolnie je maskuje
+
+P:nie taki diabeł straszny, jak go malują
+W:coś okazało się prostsze, niż wyglądało na początku
+
+P:czego nie bierze Chrystus, to fiskus porwie
+W:jak by nie było, człowiekowi i tak wszystko zabiorą
+
+P:za Bóg zapłać niewiele kupisz
+W:słowa mają niewielką wartość
+
+P:Boga na języku, a diabła ma w sercu
+W:o osobie nieszczerej, zakłamanej
+
+P:modli się pod figurą, a diabła ma za skórą
+W:o osobie nieszczerej, zakłamanej
+
+P:kto Bogu służy, temu szczęście płuży
+W:pobożność zapewnia nagrodę (szczęście) już w doczesnym życiu
+
+P:kto z Bogiem zacznie, uczyni bacznie
+W:dobrze i mądrze jest rozpoczynać wszelkie przedsięwzięcia od wezwania bożej pomocy
+
+P:kto z Bogiem, Bóg z nim
+W:ten, kto pokłada ufność w Bogu, może liczyć na jego opiekę
+
+P:komu Bóg rozumu nie da, kowal mu go nie ukuje
+W:niektórzy ludzie pozostaną głupcami do końca
+
+P:Szablon:nowe hasło/przysłowie-pl/preload
+W:krótka definicja
+
+P:chleb ma rogi
+W:dostatek sprawia, że ludzie stają się zuchwali, aroganccy
+
+P:chleb ma rogi, nędza nogi
+W:dostatek sprawia, że ludzie stają się zuchwali, aroganccy; bieda uczy pokory i zaradności
+
+P:nie dospać trzeba, kto chce dostać chleba
+W:aby osiągnąć zysk, trzeba wcześnie wstawać i dużo pracować
+
+P:chlebem i solą ludzie ludzi niewolą
+W:gościnnością łatwo zjednać sobie przyjaciół
+
+P:chleb płacze, gdy go darmo jedzą
+W:próżniactwo to powód do wstydu
+
+P:każdy kraje chleb do siebie
+W:każdy stara się o własną korzyść
+
+P:chleb cudzym nożem krajany - niesmaczny
+W:niezręcznie być na cudzym utrzymaniu; niedobrze być na obcej ziemi, daleko od domu
+
+P:bez pracy nie ma macy
+W:żeby coś osiągnąć, trzeba najpierw na to zapracować
+
+P:bez pracy trudno dostąpić honoru
+W:trudno osiągnąć uznanie i zaszczyty, nie wkładając w to trudu
+
+P:Bóg bez pracy nic nie daje
+W:bez wysiłku niczego nie można osiągnąć
+
+P:Bóg dał, Bóg wziął
+W:wyrażenie ufnej rezygnacji wobec utraty czegoś lub kogoś drogiego
+
+P:cudza praca nie wzbogaca
+W:tylko własnym wysiłkiem można coś trwałego osiągnąć
+
+P:kto chce nieba, cierpieć trzeba, a kto chce chleba, pracować trzeba
+W:nie ma nic za darmo; zarówno doczesne, jak i duchowe dobra zdobywa się z wysiłkiem i poświęceniem
+
+P:człek do pracy stworzon, ptak do lotu
+W:praca jest przeznaczeniem człowieka
+
+P:gdzie praca, pilność na straży, tam się bieda wejść nie waży
+W:pracowity człowiek nie zazna biedy
+
+P:gdzie się z chęcią zejdzie praca, tam się hojnie trud opłaca
+W:praca wykonywana z ochotą przynosi najlepsze wyniki
+
+P:Panu Bogu lichtarz, a diabłowi świeczka
+W:przezorny ubezpiecza się ze wszystkich stron. Wersja łacińska najlepiej oddaje znaczenie przysłowia: jednemu ofiaruję, by pomagał, drugiemu, by nie szkodził.
+
+P:Bogu służ, a diabła nie gniewaj
+W:przezorny ubezpiecza się ze wszystkich stron.
+
+P:Bogu się kłaniaj, a diabła nie gniewaj
+W:przezorny ubezpiecza się ze wszystkich stron.
+
+P:do Pana Boga się módl, a diabła nie obrażaj
+W:przezorny ubezpiecza się ze wszystkich stron.
+
+P:hultajska praca wniwecz się obraca
+W:niestaranna praca nie przynosi trwałych efektów
+
+P:im większa jest praca, tym są milsze znoje
+W:człowiek chętniej znosi trudy, pracując dla szczytnego celu
+
+P:jaka praca, taka płaca
+W:za ciężką pracę można spodziewać się godziwej zapłaty
+
+P:bez pracy nie ma płacy
+W:żeby coś osiągnąć, trzeba najpierw na to zapracować
+
+P:Pan Bóg nierychliwy, ale pamiętliwy
+W:sprawiedliwość boska czasami jest powolna, ale jest zapewniona
+
+P:kto ma ręce do pracy, ten się naje kołaczy
+W:pracowitym ludziom dobrze się powodzi
+
+P:kto chce żyć z swojej pracy, dolegać nie trzeba
+W:aby osiągnąć zysk, trzeba wcześnie wstawać i dużo pracować
+
+P:komu praca kłopotem, oj! oj! będzie wołał potem
+W:lenistwo prowadzi do niedostatku
+
+P:kto się do pracy leni, niewart jeść pieczeni
+W:lenistwo jest powodem do wstydu i prowadzi do niedostatku
+
+P:krzywa praca nie popłaca
+W:niestaranna praca nie przynosi trwałych efektów
+
+P:kto ku pracy ręce skłoni, nie uniży w gmachach skroni
+W:ten, kto zajmuje się uczciwą pracą, nie ma powodu do wstydu
+
+P:kto się wstydzi pracy, niewart chleba i kołaczy
+W:lenistwo jest powodem do wstydu i prowadzi do niedostatku
+
+P:kto nie chce pracy znieść, ten nie ma co jeść
+W:lenistwo prowadzi do niedostatku
+
+P:kto z prace rąk swych żyje, wnet taki utyje
+W:łatwo wzbogacić się dzięki własnej pracy
+
+P:miła praca, lubo trudna, póki nie daremna
+W:człowiek chętniej znosi trudy, jeśli może zobaczyć efekty swej pracy
+
+P:nie miła jest taka praca, za którą nie bywa płaca
+W:człowiek, który nie jest pewien zapłaty, niechętnie pracuje
+
+P:oszczędnością i pracą ludzie się bogacą
+W:człowiek pracowity i oszczędny może osiągnąć bogactwo
+
+P:po pracy miły odpoczynek: tym milszy, kto własny posiada kominek
+W:odpoczynek jest równie ważny jak praca; najwygodniej każdy czuje się we własnym domu
+
+P:po pracy nie wadzi się ucieszyć
+W:odpoczynek jest równie ważny jak praca
+
+P:powinna być temu płaca, za którą podjęta praca
+W:należy płacić tyle, na ile się wcześniej umówiono
+
+P:praca dobrowolna większą ma wartość, jak przymuszona
+W:praca wykonywana chętnie przynosi najlepsze wyniki
+
+P:praca doskonali cnotę
+W:człowiek nabywa i rozwija dzięki pracy rozmaite zalety charakteru
+
+P:cnota naukę przechodzi
+W:lepiej być człowiekiem dobrym, niż uczonym
+
+P:cnota zawżdy na dobre wynidzie
+W:cnota zawsze przynosi korzyść
+
+P:praca i statek dają dostatek
+W:człowiek pracowity i stateczny może osiągnąć bogactwo
+
+P:praca lat skraca
+W:kto zbyt ciężko pracuje, ten krócej żyje
+
+P:praca każda ma zapłatę, rozkosz sromotę, utratę
+W:każdy trud zostaje nagrodzony, a pusta rozrywka — ukarana
+
+P:oszczędnością i pracą ludy się bogacą
+W:naród pracowity i oszczędny może osiągnąć bogactwo
+
+P:praca, gniew, picie najzdrowsze w miarę
+W:brak umiaru jest zawsze szkodliwy
+
+P:praca największe bogactwo
+W:praca sama w sobie jest dobrem, nie tylko środkiem do osiągnięcia zysku
+
+P:praca nikogo nie krzywdzi
+W:ten, kto uczciwie pracuje, nie krzywdzi innych
+
+P:praca odkładana niewiele warta
+W:nie należy odkładać obowiązków na później
+
+P:praca sama sobie płaci
+W:praca sama w sobie jest dobrem, nie tylko środkiem do osiągnięcia zysku
+
+P:szukaj pracy jak chleba, nie jak noża
+W:praca sama w sobie jest dobrem, nie tylko środkiem do osiągnięcia zysku
+
+P:praca od ubóstwa strzeże: kto nie sieje, nic nie zbierze
+W:pracowity człowiek nie zazna biedy
+
+P:każda praca ma zapłatę
+W:każdy trud zostaje nagrodzony
+
+P:praca pozłaca
+W:dzięki pracy można się wzbogacić
+
+P:praca z ochotą przerabia słomę w złoto
+W:praca wykonywana z ochotą może dokonać cudów
+
+P:praca tuczy, bieda uczy
+W:dzięki pracy można się wzbogacić; bieda uczy pokory i zaradności
+
+P:praca ustawiczna wszystko przemoże
+W:dzięki wytrwałej pracy można pokonać wszelkie trudności
+
+P:praca wzbogaca
+W:dzięki pracy można osiągnąć bogactwo
+
+P:szkoda wielkiej pracy, kędy mała zmoże
+W:należy planować zadania, aby oszczędzać siły i nie pracować nadaremnie
+
+P:za pracę i niebo kupić
+W:praca doskonali człowieka i czyni go świętym
+
+P:żeby mieć kołaczy, trzeba użyć pracy
+W:nie ma nic za darmo; żeby coś osiągnąć, trzeba najpierw na to zapracować
+
+P:chleb, piwo i świéca zdobią szlachcica
+W:u porządnego szlachcica powinien być chleb domowy smaczny, piwo domowe dobre na stole i oświetlenie nie łuczywem, ale świecami, które także w dobrych gospodarstwach robiono w domu
+
+P:dał Pan Bóg zęby, da i chleb
+W:Bóg, który stworzył człowieka, nie opuści go w potrzebie
+
+P:chleb stracił, a bułki nie znalazł
+W:o kimś, kto dokonał niekorzystnej wymiany
+
+P:chleb pracą nabyty, bywa smaczny i syty
+W:kto uczciwie zarabia, może w spokoju cieszyć się owocami swej pracy
+
+P:chleb w drodze nie cięży
+W:tego, co niezbędne, nie traktuje się jako utrudnienia
+
+P:choćby chleb był rżany, byle leżany
+W:o próżniakach, leniwych
+
+P:dobry chleb z solą, byle z dobrą wolą
+W:nawet najskromniejsza gościna jest godna wdzięczności, jeżeli jest szczerze ofiarowana
+
+P:komu chleb zaszkodzi, temu kij pomoże
+W:kto z powodu dostatku staje się zbyt arogancki, zasługuje na nauczkę
+
+P:komu chleb zaszkodzi, a komu kij pomoże
+W:niektórym szkodzi szczęście i powodzenie, a inni mogą skorzystać nawet z przykrych doświadczeń
+
+P:zamienił stryjek siekierkę na kijek
+W:o kimś, kto dokonał niekorzystnej wymiany
+
+P:zamienił stryjek za siekierkę kijek
+W:o kimś, kto dokonał niekorzystnej wymiany
+
+P:wymieniał stryjek siekierkę za kijek
+W:o kimś, kto dokonał niekorzystnej wymiany
+
+P:złemu wrogowi daj chleba i soli
+W:nawet najgorszego przeciwnika można zjednać uprzejmością i gościnnością
+
+P:u wdowy chleb gotowy, ale niezdrowy
+W:ten, kto się żeni z wdową, ma zapewnione utrzymanie, ale ryzykuje utratę zdrowia ze zgryzoty
+
+P:dobra i wdowa, gdy młoda i zdrowa
+W:znaczenie dosłowne
+
+P:kto chlebem gardzi, to nim Pan Bóg bardziej
+W:kto nie szanuje chleba jako daru bożego, naraża się na gniew Boga
+
+P:trzeba chleba i nieba
+W:człowiek ma potrzeby materialne oraz duchowe; aby godnie żyć, należy zaspokajać je w równym stopniu
+
+P:trzeba nieba i chleba
+W:człowiek ma potrzeby materialne oraz duchowe; aby godnie żyć, należy zaspokajać je w równym stopniu
+
+P:zjedzony chleb bardzo ciężko odrabiać
+W:najpierw należy pracować, potem odbierać zapłatę; kto postępuje odwrotnie, stawia się w niezręcznym położeniu
+
+P:kto ze mną jeść nie chce chleba, ja z nim nie będę kołacza
+W:ludzie nie chcą świętować i weselić się z kimś, kto nie dzielił z nimi codziennych trosk
+
+P:bez kołaczy nie wesele
+W:choćby na co dzień było biednie, ważna uroczystość wymaga godnej oprawy
+
+P:kto chleb nosi, tego też chleb nosi
+W:kto pracuje na swój „chleb” (utrzymanie), ten ma wystarczające środki, aby mieć siły do dalszej pracy itd.
+
+P:kto chleba nie chce, nie godzien kołacza
+W:kto nie podejmuje codziennych trudów, nie zasługuje na nadzwyczajne nagrody
+
+P:z rankiem praca, w wieczór płaca
+W:najpierw należy pracować, potem odbierać zapłatę
+
+P:kiedy gospodyni pierze i chleb piecze, to się ledwie nie wściecze
+W:wykonywanie dwóch rzeczy na raz jest bardzo frustrujące
+
+P:niedaleko pada jabłko od jabłoni
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:strach ma wielkie oczy
+W:temu, kto się boi, wszystko wydaje się większe i groźniejsze niż w rzeczywistości
+
+P:kto pyta, nie błądzi
+W:zamiast uczyć się na własnych błędach, warto spytać o radę
+
+P:język i do Krakowa dopyta
+W:kto pyta o to, czego nie wie, może zajść daleko
+
+P:wszędzie dobrze, ale w domu najlepiej
+W:najwygodniej każdy czuje się we własnym domu
+
+P:szewc bez butów chodzi
+W:sytuacja, gdy brak komuś rzeczy, które sam wytwarza (bądź ma z nimi częsty kontakt)
+
+P:co wolno wojewodzie, to nie tobie, smrodzie
+W:osoba o wyższej pozycji/statusie/wieku może pozwolić sobie na rzeczy, które młodszym nie uchodzą czy są dla nich zabronione
+
+P:trafiła kosa na kamień
+W:osoba preferująca ostre metody działania trafiła w końcu na kogoś, kto potraktował ją identycznie lub jeszcze gorzej; ktoś trafił na osobę (np. przeciwnika) godną/równą sobie
+
+P:bieda z dziećmi, bieda i bez dzieci
+W:z wychowaniem i utrzymaniem dzieci są kłopoty, ale brak dziecka to również kłopot i nieszczęście
+
+P:kiedy chłop ma dużo dzieci, to on bogaty; kiedy pan ma dużo dzieci, to on biedny
+W:ludzie ubodzy bardziej cenią potomstwo niż zamożni; chłopu dzieci pomagają w pracy, a „pańskie” dzieci wymagają wydatków na wykształcenie
+
+P:potrzeba jest matką wynalazków
+W:to sytuacja skłania do wprowadzania innowacji i ułatwiania sobie życia
+
+P:jaka matka, taka córka
+W:córka, kiedy dorośnie, będzie zachowywać się podobnie, jak obecnie jej matka
+
+P:jakie jabłko, taka skórka, jaka matka, taka córka
+W:córka zachowuje się podobnie jak jej matka
+
+P:jakie matki, takie dziatki
+W:dzieci dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:broda mędrcem nie czyni
+W:pozory mylą, pewne rzeczy widziane u ludzi z zewnątrz potrafią być złudne
+
+P:daj kurze grzędę, a ona: wyżej siędę
+W:o kimś, kto wiecznie jest niezaspokojony, żąda coraz więcej
+
+P:gdy się człowiek spieszy, to się diabeł cieszy
+W:W pośpiechu często zdarza się o czymś zapomnieć, być niedokładnym
+
+P:gdzie drwa rąbią, tam wióry lecą
+W:uczestnicząc biernie, choć niekoniecznie świadomie w jakiejś nieprzyjemnej sytuacji, często ponosi się jej przykre konsekwencje
+
+P:kto kogo łaje, niech sam przykład daje
+W:osoba krytykująca czyjeś błędy bądź przywary nie powinna sama takowych popełniać
+
+P:jeszcze się taki nie urodził, co by wszystkim dogodził
+W:nie ma takich osób, które budziłyby akceptację wszystkich; każdy styka się z mniej lub bardziej uzasadnioną krytyką
+
+P:jaki ojciec, taki syn
+W:syn, kiedy dorośnie, będzie zachowywać się podobnie, jak obecnie jego ojciec
+
+P:jakoś chował syna, tak on z tobą poczyna
+W:sposób wychowania dziecka (surowy lub pobłażliwy, z szacunkiem lub z lekceważeniem) wpływa na jego późniejsze zachowanie wobec innych ludzi, również rodziców
+
+P:ożeń syna, kiedy zechcesz, a wydaj córkę, kiedy możesz
+W:mężczyźnie mniej śpieszyło się do małżeństwa, więc miał (lub: jego rodzice mieli) większe możliwości wyboru partnerki; kobieta musiała korzystać z okazji, jeśli nie chciała zostać starą panną
+
+P:nie ociec, nie matka ceruszke wydaje: robota, ochota, piekne obyczaje
+W:dziewczyna może wyjść za mąż nie dzięki rodzicom, a jedynie dzięki własnym zaletom
+
+P:syn tylko worki zliczy, w rozumie nie dziedziczy
+W:o chciwym i niemądrym synu
+
+P:córkę chromą do klasztoru
+W:o człowieku zakłamanym, hipokrycie: „co się ludziom nie może przydać, to się Bogu oddaje”
+
+P:jedz chleb z każdą warzą, a rób co ci każą
+W:należy żyć skromnie, oszczędnie oraz być posłusznym wobec przełożonych
+
+P:gdzie chleb, tam się zęby znajdą
+W:kto posiada upragnioną rzecz, poradzi sobie z wykorzystaniem jej
+
+P:jest to cnota nad cnotami trzymać język za zębami
+W:umiejętność milczenia jest wielką cnotą
+
+P:trzymaj język za zębami
+W:zachowaj milczenie
+
+P:co z oczu, to z serca
+W:jeśli się coś (lub kogoś) nieczęsto widzi, łatwo się zapomina
+
+P:papier jest cierpliwy
+W:na papierze można napisać wszystko bez ryzyka natychmiastowych konsekwencji
+
+P:trafiło się ślepej kurze ziarno
+W:przypadkowo udało się komuś zdobyć coś/trafić na coś, czego normalnie by nie uzyskał (w ten sposób)
+
+P:z dużej chmury mały deszcz
+W:końcowy wynik bywa niewspółmiernie mały w stosunku do oczekiwanego
+
+P:zły to ptak, co swe gniazdo plugawi
+W:nie należy wyrażać się w negatywny sposób o swoim najbliższym otoczeniu (dom, rodzina, miejsce pracy)
+
+P:źdźbło w oku bliźniego widzisz, a belki w swoim nie dostrzegasz
+W:używane w stosunku do osoby przesadnie krytykującej czyjeś drobne wady bez poczucia świadomości, że sama dopuszcza się bardzo poważnych uchybień
+
+P:kradzione nie tuczy
+W:rzecz zdobyta w nieuczciwy sposób nie przynosi korzyści
+
+P:oko za oko, ząb za ząb
+W:zasada odwetu, odpłacanie złem za prawo talionu}}
+
+P:nawet szubienica milsza w towarzystwie
+W:nic nie zastąpi towarzystwa innych ludzi
+
+P:dla chleba, nie dla nieba chce być księdzem
+W:o kimś, kto zamierza zostać księdzem bez powołania, dla łatwego zarobku
+
+P:kto nie ma córek, ten nie ma dzieci
+W:córki są bardziej oddanymi dziećmi niż synowie, silniej przywiązują się do rodziców
+
+P:jaki chleb, taka skórka, jaka matka, taka córka
+W:córka zachowuje się podobnie jak jej matka
+
+P:nie wisi syn za ojca, tylko sam za siebie
+W:każdy sam ponosi konsekwencje swoich czynów
+
+P:syn mój, a rozum u niego swój
+W:o synu uparcie nie zgadzającym się z rodzicami
+
+P:dobrego syna nigdy Bóg nie zapomina
+W:kto szanuje rodziców, ten ma zapewnioną bożą opiekę
+
+P:jakie drzewo, taki klin, jaki ojciec, taki syn
+W:syn zachowuje się podobnie jak jego ojciec
+
+P:szczęścia ojcowskiego syn nie dziedziczy
+W:pewnych dóbr niematerialnych nie sposób przekazać innemu człowiekowi
+
+P:chcesz córuni, podobaj się wprzód mamuni
+W:kto chce ożenić się z dziewczyną, powinien najpierw zyskać przychylność jej matki
+
+P:jak się córka urodzi, to jakby się siedmiu złodziei do komory podkopało
+W:wychowanie córki i wydanie jej za mąż oznaczają duże wydatki dla rodziców
+
+P:było dwóch braci mądrych, a trzeci żonaty
+W:tylko głupiec się żeni
+
+P:kiedy się bracia kochają, to się czubią
+W:utarczki między braćmi świadczą o ich wzajemnym przywiązaniu
+
+P:kto nie słucha brata, słuchać będzie bata
+W:posłuszeństwo w rodzinie jest podstawą porządku społecznego
+
+P:kochajmy się jak bracia, rachujmy się jak Żydzi
+W:mimo że jesteśmy przyjaciółmi, niech każdy dba o własne interesy
+
+P:rzadka rzecz między braćmi zgoda
+W:bracia zazwyczaj kłócą się ze sobą
+
+P:starszy brat mięso kraje, a młodszy obiera
+W:sprawiedliwy podział: jedna osoba dzieli, a druga wybiera swoją część
+
+P:nauka bez cnoty jako miecz u szalonego: i sobie i ludziom szkodzi
+W:lepiej być człowiekiem dobrym, niż uczonym
+
+P:powtarzanie jest matką wiedzy
+W:dzięki powtarzaniu utrwala się wiedzę
+
+P:kto z przyrodzenia głupi, i w Paryżu sobie rozumu nie kupi
+W:niektórzy ludzie pozostaną głupcami do końca życia
+
+P:młodość leniwa, starość płaczliwa
+W:młodzi są z natury leniwi, a starcy skłonni do narzekań
+
+P:młody może umrzeć, a stary musi
+W:młodzi ludzie rzadko myślą o śmierci, bo rzadko ich ona spotyka; starzy ludzie są pewni, że mogą umrzeć każdego dnia
+
+P:u wdowy chleb gotowy, ale nie każdemu zdrowy
+W:ten, kto się żeni z wdową, ma zapewnione utrzymanie, ale ryzykuje utratę zdrowia ze zgryzoty
+
+P:u wdowy chleb gotowy
+W:ten, kto się żeni z wdową, ma zapewnione utrzymanie, gdyż ma ona majątek z pierwszego małżeństwa i zorganizowane gospodarstwo
+
+P:wdowiec z wdową rzadko dobrze z sobą
+W:gdy wdowiec żeni się z wdową, rzadko tworzą dobrane małżeństwo
+
+P:do siostry w rok szósty, do brata we trzy lata
+W:zwyczajowy termin odwiedzin u brata i siostry
+
+P:nie wójtowska córka, a gada do rzeczy
+W:o kobiecie, która powiedziała coś rozsądnego
+
+P:zły ojciec rzadko ma dobrego syna
+W:dzieci dziedziczą po rodzicach cechy charakteru, zwłaszcza negatywne
+
+P:jeden ojciec dziesięć synów wychowa, a dziesięć synów jednego ojca żywić nie mogą
+W:o szczodrości rodziców i niewdzięczności dzieci
+
+P:do ojca po grosz, do matki po koszulę
+W:o kimś, kto nie potrafi poradzić sobie bez pomocy rodziców
+
+P:za pieniądze wszystkiego dostanie, prócz ojca i matki
+W:miłość rodziców jest bezcenna
+
+P:kto nie słucha ojca, matki, niech słucha psiej skóry
+W:kto nie słucha rodziców, powinien dostać lanie
+
+P:święto Łucy noc króci
+W:w dniu świętej Łucji noc staje się krótsza, zaś dzień się wydłuża
+
+P:jaka mać, taka nać
+W:dzieci dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:jedna matka dziesięć synów wychowa, a jednej matki dziesięć synów żywić nie mogą
+W:o szczodrości rodziców i niewdzięczności dzieci
+
+P:nadzieja matką głupich
+W:nadmierne zaufanie świadczy o naiwności
+
+P:przyjaźń szczera nie umiera
+W:prawdziwa przyjaźń trwa do końca życia
+
+P:myszy tańcują, gdy kota nie czują
+W:kiedy nie ma przez jakiś czas kontroli („kota”) nad podwładnymi lub podopiecznymi („myszami”), to następuje lekceważenie reguł, obowiązków itp.
+
+P:bój się w styczniu wiosny, bo marzec zazdrosny
+W:łagodna pogoda w styczniu zapowiada mrozy w marcu
+
+P:gdy w styczniu deszcz leje, złe robi nadzieje
+W:deszcze w styczniu zapowiadają niekorzystną pogodę w kolejnych miesiącach
+
+P:jeżeli pszczoła w styczniu z ula wylatuje, rzadko pomyślny rok nam obiecuje
+W:gdy w styczniu jest tak ciepło, że pszczoły opuszczają ul, zapowiada się niepomyślny rok
+
+P:kto sieje wiatr, ten zbiera burzę
+W:kto wywołuje zamęt, niezgodę, może sam paść ofiarą swoich poczynań
+
+P:co Anglik zmyśli, Francuz skréśli, a Niemiec doma nakrupi, wszystko to głupi Polak kupi
+W:Polacy bezkrytycznie zachwycają się wszystkim, co pochodzi z zagranicy
+
+P:Żyd okpi Niemca, diabeł Żyda, Rusin diabła, a Rusina niewiasta
+W:każdego obcego podejrzewamy o szatański spryt i skłonności do oszustwa
+
+P:co Francuz wymyśli, to Polak polubi
+W:Polacy bezkrytycznie zachwycają się wszystkim, co pochodzi z zagranicy
+
+P:Polak, Węgier – dwa bratanki, i do szabli, i do szklanki
+W:o przyjaźni między Polakami i Węgrami, opartej na wspólnych walkach i zamiłowaniu do dobrego Polak, Węgier, dwa bratanki, i do szabli, i do szklanki}}
+
+P:chłop mowny a kot łowny z głodu nie zemrą
+W:dobry mówca poradzi sobie w życiu tak, jak dobrze polujący kot
+
+P:chłop się nie przeżegna, dopóki piorunu nie usłyszy
+W:niektórych ludzi tylko krytyczna sytuacja skłania do modlitwy
+
+P:chłop, co musi, rad uczyni
+W:chłop niechętnie zajmuje się tym, do czego nie jest zmuszony
+
+P:kiedy styczeń najostrzejszy, wtedy roczek najpłodniejszy
+W:ostre mrozy w styczniu zapowiadają urodzajny rok
+
+P:miesiąc styczeń, czas do życzeń: a więc życzym pomyślności, Boga, chleba, dobrych gości
+W:tradycyjne życzenia noworoczne
+
+P:styczeń pogodny wróży rok płodny
+W:dobra pogoda w styczniu zapowiada urodzajny rok
+
+P:habit nie czyni mnicha
+W:wygląd zewnętrzny nie świadczy o wartości człowieka
+
+P:mnich niemowny, kot niełowny źle się miewają
+W:dar wymowy jest dla osoby duchownej niezwykle istotny
+
+P:mnich mnichowi kaptura nie oberwie
+W:osoby należące do jednej grupy są wobec siebie lojalne, wspierają się
+
+P:chłopa korcem nie mierzą
+W:pozory mylą; wartość człowieka nie zależy od jego wyglądu, ale od wiedzy, umiejętności, charakteru
+
+P:chłopa na korce, a rozumu na lata nie mierzą
+W:pozory mylą; wartość człowieka nie zależy od jego wyglądu; ludzie nie zawsze stają się mądrzejsi z wiekiem
+
+P:jaki pan, taki kram
+W:taka, jaka jest osoba, taki jest u niej porządek
+
+P:kto pod kim dołki kopie, ten sam w nie wpada
+W:intrygi zwykle obracają się przeciw intrygantowi
+
+P:baba z wozu, koniom lżej
+W:o sytuacji, w której pozbycie się kogoś lub czegoś jest pożądane
+
+P:gdzie diabeł nie może, tam babę pośle
+W:kobieta jest przebieglejsza od diabła, umie zaszkodzić w każdej sytuacji i każdego skusić do grzechu
+
+P:czasem luty ostro kuty, czasem w luty same pluty
+W:pogoda w lutym bywa bardzo mroźna lub przeciwnie – deszczowa i błotnista
+
+P:czasem luty się zlituje, że człek niby wiosnę czuje; ale czasem tak się zżyma, że człek prawie nie wytrzyma
+W:pogoda w lutym bywa bardzo mroźna lub przeciwnie – deszczowa i błotnista
+
+P:gdy ciepło w lutym, zimno w marcu bywa, długo trwa zima, to jest niewątpliwa
+W:łagodna pogoda w lutym zapowiada mrozy w marcu i długą zimę
+
+P:gdy mróz w lutym ostro trzyma, tedy jest niedługa zima
+W:mroźna pogoda w lutym zapowiada, że zima wkrótce się skończy
+
+P:gdy na święty Walek deszcze, mrozy wrócą jeszcze
+W:deszczowa pogoda w dzień świętego Walentego (14 lutego) zapowiada powrót mrozów
+
+P:spyta cię luty: masz li buty?
+W:na lutowe mrozy potrzebne są dobre buty
+
+P:na stycznie i lute trzeba mieć konie kute
+W:konie muszą być podkute na zimę, aby nie ślizgały się po lodzie
+
+P:jeśli ci jeszcze nie dokuczył luty, to pal dobrze w kominie i miej kożuch suty
+W:w lutym wcześniej lub później następują ostre mrozy
+
+P:kiedy luty schodzi, człek po wodzie brodzi
+W:pod koniec lutego topnieją śniegi i ludzie brodzą w wodzie lub błocie
+
+P:w lutym wody wiele – w lecie głodne nawet cielę
+W:odwilż w lutym zapowiada nieurodzajne lato
+
+P:na Nowy Rok przybywa dnia na barani skok
+W:od Nowego Roku (1 stycznia) dni stają się coraz dłuższe
+
+P:Nowy Rok jaki, cały rok taki
+W:radośnie spędzony dzień Nowego Roku wróży całoroczną pomyślność
+
+P:Rok Nowy pogodny, zbiór będzie dorodny
+W:ładna pogoda w dzień Nowego Roku (1 stycznia) zapowiada urodzajny rok
+
+P:w dzień Trzech Króli każdy się do pieca tuli
+W:około święta Trzech Króli zazwyczaj panują ostre mrozy
+
+P:w święto Trzech Króli człek się w kożuch tuli
+W:około święta Trzech Króli zazwyczaj panują ostre mrozy
+
+P:Agnieszka łaskawa puszcza skowronka z rękawa
+W:gdy zima jest ciepła na świętą Agnieszkę (21 stycznia) przylatują skowronki
+
+P:święta Agnieszka wypuszcza skowronka z mieszka
+W:jeśli w dzień świętej Agnieszki (21 stycznia) następuje ocieplenie, to rozpoczynają migrację skowronki, których śpiew może być jedynym słyszanym wśród pól
+
+P:idzie luty, podkuj buty
+W:gdy nadchodzi najmroźniejszy miesiąc w roku, trzeba mieć solidne buty, aby nie ślizgać się po lodzie
+
+P:kiedy luty, obuj buty
+W:na lutowe mrozy potrzebne są solidne buty
+
+P:kiedy luty puści, to marzec wypiecze
+W:po lutowych mrozach następują marcowe upały
+
+P:luty, napije się wół pluty
+W:podczas lutowych odwilży na drogach bywa bardzo dużo błota i wody (tyle, że wystarczyło by dla wołu)
+
+P:luty w lód okuty
+W:luty to najmroźniejszy miesiąc w roku
+
+P:w lutym gdy zagrzmi od wschodniego boku, burze i wiatry walne są w tym roku
+W:grzmoty od wschodu w lutym zapowiadają mocne wiatry i burze przez cały rok
+
+P:na wiosnę ceber deszczu, łyżka błota, na jesieni łyżka deszczu, ceber błota
+W:wiosną nawet po dużym deszczu zostaje mało błota, a na jesieni – odwrotnie
+
+P:baba swoje, czart swoje
+W:o sytuacji, kiedy dwie osoby są tak uparte, że nie mogą dojść do porozumienia
+
+P:bez ciekawości nie ma mądrości
+W:ciekawość pomaga w zdobywaniu wiedzy
+
+P:bez zachodu nie ma miodu
+W:aby zasłużyć na nagrodę, trzeba włożyć wiele wysiłku
+
+P:kochajmy się jak bracia, liczmy się jak Żydzi
+W:pomimo/mimo tego że bardzo się lubimy, to niech każdy z nas pilnuje własnych interesów
+
+P:gość w dom, Bóg w dom
+W:gościnność jest świętym obowiązkiem gospodarza
+
+P:co marzec wypiecze, to kwiecień wysiecze
+W:po upalnej pogodzie w marcu następują deszcze lub grady w kwietniu
+
+P:gdy przyjdzie marzec, umrze niejeden starzec
+W:''dosłowne''; wielu starszych ludzi umiera wczesną wiosną
+
+P:doczeka się pieska gałąź, choć mu się odwlecze
+W:złoczyńcę dosięgnie niechybna kara
+
+P:koń ma cztery nogi i też się potknie
+W:nawet największym mistrzom, znawcom i specjalistom zdarzają się pomyłki i błędy; każdy czasem się myli
+
+P:gdzie kucharek sześć, tam nie ma co jeść
+W:jeśli zbyt wiele osób pracuje nad tą samą rzeczą, tym samym problemem, dublują się ich zadania, to nie odniosą sukcesu
+
+P:wyjątek potwierdza regułę
+W:istnienie normy dowiedzione jest przez odstępstwa od niej
+
+P:przyszła kryska na matyska
+W:ktoś w końcu musiał zrobić coś, czego wykonania unikał; stało się coś, czego ktoś chciał uniknąć; nadszedł koniec dla czyjegoś złego postępowania
+
+P:biednemu zawsze wiatr w oczy
+W:biednej osobie zawsze wszystko dzieje się na przekór
+
+P:psy szczekają, karawana idzie dalej
+W:można krytykować pewne rzeczy, ale i tak nie ma się na nie wpływu
+
+P:mowa jest srebrem, a milczenie złotem
+W:chociaż mowa jest dobra, to czasem lepiej milczeć
+
+P:od przybytku głowa nie boli
+W:nadmiar pieniędzy, dóbr nikomu nie zaszkodzi
+
+P:gra w piki daje wyniki
+W:w brydżu: piki i kiery jako starsze kolory są wyżej punktowane niż kara i trefle
+
+P:kto gra karo przegra zaro
+W:w brydżu: deprymowanie przeciwników rozgrywających kontrakt w karo
+
+P:trefelki kolorek niewielki
+W:w brydżu: kara i trefle jako młodsze kolory są niżej punktowane niż piki i kiery
+
+P:gra w kiery wyrabia maniery
+W:''w brydżu''
+
+P:uczyła matula nie wychodź spod króla
+W:w brydżu: lepiej wistować spod asa, bo wtedy partner może odwrócić w ten sam kolor
+
+P:figur na figur mawiał święty Igór
+W:w brydżu: zachęta do przebicia figury wyższą figurą
+
+P:nie graj bawole, czego nie ma na stole
+W:w brydżu: broniący nie powinni na ogół wychodzić w kolor, którego nie ma u dziadka (na stole), gdyż rozgrywający może wtedy przebić atutem
+
+P:nie graj matole, czego nie ma na stole
+W:w brydżu: broniący nie powinni na ogół wychodzić w kolor, którego nie ma u dziadka (na stole), gdyż rozgrywający może wtedy przebić atutem
+
+P:trzecia ręka bije
+W:w brydżu: na ogół partner wychodzącego (trzecia osoba dokładająca się do lewy) powinien przebić o ile może
+
+P:trzecia ręka bije i płacze
+W:w brydżu: na ogół partner wychodzącego (trzecia osoba dokładająca się do lewy) powinien przebić o ile może
+
+P:kto nie ściąga atutów, ten chodzi bez butów
+W:w brydżu: przy rozgrywce w kolor ważne jest ściągnięcie na początku wszystkich kart w kolorze atutowym od przeciwników
+
+P:czwarty pas, karty w tas
+W:w brydżu: po czterech odzywkach "pas" na początku licytacji karty są ponownie tasowane i rozdawane
+
+P:karty przy orderach
+W:w brydżu: trzymaj karty przy sobie, żeby nie pokazywać ich przeciwnikom
+
+P:kto nie ma szczęścia w kartach, ten ma szczęście w miłości
+W:na pocieszenie dla przegranych graczy
+
+P:ze stolika gra pomyka
+W:w brydżu: często trudno dojść na stolik (do kart dziadka), jeśli rozgrywający ma dojście, to gra jest łatwiejsza
+
+P:jak się nie ma co się mówi, to się leży z kim się gra
+W:w brydżu: zła licytacja prowadzi do nieugrania kontraktu
+
+P:pamiętaj chemiku młody, wlewaj zawsze kwas do wody
+W:wlewanie wody do kwasu może prowadzić do rozpryskiwania mieszaniny na skutek reakcji na powierzchni
+
+P:podchorąży zawsze zdąży
+W:w PRL-u podchorąży rekrutowali się często z grona wykształconych poborowych po studiach i nie byli nazbyt chętni do służby wojskowej
+
+P:każdy as bierze raz
+W:asy są cenne, ale się prędzej czy później zużyją
+
+P:w Pińczowie dnieje
+W:robi się bardzo późno, najwyższy czas wyjść kartą
+
+P:kto się nie leni, robi złoto z kamieni
+W:pracą można dojść do bogactwa
+
+P:dzisiaj bal, jutro żal
+W:to, co dziś cieszy, jutro może smucić, może przynieść troski
+
+P:i w Paryżu nie zrobią z owsa ryżu
+W:pewne rzeczy są niemożliwe do zrobienia
+
+P:każdy sobie rzepkę skrobie
+W:każdy dba przede wszystkim o swoje własne interesy
+
+P:kto się na gorącym sparzył, ten na zimne dmucha
+W:po bolesnych doświadczeniach ludzie stają się przesadnie ostrożni
+
+P:jak ty komu, tak on tobie
+W:zależnie od twych uczynków spodziewaj się podobnej odpłaty
+
+P:jaka płaca, taka praca
+W:pracodawca może wymagać wytężonej pracy tylko wtedy, gdy odpowiednio za nią płaci
+
+P:dziura w worze, gość w komorze, piasek w mące, woda w łące, kąkol w życie, złość w habicie
+W:o rzeczach niepotrzebnych, niepożądanych
+
+P:lepsze jest wrogiem dobrego
+W:nie należy poprawiać, ulepszać rzeczy dobrych, sprawdzonych, sprawnie funkcjonujących
+
+P:w nocy wszystkie koty są szare
+W:gdy ktoś nie zna dobrze sytuacji, może łatwo pomylić się w jej ocenie
+
+P:kropla drąży skałę
+W:długie i wytrwałe działania przynoszą w końcu oczekiwane wyniki
+
+P:ziarnko do ziarnka, a zbierze się miarka
+W:oszczędzając cierpliwie nawet małe ilości można dużo uzbierać
+
+P:śpiesz się powoli
+W:rób coś dokładnie i sprawnie, ale bez nadmiernego pośpiechu, bo inaczej może się nie udać
+
+P:nikt nie jest prorokiem we własnym kraju
+W:łatwiej znaleźć uznanie u obcych niż wśród swoich, najtrudniej zdobyć uznanie wśród rodaków
+
+P:i Herkules dupa, kiedy ludzi kupa
+W:nawet heros nie pokona dużej liczby przeciwników naraz
+
+P:żaden nie powinien być bogaty, jeno cnotliwy
+W:w życiu nie są ważne pieniądze, lecz wartości ponadczasowe i zasady etyczne
+
+P:ukłon niski fałszu bliski
+W:zbytnia uprzejmość może okazać się złudna i fałszywa
+
+P:lepszy rydz niż nic
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:nieszczęścia chodzą parami
+W:jedno niepowodzenie pociąga za sobą następne
+
+P:czego oko nie widzi, tego sercu nie żal
+W:łatwo znieść stratę, o której się nic nie wie
+
+P:pańskie oko konia tuczy
+W:gdy gospodarz (właściciel) sam dogląda swego gospodarstwa (przedsiębiorstwa), to lepiej one funkcjonują
+
+P:w nocy wszystkie koty są czarne
+W:gdy nie zna się sytuacji, można się łatwo pomylić w ocenie
+
+P:i król na dziurawym tronie siaduje, gdy dobrze obiaduje
+W:kondycja ludzka zrównuje wszystkich ludzi bez względu na ich stan
+
+P:głód - najlepszy kucharz
+W:człowiekowi głodnemu wszystko smakuje
+
+P:gdy się drzewo obali, każdy wióry zbiera
+W:wszyscy wykorzystują nieszczęście, które spotkało kogoś ważnego
+
+P:jak się drzewo powali, każdy je rąbie i pali
+W:wszyscy wykorzystują nieszczęście, które spotkało kogoś ważnego
+
+P:okazja czyni złodzieja
+W:możliwość szybkiego, nieoczekiwanego wzbogacenia się jest pokusą do kradzieży
+
+P:nie dla psa kiełbasa, nie dla kota sadło
+W:ktoś na coś nie zasługuje
+
+P:natura ciągnie wilka do lasu
+W:wrodzone złe skłonności mogą mieć wpływ na postępowanie człowieka nawet dobrze wychowanego
+
+P:lekko przyszło, lekko poszło
+W:rzeczy łatwo zdobyte traci się bez żalu
+
+P:kto się lubi, ten się czubi
+W:ludzie, którzy często przy innych się sprzeczają, w rzeczywistości darzą się sympatią
+
+P:nawarzyłeś piwa, to musisz je teraz wypić
+W:należy ponosić odpowiedzialność za swoje czyny
+
+P:od piwa głowa się kiwa
+W:piwo doprowadza do stanu upojenia alkoholowego
+
+P:w marcu jak w garncu
+W:w marcu pogoda jest bardzo zmienna
+
+P:cała mądrość nie mieści się w jednej głowie
+W:nie ma człowieka, który wie wszystko
+
+P:co za dużo, to niezdrowo
+W:należy zachować umiar we wszystkim; nie zawsze im więcej, tym lepiej
+
+P:konia kują, żaba nogę podstawia
+W:ktoś stwarza pozory uczestnictwa w pracy wykonywanej w rzeczywistości przez kogoś innego
+
+P:chcąc poznać przyjaciela, trzeba z nim beczkę soli zjeść
+W:nie należy ufać obcemu dopóty, dopóki nie będzie się pewnym co do jego przyjaźni
+
+P:a co po czyjej wielkości, jak nie ma w głowie mądrości
+W:mądrość jest ważniejsza niż władza
+
+P:adwokat niech głowę, a koń niech ma nogi
+W:każdy powinien mieć to, co mu potrzebne
+
+P:na złodzieju czapka gore
+W:sytuacja, gdy winowajca dręczony wyrzutami sumienia boi się zdemaskowania, a jednak swoim zachowaniem wzbudza podejrzenia
+
+P:nie ma dymu bez ognia
+W:nie ma skutku bez przyczyny
+
+P:robota nie zając, nie ucieknie
+W:wymówka od pracy, zachęta do odpoczynku, poleniuchowania
+
+P:bliższa koszula ciału
+W:człowieka najbardziej obchodzi to, z czym się na co dzień styka, co go bezpośrednio dotyczy
+
+P:bliższa koszula ciału niż sukmana
+W:człowieka najbardziej obchodzi to, z czym się na co dzień styka, co go bezpośrednio dotyczy
+
+P:bliższa koszula ciału niż kaftan
+W:człowieka najbardziej obchodzi to, z czym się na co dzień styka, co go bezpośrednio dotyczy
+
+P:diabeł tkwi w szczegółach
+W:najtrudniejsze do rozwiązania jest to, co z pozoru wydaje się błache
+
+P:diabeł nie śpi
+W:człowiekowi grożą różne niebezpieczeństwa, zawsze go może spotkać coś złego
+
+P:licho nie śpi
+W:człowiekowi grożą różne niebezpieczeństwa, zawsze go może spotkać coś złego
+
+P:złe nie śpi
+W:człowiekowi grożą różne niebezpieczeństwa, zawsze go może spotkać coś złego
+
+P:jedna jaskółka wiosny nie czyni
+W:nie należy wyciągać pochopnych wniosków na podstawie pojedynczych faktów
+
+P:co się stało, to się nie odstanie
+W:stwierdzenie, że zaistniałe złe wydarzenia są nieodwracalne; nie można cofnąć lub odwołać tego, co się wydarzyło
+
+P:gdzie dwóch się bije, tam trzeci korzysta
+W:z rywalizacji dwóch osób może skorzystać ktoś inny
+
+P:jedna jaskółka nie czyni wiosny
+W:nie należy wyciągać pochopnych wniosków na podstawie jednego tylko faktu
+
+P:strzeż mnie, Boże, od przyjaciół, bo z wrogami poradzę sobie sam
+W:należy wystrzegać się bardziej fałszywych przyjaciół niż wrogów
+
+P:gdyby babcia miała wąsy, toby była dziadkiem
+W:powiedzenie oznaczające, że coś nie może się spełnić, jest nierealne, nigdy się nie stanie
+
+P:najlepsza zasada – patrz w karty sąsiada
+W:w brydżu: sąsiedzi są z przeciwnej pary, partner siedzi naprzeciwko
+
+P:najciężej pierwszy krok zrobić
+W:oddaje trudność rozpoczęcia czegoś dla osób nie mających doświadczenia w danej dziedzinie
+
+P:każda pliszka swój ogonek chwali
+W:każdy się chwali i przypisuje sobie zasługi
+
+P:kto wiatr sieje, zbiera burzę
+W:kto mąci, sieje zamieszanie i zamęt naraża się na niemiłe konsekwencje swych własnych poczynań
+
+P:człowiek myśli, Pan Bóg kreśli
+W:nie zawsze człowiek jest w stanie wszystko zaplanować czy przewidzieć
+
+P:być w Rzymie i nie widzieć papieża
+W:nie zwiedzić czegoś najważniejszego w jakimś kraju lub miejscowości
+
+P:moja chata z kraja
+W:te sprawy mnie nie dotyczą, są więc mi obojętne
+
+P:lepiej z mądrym zgubić, niż z głupim znaleźć
+W:zawsze, niezależnie od okoliczności, lepiej przestawać z mądrym
+
+P:gdy chłop baby nie bije, to jej wątroba gnije
+W:wobec kobiet wolno używać przemocy fizycznej
+
+P:komu w drogę, temu czas
+W:właśnie teraz trzeba wyruszać
+
+P:co swój, to nie obcy
+W:zaufanie do bliskiego jest większe niż do obcego
+
+P:wiele wody, a ryb mało
+W:dużo mówienia, a mało treści
+
+P:nie przez litanie, psalmy i posty buduje się do nieba mosty
+W:należy być dobrym w czynie, by osiągnąć zbawienie
+
+P:trzeba nieba, ale trza i chleba
+W:trzeba dbać zarówno o strawę duchową, jak i o życie doczesne
+
+P:wysoki do nieba, a głupi jak trzeba
+W:wygląd, rosłość nie świadczą o intelekcie
+
+P:baju, baju – będziesz w raju
+W:nie należy wierzyć w cuda i obietnice bez pokrycia
+
+P:jednego słońca dość na niebie
+W:nie należy mierzyć zbyt wysoko
+
+P:nie porywaj się z motyką na słońce
+W:szkoda czasu i wysiłku na rzeczy nieosiągalne
+
+P:na gnój i różę słońce jednako świeci
+W:wszyscy są równi niezależnie od cech, wyglądu, rasy, przekonań, itp.
+
+P:gdzie nie zagląda słońce, tam zagląda lekarz
+W:jeśli sprawy nie idą jak należy samoistnie, trzeba skorzystać z pomocy specjalisty
+
+P:jak się zalecał, to obiecał; jak dostał, to przestał
+W:dla osiągnięcia korzyści niektórzy obiecują rzeczy, których nie mają zamiaru dotrzymać
+
+P:gdzie jedna kość, a dwa brytany – tam pokój nie znany
+W:zagarnianie dla siebie rodzi konflikty dlatego należy umieć się dzielić
+
+P:jak pies je, to nie szczeka
+W:czasami lepiej nie robić dwóch rzeczy jednocześnie
+
+P:jak pies je, to nie szczeka, bo mu miska ucieka
+W:robienie dwóch rzeczy jednocześnie czasem niesie opłakane skutki
+
+P:nie dla psa kiełbasa
+W:nie wszystko jest dla wszystkich
+
+P:nie dla psa kiełbasa, nie dla prosiąt miód
+W:nie wszystko jest dla wszystkich
+
+P:nie dla psa kiełbasa, nie dla kota spyrka
+W:nie wszystko jest dla wszystkich
+
+P:miłość miłość rodzi
+W:kochaj, a będziesz kochany
+
+P:smakować jak psu zboże
+W:pewne rzeczy do siebie nie pasują, więc lepiej ich nie łączyć
+
+P:wara kocie, idzie o cię
+W:ostrzeżenie o bezpośrednim zagrożeniu
+
+P:dla kota za dużo, dla psa za mało
+W:wszystkich nie da się zadowolić
+
+P:jaskółka i pszczółka lata, znakiem wiosny to dla świata
+W:pewne oznaki jednoznacznie poświadczają o zjawisku
+
+P:słabe w gosposi nadzieje, gdy śpi, jak kogut pieje
+W:trzeba uważać, żeby nie przegapić ważnego momentu
+
+P:sowa huczy, choć jej nikt nie uczy
+W:pewne rzeczy przychodzą wcześniej lub później, naturalnie, samoistnie, wystarczy poczekać
+
+P:płot trzy lata, kot trzy płoty, koń trzy koty
+W:pewne zjawiska są bardziej trwałe od innych
+
+P:im kot starszy, tym ogon twardszy
+W:niektóre cechy zyskują na wartości z wiekiem
+
+P:kot kotkę okaleczył, kot kotkę będzie leczył
+W:szkodę winien naprawiać, ten kto ją wyrządził
+
+P:kot się myje, będą goście
+W:pewne oznaki jednoznacznie zapowiadają zjawisko
+
+P:bogatemu diabeł dzieci kołysze
+W:bogatym się zawsze powodzi
+
+P:jak w gromadzie, to sporzej, jak samemu, to gorzej
+W:bycie samemu jest gorsze od bycia, życia z innymi ludźmi
+
+P:samotnemu świat pustynią
+W:życie w samotności nie satysfakcjonuje tak, jak dzielenie życia z innymi
+
+P:i na starym krzaku róże kwitną
+W:to, co dojrzałe, rozwinięte, może być równie produktywne i wartościowe jak to, co świeże i młode
+
+P:ciekawość to pierwszy stopień do piekła
+W:o pewne rzeczy lepiej nie pytać, bo znajomość odpowiedzi może przeszkadzać lub zaszkodzić
+
+P:tego kwiatu jest pół światu
+W:jest wielu ludzi dookoła, znajdziesz jeszcze kogoś dla siebie ''(mówione zwykle na pocieszenie komuś, kto dostał kosza)''
+
+P:ryba psuje się od głowy
+W:korupcja (albo inne niekorzystne zjawisko) zaczyna się na szczytach władzy
+
+P:tonący brzytwy się chwyta
+W:człowiek w kłopotach próbuje wszelkich rozwiązań
+
+P:gdy na Walka są deszcze, będzie ostry mróz jeszcze
+W:deszczowa pogoda w dzień świętego Walentego (14 lutego) zapowiada powrót mrozów
+
+P:na świętego Walentego bywa zwykle mróz niczego, lecz jak Walek się rozdeszcze, pewne mrozy wrócą jeszcze
+W:deszczowa pogoda w dzień świętego Walentego (14 lutego) zapowiada powrót mrozów
+
+P:święta Jagna taje bagna
+W:pod koniec stycznia w dzień wspomnienia św. Agnieszki (21 stycznia) należy się spodziewać pierwszych roztopów na terenach bagiennych
+
+P:na świętą Agnieszkę wychodzi woda na ścieżkę
+W:pod koniec stycznia w okolicach wspomnienia św. Agnieszki (21 stycznia) pojawiają się pierwsze roztopy
+
+P:na świętego Hieronima jest pogoda albo jej ni ma
+W:na przełomie września i października (30 września) pogoda jest zmienna, w kratkę
+
+P:ze świętą Małgorzatą upał przybiera, kanikułę otwiera
+W:po 20 lipca należy się spodziewać sporego wzrostu temperatury, upałów
+
+P:święta Małgorzata zapowiada środek lata
+W:20 lipca wyznacza umowną połowę okresu, w którym można się spodziewać letnich upałów
+
+P:upały lipcowe wróżą mrozy styczniowe
+W:upalny lipiec jest zapowiedzią mroźnego początku następnego roku
+
+P:deszcz na świętą Małgorzatę jest orzechom na stratę
+W:deszczowy środek lata (20 lipca) może wpłynąć na gorsze zbiory orzechów
+
+P:kiedy w Małgorzatę kropi, siano się źle kopi
+W:deszczowa pogoda pod koniec lipca (20 lipca) nie sprzyja sianokosom i żniwom
+
+P:w lipcu się kłosek korzy, że niesie dar Boży, a najpierwsza Małgorzata, sierp w zboże założy
+W:w lipcu dojrzewa zboże i po 20 lipca można żąć
+
+P:na świętą Małgorzatę kopa zawsze w polu stanie
+W:pod koniec lipca należy się spodziewać pierwszych żniw
+
+P:w dzień świętej Małgorzaty pierwsze gruszki do chaty
+W:po 20 lipca można zrywać pierwsze dojrzałe owoce w sadzie
+
+P:jak w świętą Annę deszcz pada, to robak orzechy zjada
+W:deszczowy koniec lipca (26 lipca) zapowiada nieurodzaj orzecha w danym roku
+
+P:w świętą Małgorzatę skąd wiatr duje, drogę po zboże toruje
+W:niezależnie od pogody pod koniec lipca (20 lipca) należy już myśleć o żniwach
+
+P:deszcze na lipca pierwszego, drugiego, zapowiedzią deszczu czterdziestodniowego
+W:deszczowe pierwsze dni lipca są zapowiedzią brzydkiej pogody przez cały miesiąc
+
+P:gdy Halina łąki zrosi, rolnik w wodzie siano kosi
+W:deszczowy pierwszy dzień lipca jest zapowiedzią brzydkiej pogody przez cały miesiąc
+
+P:jaka Małgorzatka, takie będzie pół latka
+W:pogoda w dniu 20 lipca zapowiada aurę na kolejny miesiąc
+
+P:gdy w lipcu słońce dopieka, burza niedaleka
+W:upalny dzień lipcowy zapowiada nadejście burzy
+
+P:gdy pająk w lipcu przychodzi, to za sobą deszcz przywodzi, gdy swą pajęczynę snuje, bliską burzę czuje
+W:pająki szukające schronienia w domostwach w lipcu zapowiadają deszczową aurę
+
+P:gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda
+W:lipcowe burze są przyczyną szkód w drzewostanie
+
+P:od świętej Anny nie doczeka południa deszcz poranny
+W:od połowy lata (26 lipca) poranne deszcze nie zwiastują całodziennej niepogody
+
+P:jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota
+W:letnie upały zwiastują mroźną zimę, zaś chłodne lato ciepłą zimę
+
+P:kto w lipcu patrzy chłodu, nacierpi się w zimie głodu
+W:uciekanie przed pracą w upalny letni dzień stanie się przyczyną nienadążenia ze zbiorem płodów
+
+P:kwiat lipcowy, napój zdrowy
+W:wywar z kwiatów lipy ma zdrowotne właściwości
+
+P:kiedy przyjdziesz między wrony, musisz krakać jako ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien upodobnić się (dostosować się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, musisz krakać jak i one
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, musisz krakać jak i ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, tak kracz jako i ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, tak też krakaj jak i ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, kraczże jako ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, kraczże jak i ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy przyjdziesz między wrony, krakaj jak i one
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kiedy wejdziesz między wrony, krakajże jak i ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:kto przyjdzie między wrony, musi krakać jako ony
+W:jeśli ktoś wejdzie w jakieś towarzystwo, powinien dostosować się (upodobnić się) do niego, aby nie narazić się na przykrą lub nawet niebezpieczną sytuację
+
+P:Katarzyny dzień jaki, cały grudzień taki
+W:aura pod koniec listopada (25 listopada) jest zapowiedzią pogody na cały następny miesiąc
+
+P:do panny Katarzyny nowych butów obłóczyny
+W:pod koniec listopada (25 listopada) należy zacząć nosić zimowe obuwie
+
+P:jak się baby nie bije, to jej wątroba gnije
+W:wobec kobiet wolno używać przemocy fizycznej
+
+P:święta Katarzyna adwent zaczyna, święty Jędrzej jeszcze mędrzej
+W:po kościelnym obchodzie św. Katarzyny (25 listopada) należało się przysposobić do adwentowego okresu wyciszenia i przygotowania do świąt, obchód św. Andrzeja Apostoła (30 listopada) był ostatecznym sygnałem do zaprzestania urządzania zabaw zgodnie z prawem kanonicznym Kościoła katolickiego – św. Andrzeja czasem wypada już w adwencie
+
+P:święta Katarzyna adwent zaczyna
+W:po dniu św. Katarzyny (25 listopada) należy się powstrzymać od organizowania zabaw, zgodnie z przepisami prawa kanonicznego Kościoła katolickiego, ponieważ zbliża się adwent
+
+P:święta Katarzyna adwent zawięzuje, a święty Andrzej poprawuje
+W:po dniu św. Katarzyny (25 listopada) należy się przysposobić do adwentowego okresu wyciszenia i przygotować do świąt, a dzień św. Andrzeja Apostoła (30 listopada) jest ostatecznym sygnałem do zaprzestania urządzania zabaw zgodnie z prawem kanonicznym Kościoła katolickiego – św. Andrzeja czasem wypada już w adwencie
+
+P:święta Katarzyna adwent rozpoczyna
+W:po kościelnym obchodzie św. Katarzyny (25 listopada) należało się powstrzymać od organizowania zabaw zgodnie z przepisami prawa kanonicznego Kościoła katolickiego, zbliżał się adwent
+
+P:święta Katarzyna adwent zawiązuje, sama hula, pije, a nam zakazuje
+W:po kościelnym obchodzie św. Katarzyny (25 listopada) należało się powstrzymać od organizowania zabaw zgodnie z przepisami prawa kanonicznego Kościoła katolickiego, zbliżał się adwent
+
+P:święta Katarzyna klucz zgubiła, święty Jędrzej znalazł, zamknął skrzypki zaraz
+W:''… oznaczające, że rozpoczęcie adwentu kończy głośne, huczne zabawy''
+
+P:święta Katarzyna po lodzie, Boże Narodzenie po wodzie
+W:mróz na koniec listopada (25 listopada) jest zapowiedzią odwilży pod koniec grudnia
+
+P:święta Katarzyna po wodzie, Boże Narodzenie po lodzie
+W:brak mrozu pod koniec listopada (25 listopada) jest zapowiedzią mroźnego końca roku
+
+P:święta Katarzyna pokazuje, jaką pogodę nam styczeń zgotuje
+W:aura pod koniec listopada (25 listopada) wróży pogodę na cały styczeń
+
+P:święta Katarzyna śluby ucina
+W:w Kościele katolickim nie zawierano związków małżeńskich w adwencie, 25 listopada nigdy nie wypada w okresie adwentowym, to ostatnia szansa by urządzić wesele
+
+P:święta Katarzyna śmiechem, święty Andrzej grzechem
+W:o ile zabawie w katarzynki (25 listopada) nie staje na przeszkodzie okres adwentu, o tyle andrzejki (30 listopada) niekiedy wypadają już po jego rozpoczęciu
+
+P:święta Katarzyna śmiechem, święty Jędrzej grzechem
+W:o ile zabawie i obrzędowości związanej z katarzynkami (25 listopada) nie stają na przeszkodzie okresowi adwentu, o tyle andrzejki (30 listopada) czasem wypadają już w czasie, gdy bawić się nie powinno
+
+P:święty Andrzej grzechem, święta Katarzyna śmiechem
+W:o ile zabawie w katarzynki (25 listopada) nie staje na przeszkodzie okres adwentu, o tyle andrzejki (30 listopada) niekiedy wypadają już po jego rozpoczęciu
+
+P:w Katarzynę z nieba nic nie spadnie, będzie w przyszłym lutym chyba jeszcze ładniej
+W:ładna pogoda pod koniec listopada (25 listopada) zapowiada słoneczny luty następnego roku
+
+P:nie czas żałować róż, gdy płoną lasy
+W:trzeba zajmować się sprawami w kolejności ich znaczenia, hierarchii; nie należy żałować czegoś mniej istotnego, gdy większa sprawa jest zagrożona
+
+P:nie igraj, kotku, z niedźwiedziem
+W:ostrzeżenie, aby nie prowokować sytuacji, z którymi prowokujący sobie nie poradzi
+
+P:znać kota po pazurach
+W:pewne cechy jednoznacznie wskazują winowajcę
+
+P:gdyby kózka nie skakała, toby nóżki nie złamała
+W:brak umiaru może doprowadzić do niekorzystnych rezultatów
+
+P:uczył Marcin Marcina, a sam głupi jak świnia
+W:wszyscy popełniamy takie same błędy
+
+P:wilka nogi karmią
+W:trzeba włożyć wysiłek, by coś osiągnąć
+
+P:dla dwóch kogutów za mało miejsca na jednym gnoju
+W:lepsze zarządzanie można osiągnąć obierając jedno dowództwo
+
+P:od rzemyczka do koniczka
+W:kto dopuszcza się drobnych wykroczeń, ten później popełnia poważne przestępstwa
+
+P:chleb świętej Agaty od ognia strzeże chaty
+W:chleb święcony w kościołach we wspomnienie świętej Agaty (5 lutego) miał chronić domostwa przed pożarami
+
+P:sól świętej Agaty od ognia strzeże chaty
+W:sól święcona w kościołach we wspomnienie świętej Agaty (5 lutego) miała chronić domostwa przed pożarami
+
+P:sól świętej Agaty broni od ognia chaty
+W:sól święcona w kościołach we wspomnienie świętej Agaty (5 lutego) miała chronić domostwa przed pożarem
+
+P:gdzie święta Agata, bezpieczna tam chata
+W:chleb i sól święcone w kościołach we wspomnienie świętej Agaty (5 lutego) i przynoszone do domu, miały chronić domostwa przed pożarami
+
+P:gdzie święta Jagata, bezpieczna tam chata
+W:chleb i sól święcone w kościołach we wspomnienie świętej Agaty (5 lutego) i przynoszone do domu, miały chronić domostwo przed pożarami
+
+P:na świętą Agatę wysuszysz na słońcu szmatę
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni są jaśniejsze i robi się cieplej
+
+P:na świętej Agaty wychodzą muchy zza łaty
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni są jaśniejsze i robi się cieplej, co powoduje pobudzenie zimujących w domach owadów
+
+P:po świętej Agacie wyschną na słońcu gacie
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni stają się jaśniejsze i robi się cieplej
+
+P:po świętej Agacie wyschnie bielizna na płocie
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni stają się jaśniejsze i robi się cieplej
+
+P:świętej Agaty uschną szmaty
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni stają się jaśniejsze i robi się cieplej
+
+P:w dzień świętej Agaty, jeśli słonko przez okienko zajrzy do chaty, to wiosenka na świat podgląda zza zimowej kraty
+W:na początku lutego w okolicach wspomnienia św. Agaty (5 lutego) dni mogą stać się jaśniejsze i może zrobić się wiosennie
+
+P:kto z kim przestaje, takim się staje
+W:długie przebywanie z kimś powoduje upodobnienie się do niego, przejęcie czyichś zwyczajów
+
+P:gdzie Rzym, gdzie Krym
+W:pytanie stawiane w sytuacji, gdy dwie rzeczy, sytuacje, zjawiska lub miejsca nie mają ze sobą żadnego związku
+
+P:uderz w stół, a nożyce się odezwą
+W:sytuacja, gdy wspomina się o kimś nieokreślonym, a jakaś osoba reaguje, mimo, że wprost jej nie wskazano
+
+P:głuchemu próżne słowa
+W:przekazywanie informacji, komuś kto nie potrafi ich zrozumieć jest bezcelowe
+
+P:fortuna często rozumowi przeczy
+W:nie ma zależności między stanem posiadania a poziomem inteligencji
+
+P:mądry przyjmie radę, głupi nią wzgardzi
+W:korzystanie z rad przynosi korzyści
+
+P:ile wina w głowie, tyle prawdy w słowie
+W:osoby będące pod wpływem alkoholu mają tendencję do wypowiadania się szczerzej niż bez upojenia, nie zatajając tego, czego zwykle by nie powiedzieli
+
+P:lepszy w domu groch, kapusta niż na wojnie kura tłusta
+W:korzyści kuszące do wysiłku poza domem zwykle nie w pełni wynagradzają brak domowego ciepła
+
+P:na święty Walenty uciekają z domu centy
+W:z okazji święta zakochanych wydaje się więcej na prezenty niż z powodu innych okazji
+
+P:po tłuste cielę i do domu trafią, a chudego i na targu nie kupią
+W:wartościowa rzecz przyciąga chętnych, a bezwartościowa nie znajduje amatorów
+
+P:połknął czart babę, ale nie mógł jej strawić
+W:charakter kobiety jest tak trudny, że ciężko z nią wytrzymać nawet najtwardszym
+
+P:kto kupuje, czego mu nie trzeba, nie ma potem za co kupić chleba
+W:sytuacja, w której brakuje możliwości zaspokojenia podstawowych potrzeb lub realizacji istotnych zagadnień na skutek wcześniejszego wyczerpania zasobów, energii, czasu
+
+P:każdy kogut na swych śmieciach śmielszy
+W:w swoim środowisku człowiek jest odważniejszy
+
+P:dobra psu i mucha, kiedy głodny
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:dobra psu i mucha, kiedy nie ma chleba
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:dobra psu i mucha, kiedy sama wleci do brzucha
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:dobra psu mucha, a chłopowi rzepa
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:lepszy dzięcioł w ręku niż orzeł na sęku
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:lepszy wróbel w ręku niż cietrzew na sęku
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:lepszy wróbel w ręku niż sokół na sęku
+W:warto jest dysponować czymkolwiek, nawet jeśli nie zaspokaja to całkowicie naszych oczekiwań
+
+P:jaki wół, taka skóra, jaka mać, taka córa
+W:dzieci dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:jaka jabłoń, takie jabłko
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko drzewa jabłko pada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:blisko swej jabłoni jabłko pada
+W:dzieci przeważnie dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko jabłko pada od jabłoni
+W:dzieci przeważnie dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko jabłoni jabłko upada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko odleci jabłko od jabłonie
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:nigdy jabłko daleko od jabłoni nie odleci
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:od sada niedaleko jabłko pada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko jabłko padnie jabłoni, tylko koło niéj
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:jabłko od jabłoni niedaleko się toczy
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko jabłko od jabłoni pada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:niedaleko leci jabłko od jabłoni swojej
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:ojczysta w dzieciach dziedziczy wada: blisko swej jabłoni jabłko pada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:od swej jabłoni blisko jabłko pada
+W:dzieci zwykle dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:ciągnie swój do swego
+W:jednakowe zjawiska czy osobniki mają tendencję do łączenia się w pary
+
+P:jedna owca parszywa całe stado zarazi
+W:złe cechy jednej osoby w grupie dominują nad wieloma osobami o dobrym charakterze
+
+P:święta Katarzyna zawięzuje adwent łyczkiem, a święty Marcin rzemyczkiem
+W:po dniu św. Katarzyny (25 listopada) należy się przysposobić do adwentowego okresu wyciszenia i przygotować do świąt, zaś na św. Marcina (11 listopada) kończono jesienne prace w polu i gromadzenie zapasów na zimę, stąd wiązanie worków rzemykiem
+
+P:na święty Jerzy rosa, nie trzeba koniom owsa
+W:zwykle 23 kwietnia rośnie już trawa i zwierzęta gospodarskie pasą się na powietrzu
+
+P:jajko chce być mądrzejsze od kury
+W:powinno się szanować doświadczenie starszych
+
+P:mądrzejsze jajko od kury
+W:powinno się szanować wiedzę oraz doświadczenie starszych
+
+P:mędrsze jaje niż kura
+W:powinno się szanować wiedzę oraz doświadczenie starszych
+
+P:jeszcze tego nie było, by jajko kurę uczyło
+W:powinno się szanować wiedzę oraz doświadczenie starszych
+
+P:więcej poufałości niż znajomości
+W:      <model>wikitext</model>
+
+P:więcej poufałości niż znajomości
+W:o kimś, kto zachowuje się względem kogoś bardziej poufale, niż powinien
+
+P:im na Krzysztofa większe pogody, tym zimą sroższe nastaną lody
+W:upały pod koniec lipca (24 lipca) zapowiadają ostrą zimę
+
+P:jeśli bociany do Michała zostały, nie będzie mrozów przez grudzień cały
+W:opóźniony do końca września odlot bocianów zapowiada łagodną pogodę w grudniu
+
+P:gdy wietrzno w Michała, będzie mroźna zima cała
+W:wietrzna pogoda pod koniec września (29 września) zapowiada srogą zimę
+
+P:gdy w Michała wiatr od wschodu lub północy, w zimie mrozy wielkiej mocy
+W:północno-wschodnie wiatry pod koniec września (29 września) zapowiadają nadejście mroźnej zimy
+
+P:jaki Michał, taka wiosna
+W:aura w dzień św. Michała (29 września) zapowiada pogodę na wiosnę następnego roku
+
+P:gdy w Michała deszcz spadnie, lekka zima będzie snadnie
+W:deszczowa aura pod koniec września (29 września) zapowiada łagodną zimę
+
+P:gdy deszcz w świętego Michała, będzie łagodna zima cała
+W:deszczowa aura pod koniec września (29 września) zapowiada łagodną zimę
+
+P:kiedy na Michała wiatr północny wieje, na ładną pogodę chłop traci nadzieję
+W:północne wiatry pod koniec września (29 września) zapowiadają trwałe ochłodzenie
+
+P:jeśli w dzień świętego Michała wiatr północny wieje, to na pogodę nie miejmy nadzieję
+W:północne wiatry pod koniec września (29 września) zapowiadają trwałe ochłodzenie
+
+P:jeżeli święty Michał deszczem przysłuży, to suchą wiosnę nam wróży
+W:deszczowa pogoda pod koniec września (29 września) zapowiada brak opadów wiosną następnego roku
+
+P:jeśli nie odlecą ptaszki do Michała, do Wigilii zima nie nastąpi trwała
+W:opóźniony do końca września odlot ptaków zapowiada łagodną pogodę w grudniu
+
+P:noc jasna na Michała, zima ostra i trwała, gdy noc słotna, zima do końca grudnia lekka i błotna
+W:bezchmurne noce z końcem września (29 września) zwiastują mroźny początek zimy, zaś noce z opadami zapowiadają ciepły początek zimy
+
+P:gdy noc jasna na Michała, to nastąpi zima trwała
+W:bezchmurne noce z końcem września (29 września) zwiastują mroźny początek zimy
+
+P:do Michała przymrozków ile, i w maju tyle
+W:aura w ostatnich dniach września (29 września) zwiastuje pogodę w maju następnego roku
+
+P:gdy na Michała obrodzą żołędzie, dużo śniegów w zimie będzie
+W:duża ilość opadniętych żołędzi pod koniec września (29 września) zwiastuje nadejście śnieżnej zimy
+
+P:jeśli deszcz na Michała, zima będzie nietrwała
+W:deszczowa aura pod koniec września (29 września) zapowiada łagodną zimę
+
+P:gdy na świętego Prota jest pogoda albo słota, to na świętego Hieronima jest deszcz albo go ni ma
+W:druga połowa września odznacza się zmiennością pogody
+
+P:i w Paryżu nie zrobią z gówna ryżu
+W:pewne rzeczy są niemożliwe do zrobienia
+
+P:jak drozdy śpiewają na wierzchołkach drzew, wiosna wnet, a jak między gałęziami, to jeszcze het
+W:śpiewy drozdów, siedzących w górnej części koron drzew, zwiastują nadejście wiosny
+
+P:gdy bez wiatrów luty chodzi, w kwietniu wicher nie zawodzi
+W:bezwietrzna pogoda w lutym zwiastuje wietrzną wiosnę
+
+P:jak styczeń zachlapany, to lipiec zapłakany
+W:ciepły styczeń zwiastuje deszcze w lipcu
+
+P:styczeń bywa łagodny, gdy październik śnieżny i chłodny
+W:ochłodzenie w październiku może zwiastować cieplejszy początek następnego roku
+
+P:w styczniu grzmoty, częste słoty
+W:styczeń jest miesiącem pogorszenia się pogody i burz
+
+P:w lutym wody wiele, w lecie głodne i cielę
+W:odwilż w lutym zapowiada nieurodzajne lato
+
+P:choć już w kwietniu słonko grzeje, nieraz pole śnieg zawieje
+W:w kwietniu występuje duża zmienność pogodowa
+
+P:mędrsze jajca niż kokosz
+W:powinno się szanować wiedzę oraz doświadczenie
+
+P:jaka Gromniczna bracie, taki Święty Maciej
+W:pogoda na początku lutego (2 lutego) zwiastuje aurę na cały miesiąc
+
+P:kiedy Gromniczna zimę traci, to święty Maciej ją wzbogaci
+W:odwilże na początku lutego (2 lutego) zwiastują niechybnie ochłodzenie pod koniec miesiąca (24 lutego)
+
+P:gdy Święty Maciej zimę poprawia, to Oblubieniec mrozy zostawia
+W:ochłodzenie pod koniec lutego (24 lutego) zwiastuje ocieplenie w drugiej połowie marca (19 marca)
+
+P:jak na święty Maciej ciepło, to się będzie długo wlekło
+W:ocieplenie pod koniec lutego (24 lutego) zwiastuje długie utrzymanie się chłodnej aury zimowej
+
+P:na świętego Macieja prędzej wiosny nadzieja
+W:pod koniec lutego (24 lutego) można spodziewać się już pierwszych oznak wiosny
+
+P:na święty Maciej skowronek zapiej
+W:pod koniec lutego (24 lutego) można spodziewać się już pierwszych oznak wiosny
+
+P:na święty Maciej lody wróżą długie chłody, a gdy płyną już strugą, to i zimy niedługo
+W:chłodny koniec lutego (24 lutego) zwiastuje jeszcze długa zimę, zaś ocieplenie rychły koniec zimowej aury
+
+P:na świętego Macieja zniesie gęś pierwsze jejca
+W:pod koniec lutego (24 lutego) można spodziewać się już pierwszych oznak wiosny
+
+P:głodny głodnemu wypomni
+W:ktoś, kto zwróci uwagę na rzekome ukryte myśli rozmówcy, sam takimi dysponuje
+
+P:rzadko ten jastrząb kuropatwę schwyci, który się za całym ugania stadem
+W:zachłanność nie popłaca
+
+P:każda pliszka swój ogon chwali
+W:każdy się chwali i przypisuje sobie zasługi
+
+P:nie urodzi sikora słowika
+W:dzieci dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:nie urodzi sowa sokoła
+W:dzieci dziedziczą skłonności i cechy charakteru po rodzicach
+
+P:słówko wyleci wróblem, a powróci wołem
+W:plotkowanie nie popłaca
+
+P:z czasem wróble na strachu siadają
+W:do wszystkiego się można przyzwyczaić
+
+P:osioł konia nie spłodzi
+W:należy brać pod uwagę możliwości i zdolności osoby
+
+P:gdy wilk się zestarzeje, skubie go i wrona
+W:do wszystkiego się można przyzwyczaić
+
+P:ryby, choć dobre bywają, w trzeci dzień się przejadają
+W:wszystko z czasem staje się nudne
+
+P:co ptakiem z gęby wyleci, wołem nazad nie wciągniesz
+W:plotkowanie i nie liczenie się z własnym słowem nie popłaca
+
+P:gdy Zuzanna z pogodą chadza, piękną jesień przyprowadza
+W:słoneczna pogoda w połowie sierpnia (11 sierpnia) zapowiada ciepłą jesień
+
+P:czerwiec po deszczowym maju często dżdżysty w naszym kraju
+W:po deszczowym maju często następuje deszczowy czerwiec
+
+P:czerwiec – przerwiec, bo przerywa gospodarkę aż do żniwa
+W:w czerwcu nie ma prac polowych, bo orka i siew już zakończone, a żniwa jeszcze nie nadeszły
+
+P:czerwiec się czerwieni? Będzie dość w kieszeni
+W:dobry urodzaj i zarobek zapowiadają czerwone zachody słońca w czerwcu
+
+P:mokry czerwiec, chłodny maj – wszystkim gburom prawy raj
+W:chłodny maj i deszczowy czerwiec sprzyjają obfitym plonom
+
+P:czerwiec stały, grudzień doskonały
+W:stabilna pogoda w czerwcu zapowiada dobrą pogodę w grudniu
+
+P:grzmoty czerwca rozweselają rolnikom serca
+W:czerwcowe grzmoty zapowiadają dobry urodzaj
+
+P:śmiech to zdrowie
+W:dobre samopoczucie sprzyja posiadaniu dobrej kondycji ciała
+
+P:najciemniej jest pod latarnią
+W:      <model>wikitext</model>
+
+P:najciemniej jest pod latarnią
+W:często nie zauważamy tego, co wydaje się oczywiste
+
+P:gdy na święty Józef bociek przybędzie, to już śniegu nie będzie
+W:przylot bocianów w drugiej połowie marca (19 marca) zapowiada nastanie wiosny i ocieplenie
+
+P:Wawrzyniec pokazuje, jaka jesień następuje
+W:słoneczna pogoda w połowie sierpnia (10 sierpnia) zapowiada ciepłą jesień, zaś aura deszczowa, chłodną
+
+P:na świętego Wawrzyna śpieszą do młyna
+W:połowa sierpnia (10 sierpnia) to czas końca żniw, zboże zawozi się do zmielenia
+
+P:w święto Wawrzyńca śpieszą do młyńca
+W:połowa sierpnia (10 sierpnia) to czas końca żniw, zboże zawozi się do zmielenia
+
+P:na święty Wawrzyniec, wolny przez pola gościniec
+W:w połowie sierpnia (10 sierpnia) kończą się żniwa, na polach zostają tylko ścierniska
+
+P:gdy na Wawrzyńca orzechy obrodzą, to w zimie mrozy dogodzą
+W:obfitość orzechów dojrzewających od połowy sierpnia (10 sierpnia) zapowiada mroźną zimę
+
+P:gdy Wawrzyniec i Bartłomiej pogodą dopisują, piękną jesień obiecują
+W:pogodny sierpień (10 i 24 sierpnia) zapowiada ciepłą jesień
+
+P:jaki Bartek, taki wrzesień, jaki Marcin, taka zima
+W:pogodny koniec sierpnia (24 sierpnia) zwiastuje ciepły wrzesień, zaś ciepły początek listopada (11 listopada) łagodną zimę
+
+P:jaki dzień Bartłomieja, takiej jesieni nadzieja
+W:pogodny koniec sierpnia (24 sierpnia) zwiastuje ciepłą jesień
+
+P:święty Bartłomiej pogodny, jesień pogodna
+W:pogodny koniec sierpnia (24 sierpnia) zwiastuje ciepłą jesień
+
+P:na święty Dominik, kopy z pola mig, mig
+W:z początkiem sierpnia (4 sierpnia) dobiegają końca żniwa, zwozi się słomę z pól
+
+P:deszcz na świętego Błażeja, słaba wiosny nadzieja
+W:deszczowa pogoda na początku lutego (2 lutego) zwiastuje późne nadejście wiosennego ocieplenia
+
+P:święty Błażej gardła zagrzej
+W:zmienna pogoda na początku lutego (2 lutego) sprzyja przeziębieniom
+
+P:jak śnieg w świętego Błażeja, pogodna będzie Wielka Niedziela
+W:opady śniegu na początku lutego (2 lutego) zwiastują ciepłą wiosnę
+
+P:pogoda na świętego Błażeja, dobra wiosny nadzieja
+W:pogodny początek lutego (2 lutego) zwiastuje nadejście ciepłej wiosny
+
+P:Pankracy, Serwacy, Bonifacy i Zośka to zimni święci
+W:do połowy maja (od 12 do 15 maja) mogą jeszcze zdarzyć się przymrozki
+
+P:Pankracy, Serwacy, Bonifacy, każdy swoim zimnem raczy
+W:do połowy maja (12-14 maja) mogą jeszcze zdarzyć się przymrozki
+
+P:Pankracy, Serwacy i Bonifacy – źli na ogrody chłopacy
+W:do połowy maja (12-14 maja) nie należy flancować roślin do gruntu, bo jeszcze mogą zdarzyć się przymrozki
+
+P:przed Pankracym nie ma lata, po Bonifacym mróz ulata
+W:do połowy maja (12-14 maja) mogą jeszcze zdarzyć się przymrozki
+
+P:kiedy Paweł się nawróci, zima na wspak się odwróci
+W:mroźna pogoda przed końcem stycznia (25 stycznia) zwiastuje ocieplenie w lutym 
+
+P:gdy na święty Paweł jasno, po żniwach też będzie ciasno
+W:pogodny koniec stycznia (25 stycznia) zwiastuje urodzaj w lecie
+
+P:gdy na święty Paweł jasno, po żniwach w stodole ciasno
+W:pogodny koniec stycznia (25 stycznia) zwiastuje urodzaj w lecie
+
+P:jeśli w święty Paweł śnieg albo deszcz pada, dobrych się urodzajów spodziewać wypada
+W:opady pod koniec stycznia (25 stycznia) zwiastują urodzajne lato
+
+P:nie strasz, nie strasz, bo się zesrasz
+W:nie należy straszyć innych, bo grozi to odwetem
+
+P:święta Anno! uproś wnuka, niech ma każdy, czego szuka
+W:wyraz wiary we wstawiennictwo świętej babki Chrystusa w wymodleniu potomstwa dla własnych dzieci
+
+P:na świętego Andrzeja trza kożucha dobrodzieja
+W:z końcem listopada (30 listopada) ostatecznie nastaje zimowa aura
+
+P:święty Andrzej ci ukaże, co ci los przyniesie w darze
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące przyszłości
+
+P:święty Ambroży zimy przysporzy
+W:od pierwszej połowie grudnia (7 grudnia) należy się spodziewać zimowej aury
+
+P:święty Andrzej wróży szczęście i szybkie zamęście
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia i przyszłości
+
+P:na świętego Andrzeja błyska dziewkom nadzieja
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia
+
+P:na świętego Andrzeja błyska pannom nadzieja
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia
+
+P:na świętego Andrzeja dziewkom z wróżby nadzieja
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia
+
+P:w dzień świętego Andrzeja pannom z wróżby nadzieja
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia
+
+P:noc Andrzeja świętego przyniesie nam narzeczonego
+W:z okazji andrzejek (30 listopada) czyni się wróżby dotyczące zamążpójścia
+
+P:gdy święty Andrzej ze śniegiem przybieży, sto dni śnieg na polu leży
+W:opady śniegu pod koniec listopada (30 listopada) zapowiadają śnieżną zimę
+
+P:miękko na Andrzeja, oj! niedobra nadzieja
+W:opady śniegu pod koniec listopada (30 listopada) zapowiadają srogą zimę
+
+P:miękko na Jędrzeja, oj! niedobra nadzieja
+W:opady śniegu pod koniec listopada (30 listopada) zapowiadają srogą zimę
+
+P:gdy w Andrzeja deszcz lub słota, w grudniu drogi bez błota
+W:deszczowa pogoda pod koniec listopada (30 listopada) zapowiada mroźny grudzień
+
+P:święty Jędrzej adwent przytwierdzi
+W:zwykle andrzejki (30 listopada) wypadają już w adwencie
+
+P:święta Hanna to już jesienna panna
+W:pod koniec lipca (26 lipca) średnie dzienne temperatury zaczynają spadać
+
+P:od świętej Anki chłodne wieczory, poranki
+W:od końca lipca (26 lipca) noce są coraz chłodniejsze
+
+P:od świętej Anki zimne poranki
+W:od końca lipca (26 lipca) noce są coraz chłodniejsze
+
+P:od świętej Anki zimne wieczory i ranki
+W:w końcówce lipca (26 lipca) noce są coraz chłodniejsze
+
+P:od świętej Hanki zimne poranki
+W:od końca lipca (26 lipca) noce są coraz chłodniejsze
+
+P:od świętej Hanki zimne wieczory i ranki
+W:od końca lipca (26 lipca) noce są coraz chłodniejsze
+
+P:Barbara święta o górnikach pamięta
+W:w Barbórkę (4 grudnia) górnicy obchodzą swoje święto
+
+P:na świętego Mikołaja czeka dzieciąt cała zgraja: da posłusznym ciasteczko, złych przekropi rózeczką
+W:wyraz radości z obchodu wspomnienia patrona dzieci (6 grudnia) połączonego z obdarowywaniem ich prezentami
+
+P:gdy na świętą Barbarę gęś chodzi po lodzie, to Boże Narodzenie będzie po wodzie
+W:mroźny początek grudnia (4 grudnia) wróży ocieplenie pod koniec roku (25 grudnia)
+
+P:gdy w świętą Barbarę gęś chodzi po lodzie, to Boże Narodzenie będzie po wodzie
+W:mroźny początek grudnia (4 grudnia) wróży ocieplenie pod koniec roku (25 grudnia)
+
+P:gdy w świętą Barbarę gęś po stawie chodzi, w Boże Narodzenie pływać po nim się godzi
+W:mroźny początek grudnia (4 grudnia) wróży ocieplenie pod koniec roku (25 grudnia)
+
+P:święta Barbara po lodzie, Boże Narodzenie po wodzie
+W:mroźny początek grudnia (4 grudnia) wróży ocieplenie pod koniec roku (25 grudnia)
+
+P:święta Barbara po wodzie, Boże Narodzenie po lodzie
+W:ciepły początek grudnia (4 grudnia) zapowiada mroźny koniec roku (25 grudnia)
+
+P:święto Barbary po wodzie, Boże Narodzenie po lodzie
+W:ciepły początek grudnia (4 grudnia) zapowiada mroźny koniec roku (25 grudnia)
+
+P:gdy w świętą Barbarę ostre mrozy, to na zimę gotuj wozy, a gdy roztajanie, każ opatrzyć sanie
+W:mroźny początek grudnia (4 grudnia) wróży bezśnieżną zimę, zaś ciepły obfitującą w opady śniegu
+
+P:gdy na świętą Barbarę mróz, sanie na górę włóż, a szykuj dobry wóz
+W:mroźny początek grudnia (4 grudnia) wróży bezśnieżną zimę
+
+P:na świętą Barbarę, wyciągnij z kąta czamarę
+W:z początkiem grudnia (4 grudnia) należy spodziewać się zimowych chłodów
+
+P:na świętą Barbarę, dobądź ze skrzyni czamarę
+W:z początkiem grudnia (4 grudnia) należy spodziewać się zimowych chłodów
+
+P:kiedy w świętą Barbarę mróz, to chłopie sanie na górę włóż
+W:mroźny początek grudnia (4 grudnia) wróży bezśnieżną zimę
+
+P:kiedy w świętą Barbarę mróz, to szukaj chłopie dobry wóz
+W:mroźny początek grudnia (4 grudnia) wróży bezśnieżną zimę
+
+P:kiedy w świętą Barbarę mróz, to szykuj chłopie dobry wóz
+W:mroźny początek grudnia (4 grudnia) wróży bezśnieżną zimę
+
+P:święty Błażej po świecach łazi
+W:we wspomnienie patrona wspomożyciela w chorobach gardła (3 lutego) używa się świec przy ich błogosławieniu
+
+P:na świętego Franciszka odlatuje pliszka
+W:na początku października (4 października) pliszki odlatują do miejsc zimowania
+
+P:na świętego Franciszka przylatuje pliszka
+W:na początku kwietnia (2 kwietnia) pliszki wracają na miejsca lęgowe
+
+P:na święty Wojciech zniesie jajko bociek
+W:w drugiej połowie kwietnia (23 kwietnia) rozpoczyna się gniazdowanie bocianów
+
+P:na świętego Franciszka zielenią się łany i ze swego zimowiska wracają bociany
+W:z początkiem kwietnia (2 kwietnia) rozpoczyna się okres wegetacyjny w przyrodzie
+
+P:na Tomasza najdłuższa noc nasza
+W:najdłuższa noc wypada z 21 na 22 grudnia
+
+P:na święty Tomasz dzień się z nocą sili, mniej nocy, więcej dnia będzie po chwili
+W:po przesileniu grudniowym (z 21 na 22 grudnia) dnia zaczyna przybywać
+
+P:po Urbanie lato nastanie
+W:w drugiej połowie maja (19, dawniej zaś 25 maja) ostatecznie robi się już ciepło
+
+P:na Urbana chwile jakie, mówią, że i lato takie
+W:aura w drugiej połowie maja (19, dawniej zaś 25 maja) zwiastuje pogodę na całe nadchodzące lato
+
+P:w Urbana, miły chłopie, siej len i konopie
+W:druga połowa maja (19, dawniej zaś 25 maja) to dogodny czas dla wysiewu roślin włóknodajnych
+
+P:na Urbana chwile jakie, i lato takie
+W:aura w drugiej połowie maja (19, dawniej zaś 25 maja) zwiastuje pogodę na całe nadchodzące lato
+
+P:kto sieje jęczmień na Urbana, będzie pił piwo ze dzbana
+W:druga połowa maja (19, dawniej zaś 25 maja) to dogodny czas dla wysiewu jęczmienia
+
+P:gdy deszcz w świętego Urbana, mały profit z winobrania
+W:deszczowa druga połowa maja (19, dawniej zaś 25 maja) źle wpływa na kwiatostan latorośli
+
+P:po świętym Tadeuszu trzeba chodzić w kapeluszu
+W:pod koniec października (28 października) należy się zacząć ciepło ubierać
+
+P:żeby kózka nie skakała, toby nóżki nie złamała
+W:brak umiaru może doprowadzić do niekorzystnych rezultatów
+
+P:nie pamiętał wół, jak cielęciem był
+W:używane, gdy chce się zwrócić komuś uwagę, że nie powinien pouczać, gdyż sam kiedyś (w młodości) zachowywał się tak samo
+
+P:głupiego wilka i cielęta liżą
+W:brakującemu doświadczenia i rozwagi nie pomoże przewaga w sile czy pochodzenie
+
+P:zapomniał wół, jak cielęciem był
+W:…używane, gdy chce się zwrócić komuś uwagę, że nie powinien pouczać, gdyż sam kiedyś (w młodości) zachowywał się tak samo
+
+P:przysłowia są mądrością narodów
+W:w przysłowiach wyrażone zostały podstawowe prawdy życiowego każdej nacji
+
+P:przysłowia są mądrością narodu
+W:w przysłowiach wyrażone zostały podstawowe prawdy życiowego każdej nacji
+
+P:poślij do Paryża osła głupiego, jeśli tu był osłem, nie będzie koń z niego
+W:pewne rzeczy są niemożliwe do zrobienia
+
+P:nikt nie może dwom panom służyć
+W:nie sposób opowiadać się za dwoma przeciwnymi wartościami w sensie moralnym
+
+P:nikt nie może dwóm panom służyć
+W:nie sposób opowiadać się za dwoma przeciwnymi wartościami w sensie moralnym
+
+P:więcej dwóch ujrzy niż jeden
+W:świadectwo więcej niż jednego świadka jest wiarygodniejsze
+
+P:kto daje i odbiera, ten się w piekle poniewiera
+W:pozorna hojność i odbieranie wręczonych przez siebie podarków jest nieżyczliwie postrzegane przez otoczenie
+
+P:słowa nic nie kosztują
+W:mowa ma niewielką wartość, gdy nie idzie w parze z czynami
+
+P:ziorko do ziorka, a bydzie miorka
+W:ziarnko do ziarnka, a zbierze się miarka
+
+P:kto małego nie chce, to i dużego nie ogląda
+W:zachłanność się nie opłaca
+
+P:gdy przyjdzie święta Agnieszka, przebije lód ogonem pliszka
+W:pod koniec stycznia (21 stycznia) dni stają się jaśniejsze i następuje ocieplenie
+
+P:gdy przyjdzie Agnieszka, rozbije ogonem lód pliszka
+W:pod koniec stycznia (21 stycznia) dni stają się jaśniejsze i następuje ocieplenie
+
+P:świętej Agnieszki uschną pieluszki
+na przełomie stycznia i lutego (21 stycznia i 5 lutego) dni stają się jaśniejsze i następuje ocieplenie
+
+świętej Agaty uschną i szmaty
+W:na przełomie stycznia i lutego (21 stycznia i 5 lutego) dni stają się jaśniejsze i następuje ocieplenie
+
+P:jak święta Agnieszka wypuści śnieg z mieszka, to go nie powstrzyma ani do Franciszka
+W:śnieżna aura pod koniec stycznia (21 stycznia) może przedłużyć się nawet na okres jednego tygodnia (29 stycznia)
+
+P:po świętej Agnieszce napije się wół na ścieżce
+W:pod koniec stycznia (21 stycznia) dni stają się jaśniejsze i następuje odwilż
+
+P:strzeżonego Pan Bóg strzeże
+W:lepiej jest zapobiegać, niż później bać się o to, jak sprawy się potoczą 
+
+P:lepiej zapobiegać niż leczyć
+W:bardziej opłaca się zapobieganie, niż naprawianie zaniedbań i błędów
