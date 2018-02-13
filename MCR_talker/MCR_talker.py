@@ -103,6 +103,8 @@ class MCRTalker(Talker):
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
+        if not isinstance(real_question, unicode):
+            real_question = real_question.decode("utf8")
         selected_quote, score = self._get_answer(real_question)
         if selected_quote == self.default_quote:
             return {"answer": selected_quote,
@@ -187,6 +189,8 @@ class MCRTalker(Talker):
 
     def select_quote(self, results, line, raw_question):
         # type: (MCRTalker, dict[int, set[int]], list[list[str]], str) -> tuple[unicode, float]
+        if not isinstance(raw_question, unicode):
+            raw_question = raw_question.decode("utf8")
         if len(results) == 0:
             return self.default_quote, 0.
         if self.filter_rare_results:  # TODO: Test impact on speed and correctness
