@@ -1,5 +1,6 @@
 import os.path
-import shelve
+import cPickle as pickle
+
 from enum import Enum
 
 
@@ -18,22 +19,21 @@ EXTENSIONS = {
     IndexType.POSITIONAL_WITHOUT_LEMATIZATION: ".pwl",
     IndexType.POSITIONAL_ENCODED: ".enc",
     IndexType.TITLE_4GRAM: ".4gr",
-    IndexType.DIALOGUE: ".dlg.rvi"
+    IndexType.DIALOGUE: ".drvi"
 }
 
 
 def store_reverse_index(collection_path, create_reverse_index_function, index_creation_arguments=(),
                         index_type=IndexType.REVERSE):
-    index = create_reverse_index_function(collection_path, *index_creation_arguments)
-    stored_index = shelve.open(collection_path + EXTENSIONS[index_type])
-    documents_beginnings = shelve.open(collection_path + EXTENSIONS[index_type] + ".beg")
-    stored_index.update(index[0])
-    documents_beginnings.update({b"1": index[1]})
-    return stored_index
+    index = dict(create_reverse_index_function(collection_path, *index_creation_arguments)[0])
+    with open(collection_path + EXTENSIONS[index_type], "wb") as file:
+        pickle.dump(index, file)
+    return index
 
 
 def load_reverse_index(collection_path, index_type=IndexType.REVERSE):
-    stored_index = shelve.open(collection_path + EXTENSIONS[index_type])
+    with open(collection_path + EXTENSIONS[index_type], "rb") as file:
+        stored_index = pickle.load(file)
     return stored_index
 
 
