@@ -74,9 +74,9 @@ class MCRTalker(Talker):
                  filter_rare_results=True,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
-                 filter_stopwords=False,
+                 filter_stopwords=True,
                  nonexistent_words_penalty=1,  # TODO: check default value
-                 stopwords_penalty=.1):
+                 stopwords_penalty=.2):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -161,7 +161,9 @@ class MCRTalker(Talker):
             line = line[0].lower() + line[1:]
 
         line = tokenize(line)
-        if self.filter_stopwords:
+        if self.filter_stopwords and not all([word in self.stopwords
+                                              or word not in self.morphosyntactic.get_dictionary()
+                                              for word in line]):
             for word_idx, word in enumerate(line):
                 if word in self.stopwords:
                     line[word_idx] = "__" + word

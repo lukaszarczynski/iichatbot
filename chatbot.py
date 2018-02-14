@@ -40,7 +40,7 @@ def get_talkers(exclude=()):
         (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {}),
         (MCRTalker, ["data/przyslowia_formatted.txt"], {}),
         (MCRTalker, ["data/subtitles_fixed.txt"], {}),
-        (MCRTalker, ["data/yebood.txt"], {}),
+        # (MCRTalker, ["data/yebood.txt"], {}),
     ]
     talkers = []
     print_progress = progress_bar()
