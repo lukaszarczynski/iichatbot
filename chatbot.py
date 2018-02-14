@@ -14,6 +14,7 @@ from first_year_talker.first_year_talker import FirstYearTalker
 from interview_talker.interview_talker import InterviewTalker
 # from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
+# from seq2seq.seq_talker import SeqTalker
 from talker_grade import TalkerGrade
 from helpers.progress_bar import progress_bar
 
@@ -35,6 +36,7 @@ def get_talkers(exclude=()):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
+        # (SeqTalker, [], {}),
         (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {}),
         (MCRTalker, ["data/drama_quotes_longer.txt"], {}),
         (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {}),
@@ -116,8 +118,8 @@ def loop(talkers, grader):
                 answers.values(),
                 key=lambda answer: -answer["score"],
             )
-            
-            
+
+
             answer = answers[0]
             print("<", answer["answer"])
             logging.info("Answered: %s" % answer["answer"])
