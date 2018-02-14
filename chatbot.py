@@ -35,12 +35,12 @@ def get_talkers(exclude=()):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
-        (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {}),
-        (MCRTalker, ["data/drama_quotes_longer.txt"], {}),
-        (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {}),
-        (MCRTalker, ["data/przyslowia_formatted.txt"], {}),
-        (MCRTalker, ["data/subtitles_fixed.txt"], {}),
-        # (MCRTalker, ["data/yebood.txt"], {}),
+        (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {"select_answer_threshold": 0.6}),
+        (MCRTalker, ["data/drama_quotes_longer.txt"], {"select_answer_threshold": 0.75}),
+        (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {"select_answer_threshold": 0.8,
+                                                         "filter_stopwords": False}),
+        (MCRTalker, ["data/przyslowia_formatted.txt"], {"select_answer_threshold": 0.95}),
+        (MCRTalker, ["data/subtitles_fixed.txt"], {"select_answer_threshold": 0.8}),
     ]
     talkers = []
     print_progress = progress_bar()
