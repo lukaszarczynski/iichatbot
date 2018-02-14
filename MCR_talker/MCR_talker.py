@@ -74,9 +74,11 @@ class MCRTalker(Talker):
                  filter_rare_results=True,
                  default_quote="Jeden rabin powie tak, a inny powie nie.",
                  randomized=False,
-                 filter_stopwords=False,
+                 filter_stopwords=True,
                  nonexistent_words_penalty=1,  # TODO: check default value
-                 stopwords_penalty=.1):
+                 stopwords_penalty=.2,
+                 select_answer_threshold=.8,
+                 successor_score_weight=.8):
         self.morphosyntactic = morph.Morphosyntactic(morphosyntactic_path)
         self.morphosyntactic.get_dictionary()
         self.stopwords = MCRTalker.load_stopwords(stopwords_path)
@@ -100,6 +102,8 @@ class MCRTalker(Talker):
                                                         self.morphologocal_bases, self._score_function,
                                                         vector_file_extension=self.vector_file_extension)
         self.vector_serialization.load()
+        self.select_answer_threshold = select_answer_threshold
+        self.successor_score_weight = successor_score_weight
 
     def get_answer(self, question, status):
         real_question = question["fixed_typos"]
@@ -161,7 +165,9 @@ class MCRTalker(Talker):
             line = line[0].lower() + line[1:]
 
         line = tokenize(line)
-        if self.filter_stopwords:
+        if self.filter_stopwords and not all([word in self.stopwords
+                                              or word not in self.morphosyntactic.get_dictionary()
+                                              for word in line]):
             for word_idx, word in enumerate(line):
                 if word in self.stopwords:
                     line[word_idx] = "__" + word
@@ -189,25 +195,29 @@ class MCRTalker(Talker):
 
     def select_quote(self, results, line, raw_question):
         # type: (MCRTalker, dict[int, set[int]], list[list[str]], str) -> tuple[unicode, float]
+        def weighted_score(score1, score2):
+            return (score1 * (1-self.successor_score_weight)
+                    + score2 * self.successor_score_weight)
         if not isinstance(raw_question, unicode):
             raw_question = raw_question.decode("utf8")
         if len(results) == 0:
             return self.default_quote, 0.
-        if self.filter_rare_results:  # TODO: Test impact on speed and correctness
+        if self.filter_rare_results:
             if any((len(k) > 1 for k in results.values())):
                 results = {k: v for k, v in results.items() if len(v) > 1}
 
         self.line_tf = TF_IDF("__temp", self.morphosyntactic).compute_dialogue_tf([raw_question])
         possible_quotes = self._get_quotes_from_indices(results)
+        rated_quotes = []
         question_vector = WordVector(line, self._question_score_function)
         for possible_quote in possible_quotes:
-            possible_quote[0], possible_quote[1] = self.evaluate_quote(possible_quote, question_vector)  # TODO: Select best quote, to powinno być bez tego for, za każdym razem tworzy wektor dla pytania
+            rated_quotes.append(self.evaluate_quote(possible_quote, question_vector))
         self.line_tf = None
         if self.randomized:
-            selected_quote, score = self._select_randomized_quote(possible_quotes)
+            selected_quote, score, successor_score = self._select_randomized_quote(rated_quotes)
         else:
-            selected_quote, score = self._select_best_quote(possible_quotes)
-        return selected_quote, score
+            selected_quote, score, successor_score = self._select_best_quote(rated_quotes)
+        return selected_quote, weighted_score(score, successor_score)
 
     def _get_quotes_from_indices(self, results):
         possible_quotes = []
@@ -270,13 +280,15 @@ class MCRTalker(Talker):
             quote[dialogue_idx] = _quote_text
         return quote
 
-    def evaluate_quote(self, quote, question_vector, choose_answer=False):
+    def evaluate_quote(self, quote, question_vector):
+        choose_answer = False
         quote_idx = quote[1]
         raw_quote_text = split_dialogue(quote[0])
         quote_text = tokenize_dialogue(quote[0])
         quote_text = self.morphologocal_bases(quote_text)
         best_quote = raw_quote_text[0]
         cosine = 0
+        successor_cosine = 0
 
         for dialogue_idx in range(len(quote_text)):
             quote_vector = self.vector_serialization.word_vectors[quote_idx][dialogue_idx]
@@ -285,10 +297,25 @@ class MCRTalker(Talker):
             else:
                 new_cosine = quote_vector.__matmul__(question_vector)
                 new_cosine /= quote_vector.len() * question_vector.len()
+            if new_cosine >= self.select_answer_threshold:
+                choose_answer = True
             if new_cosine >= cosine and (not choose_answer or len(quote_text) > dialogue_idx + 1):
                 cosine = new_cosine
                 best_quote = raw_quote_text[dialogue_idx + choose_answer]
-        return best_quote, cosine
+                if choose_answer:
+                    successor_vector = self.vector_serialization.word_vectors[quote_idx][dialogue_idx + 1]
+                    if successor_vector.len() == 0 or question_vector.len() == 0:
+                        successor_cosine = 0
+                    else:
+                        successor_cosine = successor_vector.__matmul__(question_vector)
+                        successor_cosine /= successor_vector.len() * question_vector.len()
+
+        score = cosine
+        if choose_answer:
+            successor_score = successor_cosine
+        else:
+            successor_score = cosine
+        return best_quote, score, successor_score
 
 
 class WordVector:
