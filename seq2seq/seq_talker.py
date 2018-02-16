@@ -8,7 +8,7 @@ from talker import Talker
 
 
 class SeqTalker(Talker):
-    def __init__(self, model_path="seq2seq/model_out/gabor-desktop_574565"):
+    def __init__(self, model_path="big_data/seq2seq"):
         self.params, self.data, self.lm_data, self.ans_data = pickle.load(
             open("{}/lm.pkl".format(model_path), "rb"),
         )

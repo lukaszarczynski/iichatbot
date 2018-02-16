@@ -14,7 +14,7 @@ from first_year_talker.first_year_talker import FirstYearTalker
 from interview_talker.interview_talker import InterviewTalker
 # from stupid_talker.stupid_talker import StupidTalker
 from vector_sum_talker.vector_sum_proxy import VectorSumProxy
-# from seq2seq.seq_talker import SeqTalker
+from seq2seq.seq_talker import SeqTalker
 from talker_grade import TalkerGrade
 from helpers.progress_bar import progress_bar
 
@@ -36,6 +36,7 @@ def get_talkers(exclude=()):
         ),
         (FirstYearTalker, [], {}),
         (CandidatesTalker, [], {}),
+        (SeqTalker, [], {}),
         (MCRTalker, ["data/wikiquote_polish_dialogs.txt"], {"select_answer_threshold": 0.6}),
         (MCRTalker, ["data/drama_quotes_longer.txt"], {"select_answer_threshold": 0.75}),
         (MCRTalker, ["data/dialogi_z_prozy_fixed.txt"], {"select_answer_threshold": 0.8,
